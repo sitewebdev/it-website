@@ -1,0 +1,92 @@
+.offre {
+    height: 640px;
+    background-image: url(../images/heolienne-panneau.png);
+    background-size: 934px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+.offre-description {
+    padding: 5em 1em 2em 1.6em;
+    text-align: center;
+}
+
+.offre-description h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #ffab09;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.offre-description h3 {
+    margin: 0em 0em;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 4px
+}
+
+.offre-description p {
+    line-height: 126%;
+    width: 816px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.offre-bloc-vignette {
+    padding: 0em 2em 0em;
+}
+
+.offre-list-vignette {
+    height: 330px;
+    max-width: 950px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.offre-vignette {
+    width: 195px;
+    height: 235px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.offre-vignette img {
+    height: 125px;
+    margin-top: -60px;
+}
+
+.offre-bloc-space {
+    padding: 3em;
+}
+
+.offre-vignette h5 {
+    margin: 0em 0em;
+    color: #3d348b;
+    font-size: 1.05em;
+    font-weight: bold;
+    padding: 15px 15px 0px 15px;
+}
+
+.offre-vignette p {
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 0.65em;
+}
+
+.offre-vignette .link {
+    color: #ff941c;
+    font-size: 0.8em;
+    padding: 10px;
+
+}

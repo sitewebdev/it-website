@@ -1,0 +1,196 @@
+/*card-nr ARTICLE*/
+.card-nr {
+  width: 215px;
+  text-align: center;
+  /*transition: all .125s;
+  transform: scale(1) translateY(0px);*/
+}
+
+/* Elements */
+.card-nr__wrapper {
+  padding-top: .1px;
+  padding-bottom: .1px;
+  position: relative;
+
+  background-color: #ffffff;
+  color: #999999;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
+  border-radius: 13px;
+}
+
+.card-nr__wrapper img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.card-nr__wrapper:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .2);
+  /*transition: all .125s;
+  transform: scale(1) translateY(0px);*/
+}
+
+.card-nr__type {
+  height: 29px;
+}
+
+.card-nr__type h6 {
+  border-radius: 47px;
+  text-transform: uppercase;
+  background-color: #3d348b;
+  color: #fff;
+  float: left;
+  padding: 7px;
+  margin: 0px;
+  width: 30%;
+  font-size: 0.8em;
+}
+
+.card-nr__type .date {
+  width: 70%;
+  float: right;
+  height: 29px;
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 0.8em;
+  padding: 7px;
+
+}
+
+
+.card-nr__box {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.card-nr__item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.card-nr__item p {
+  text-align: left;
+  color: #000;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-nr__item--small {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-nr__feature {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.card-nr__img {
+  display: block;
+  max-width: 100%;
+  height: 100px;
+}
+
+.card-nr__header {
+  position: relative;
+  z-index: 1;
+}
+
+.card-nr__title {
+  color: #665fa2;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+  font-weight: bold;
+}
+
+.card-nr__label {
+  color: #cccccc;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.card-nr__divider {
+  display: block;
+  width: 100%;
+  height: 15px;
+
+  border: none;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyOHB4IiBoZWlnaHQ9IjE1cHgiIHZpZXdCb3g9IjAgMCAyOCAxNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjggMTUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNERURFREUiIGQ9Ik0yNy41LDdoLTZDMjEuMiwzLjEsMTgsMCwxNCwwUzYuOCwzLjEsNi41LDdoLTZDMC4yLDcsMCw3LjIsMCw3LjVTMC4yLDgsMC41LDhoNmMwLjMsMy45LDMuNSw3LDcuNSw3czcuMi0zLjEsNy41LTdoNkMyNy44LDgsMjgsNy44LDI4LDcuNVMyNy44LDcsMjcuNSw3eiBNMTQsMWMzLjQsMCw2LjIsMi42LDYuNSw2SDcuNUM3LjgsMy42LDEwLjYsMSwxNCwxeiBNMTQsMTRjLTMuNCwwLTYuMi0yLjYtNi41LTZoMTIuOUMyMC4yLDExLjQsMTcuNCwxNCwxNCwxNHoiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card-nr__body {
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+/* Modifiers */
+.card-nr:hover {
+  cursor: pointer;
+  /*transform: scale(1.05);*/
+}
+
+.card-nr:hover .card-nr__wrapper {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .05);
+}
+
+.card-nr:hover .card-nr__wrapper:after {
+  /*transform: scale(0.95) translateY(10px);*/
+}
+
+.nous-rejoindre .owl-item {
+  width: 220px!important;
+}
+
+
+
+.carroussel-action{
+  height: 50px;
+  margin: 35px 0px;
+}
+
+.nous-rejoindre .read-more {
+  float: left;
+}
+.nous-rejoindre .read-more .button {
+  background-color: #3d348b;
+  color: white;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.nous-rejoindre .read-more .button:hover {
+  background-color: #555;
+}
+
+.nous-rejoindre .read-more.button:active {
+  background-color: black;
+}
+
+.nous-rejoindre .navigation{
+  float: right;
+}

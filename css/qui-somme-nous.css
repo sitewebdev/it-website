@@ -1,0 +1,109 @@
+
+.qui-sommes-nous {
+    height: 622px;
+}
+
+.qui-sommes-nous-background-photo {
+    height: 415px;
+    background: url('../images/img_about.jpg');
+    background-size: 1300px;
+}
+
+.qui-sommes-nous-bloc-description {
+    height: 415px;
+    width: 65%;
+    float: right;
+    background-color: #3d348b;
+    position: relative;
+    right: -15px;
+    top: 207px;
+    border-radius: 11px;
+
+    background-image: url(../images/multicon.png);
+    background-repeat: no-repeat;
+    background-size: 495px;
+    background-position-x: right;
+    padding: 3em;
+}
+
+.qui-sommes-nous-bloc-description h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #ffab09;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.qui-sommes-nous-bloc-description h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 4px
+}
+
+.qui-sommes-nous-bloc-description p {
+    padding: 0px;
+    line-height: 126%;
+    width: 816px;
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+    font-size: 1em;
+    margin: 0px 0px 25px;
+}
+
+.qui-sommes-nous-bloc-description h4.valeur {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #9f9afc;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
+.valeur-bloc-vignette {
+    padding: 2em 0em 0em;
+}
+
+.valeur-list-vignette {
+    max-width: 950px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.valeur-vignette {
+    background-color: white;
+    color: #3d348b;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 230px;
+    margin: 5px;
+}
+
+.valeur-vignette img{
+    height: 15px;
+    margin-right: 8px;
+    float: left;
+}
+
+.qui-sommes-nous-bloc-description .read-more {
+    padding: 2em 0em 0em;
+}
+.qui-sommes-nous-bloc-description .read-more .button {
+    background-color: #ffab09;
+    color: white;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+

@@ -1,0 +1,93 @@
+
+.carriere {
+    height: 560px;
+    background-image: url(../images/carriere.jpg);
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 5.8em 2em 0em;
+}
+
+.carriere-offres-image{
+    max-width: 1069px;
+    height: 100%;
+    background: #757ce6;
+    border-radius: 14px;
+    margin: 0 auto;
+}
+
+.carriere-offres-image .bloc-offres{
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 2em;
+}
+
+.carriere-offres-image .bloc-image{
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.carriere-offres-image h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #42347f    ;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.carriere-offres-image h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 4px
+}
+
+.carriere-offres-image ul{ 
+    display: block;
+    padding: 40px 0px 40px 40px;
+    list-style-image: url('../images/carriere-puce.png');
+}
+.carriere-offres-image ul li{
+    display: block;
+    list-style-image: url('../images/carriere-puce.png');
+
+/*
+    background-image: url(../images/carriere.jpg);
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;*/
+}
+.carriere-offres-image ul li a{
+    display: block;
+    display: block;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 200%;
+    background-image: url(../images/group-link.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-y: bottom;
+}
+
+.carriere-offres-image .read-more .button {
+    background-color: white;
+    color: #42347f;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.carriere-offres-image .read-more .link {
+    color: white;
+    font-size: 0.8em;
+    padding: 10px;
+
+}

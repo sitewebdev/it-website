@@ -1,0 +1,138 @@
+
+.footer{
+    height: 377px;
+    background: #f9f9f9;
+    /*background-image: url(../images/footer.jpg);*/
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.top-footer{
+    height: 320px;
+}
+
+.top-footer-left{
+    height: 100%;
+    width: 29%;
+    float: left;
+    padding: 2.5em 2.5em 2.5em 2.5em;
+    /*text-align: right;*/
+}
+
+.top-footer-left .logo{
+    height: 56px;
+}
+.top-footer-left .logo-network{
+    text-align: left;
+    float: right;
+    width: 261px;
+}
+
+#linkedInLogo {
+    background-image: url(../images/linkedin.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 30px 15px 0px 0px;
+    float: left;
+    text-indent: -9999px;
+    width: 41px;
+    height: 41px;
+  }
+
+  #youtubeLogo {
+    background-image: url(../images/youtube.png);
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    margin: 30px 15px 0px 0px;
+    text-indent: -9999px;
+    width: 41px;
+    height: 41px;
+  }
+
+.top-footer-right{
+    height: 100%;
+    width: 70%;
+    float: right;
+    margin: 0 5px;
+}
+
+.top-footer-bloc-list{
+    height: 100%;
+    float: right;
+    margin: 2em;
+}
+
+.footer-adresse h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #3d348b;
+    font-size: 1.7em;
+    font-weight: bold;
+    
+}
+
+.footer-adresse{
+    height: 100%;
+    float: right;
+    margin: 2em;
+    width: 53%;
+}
+
+.footer-adresse-details{
+    margin: 20px 0px;
+}
+.footer-adresse-details h5{
+    color: #6b74e3;
+    font-weight: bold;
+    margin: 6px 0px;
+}
+
+.footer-adresse-details-content img{
+    float: left;
+    height: 20px;
+    margin: 3px 6px 0px 0px;
+}
+.footer-adresse-details-content p{
+    display: block;
+    width: 362px;
+    font-size: 1em;
+    margin: 0px 0px;
+}
+
+.top-footer-bloc-list h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #3d348b;
+    font-size: 1.7em;
+    font-weight: bold;
+    
+}
+
+.top-footer-bloc-list ul {
+    margin: 0px;
+    padding: 0px 26px;
+}
+
+.top-footer-bloc-list ul li::marker {
+    color: #edb940;
+    list-style-type: circle;
+    font-size: 20px;
+}
+
+.top-footer-bloc-list ul li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 198%;
+    font-size: 0.95em;
+} 
+
+
+.bottom-footer{
+    height: 57px;
+}
+
+.logo-network{
+    height: 150px;
+}

@@ -1,0 +1,64 @@
+
+
+.nous-rejoindre {
+    height: 608px;
+
+}
+.nous-rejoindre-title {
+    height: 269px;
+}
+.nous-rejoindre-carroussel {
+    height: 339px;
+    background-color: #ffab09;
+}
+.nous-rejoindre-bloc-image{
+    float: left;
+    width: 50%;
+}
+
+.nous-rejoindre-bloc-image div{
+    float: right;
+    width: 537px;
+    height: 537px;
+    background-image: url('../images/defi.png');
+    background-repeat: no-repeat;
+    background-size: 537px;
+    margin-top: 44px;
+
+    border-radius: 11px;
+}
+.nous-rejoindre-bloc-text{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 5em 1em 2em 1.6em;
+}
+
+.nous-rejoindre-bloc-text h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #3d348b;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nous-rejoindre-bloc-text h3 {
+    margin: 0em 0em;
+    color: #000;
+    font-size: 2.02em;
+    font-weight: bold;
+    padding: 4px
+}
+
+.nous-rejoindre-bloc-text p{
+    line-height: 126%;
+    width: 521px;
+    padding: 5px;
+}
+
+.espace-offre {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+}
