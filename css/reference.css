@@ -25,14 +25,11 @@
     padding: 4px
 }
 
-
-
 .reference-bloc-vignette {
     padding: 1em 0em 0em;
 }
 
 .reference-list-vignette {
-    max-width: 950px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,10 +38,31 @@
 }
 
 .reference-vignette {
-    width: 165px;
-    height: 165px;
+    width: 170px;
+    height: 170px;
     background-color: #fff;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    margin:7px;
+    margin: 7px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.reference-vignette img{
+    width: 110px;
+    opacity: 0.8;
+    -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(100%); /* Firefox */
+}
+
+.reference-vignette:hover {}
+.reference-vignette:hover img{
+    width: 130px;
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(0%); /* Firefox */
 }

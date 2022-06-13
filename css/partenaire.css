@@ -40,6 +40,12 @@
     width: 210px;
     height: 100px;
     border-radius: 10px;
+    text-decoration: none;
+}
+.partenaire-vignette:hover {
+    
+    animation: headShake; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.8s; /* don't forget to set a duration! */
 }
 
 .partenaire-vignette img{

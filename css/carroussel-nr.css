@@ -181,6 +181,14 @@
   border-radius: 5px;
   font-size: 0.8em;
   font-weight: bold;
+  border: 2px solid #3d348b;
+}
+
+.nous-rejoindre .read-more .button:hover {
+  color: #3d348b;
+  background-color: #ffab09!important;
+  transition: 0.3s;
+  border: 2px solid #3d348b;
 }
 
 .nous-rejoindre .read-more .button:hover {

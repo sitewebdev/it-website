@@ -50,7 +50,7 @@
     padding: 40px 0px 40px 40px;
     list-style-image: url('../images/carriere-puce.png');
 }
-.carriere-offres-image ul li{
+.carriere-offres-image ul li::marker{
     display: block;
     list-style-image: url('../images/carriere-puce.png');
 
@@ -62,9 +62,8 @@
 }
 .carriere-offres-image ul li a{
     display: block;
-    display: block;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
     line-height: 200%;
     background-image: url(../images/group-link.png);
@@ -72,7 +71,15 @@
     background-repeat: no-repeat;
     background-size: 25px;
     background-position-y: bottom;
+    padding: 0.2em;
+    background-position-y: center;
 }
+.carriere-offres-image ul li a:hover{
+    color: #42347f;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 
 .carriere-offres-image .read-more .button {
     background-color: white;
@@ -83,11 +90,26 @@
     font-size: 0.8em;
     font-weight: bold;
     margin: 5px;
+    border: 2px solid white;
+
+}
+.carriere-offres-image .read-more .button:hover {
+    background-color: transparent;
+   border: 2px solid white;
+   color: white;
+   transition: 0.3s;
 }
 
 .carriere-offres-image .read-more .link {
     color: white;
     font-size: 0.8em;
     padding: 10px;
+    text-decoration: none;
 
+}
+.carriere-offres-image .read-more .link:hover {
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: 0.3s;
+    text-decoration: underline;
 }

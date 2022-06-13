@@ -84,6 +84,13 @@
     font-weight: bold;
     width: 230px;
     margin: 5px;
+    border: 1px solid #fff;
+}
+
+.valeur-vignette:hover {
+    background-color: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    transition: 0.3s;
 }
 
 .valeur-vignette img{
@@ -106,4 +113,10 @@
     margin: 5px;
 }
 
-
+.qui-sommes-nous-bloc-description .read-more .button:hover {
+    color: #ffab09;
+    background-color: transparent;
+    transition: 0.3s;
+    border: 1px solid #ffab09;
+  }
+  

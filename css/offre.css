@@ -66,6 +66,11 @@
     margin-top: -60px;
 }
 
+.offre-vignette:hover img {
+    animation: tada; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 .offre-bloc-space {
     padding: 3em;
 }
@@ -89,4 +94,10 @@
     font-size: 0.8em;
     padding: 10px;
 
+}
+
+.offre-vignette .link:hover {
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
