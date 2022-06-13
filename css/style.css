@@ -258,13 +258,24 @@ nav.stroke ul li a:hover:after {
 .card__type h6 {
     border-radius: 47px;
     text-transform: uppercase;
-    background-color: #3d348b;
+    
     color: #fff;
     float: left;
     padding: 7px;
     margin: 0px;
     width: 30%;
     font-size: 0.8em;
+}
+.violet {
+    background-color: #3d348b;
+}
+
+.blue {
+    background-color: #2b95ff;
+}
+
+.red {
+    background-color: #ff0000;
 }
 
 .card__type .date {
@@ -370,4 +381,8 @@ nav.stroke ul li a:hover:after {
 
 .card:hover .card__wrapper:after {
     /*transform: scale(0.95) translateY(10px);*/
+}
+
+.bloc-menu-logo-network{
+    float: right;
 }
