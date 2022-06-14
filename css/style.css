@@ -148,19 +148,18 @@ nav.stroke ul li a:hover:after {
     font-weight: bold;
 }
 
-
-
 .bloc-articles-carroussel {
     margin-top: 2em;
 }
 
-.carroussel-action{
+.bloc-articles-carroussel .carroussel-action{
     height: 50px;
-    margin: 35px 0px;
+    margin: 15px 0px;
 }
 
 .bloc-articles-carroussel .read-more {
     float: left;
+    padding: 15px 0px
 }
 .bloc-articles-carroussel .read-more .button {
     background-color: #3d348b;
@@ -201,10 +200,23 @@ nav.stroke ul li a:hover:after {
     margin: 3px;
     display: block;
     border: 3px solid #3d348b;
+    cursor: pointer;
+    padding: 9px 9px;
 
 }
+
+.bloc-articles-carroussel .navigation .button svg g path {
+    fill: #3d348b;
+  }
+
 .bloc-articles-carroussel .navigation .button:hover {
     background-color: #3d348b;
+    transition: 0.3s
+}
+
+.bloc-articles-carroussel .navigation .button:hover  svg g path {
+    fill: #fff;
+    transition: 0.3s
 }
 
 .bloc-articles-carroussel .navigation .left {  float: left; }

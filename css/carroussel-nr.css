@@ -172,6 +172,8 @@
 
 .nous-rejoindre .read-more {
   float: left;
+  padding: 15px 0px
+
 }
 .nous-rejoindre .read-more .button {
   background-color: #3d348b;
@@ -202,3 +204,44 @@
 .nous-rejoindre .navigation{
   float: right;
 }
+
+
+.nous-rejoindre .navigation{
+  float: right;
+}
+
+.nous-rejoindre .navigation .button {
+  color: white;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  margin: 3px;
+  display: block;
+  border: 3px solid #fff;
+  cursor: pointer;
+  padding: 9px 9px;
+
+}
+
+.nous-rejoindre .navigation .button svg g path {
+  fill: #fff;
+}
+
+.nous-rejoindre .navigation .button:hover {
+  background-color: #fff;
+  transition: 0.3s
+}
+
+.nous-rejoindre .navigation .button:hover  svg g path {
+  fill: #ffab09;
+  transition: 0.3s
+}
+
+.nous-rejoindre .navigation .left {  float: left; }
+.nous-rejoindre .navigation .right { float: right; }

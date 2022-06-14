@@ -250,15 +250,19 @@
   transition: width 0.2s ease;
 }
 .slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
-  background-color: #fff;
+  background-color: #ffab09;
 }
 .slideshow .arrows .arrow {
   margin: -33px 0 0;
-  padding: 20px;
+  padding: 13px 9px;
   position: absolute;
   top: 50%;
   cursor: pointer;
   z-index: 3;
+}
+
+.slideshow .arrows .arrow svg g path {
+  fill: #ffab09;
 }
 .slideshow .arrows .prev {
   position: absolute;
@@ -273,6 +277,14 @@
 .slideshow .arrows .prev:hover{
   background: #ffab09;
   transition: 0.3s;
+}
+
+.slideshow .arrows .prev:hover svg g path{
+  fill: #fff;
+}
+
+.slideshow .arrows .next:hover svg g path{
+  fill: #fff;
 }
 
 .slideshow .arrows .next:hover{

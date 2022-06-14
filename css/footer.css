@@ -131,7 +131,7 @@
 }
 .bottom-footer{
     height: 57px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 .bottom-footer-left{
     height: 100%;
@@ -173,6 +173,10 @@
     line-height: 198%;
     font-size: 0.95em;
 } 
+
+.bottom-footer-right .user_link ul li a svg{
+    margin-right: 10px;
+}
 
 .bottom-footer-right .user_link ul li a:hover{
     color: #ffab09;
