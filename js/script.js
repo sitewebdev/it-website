@@ -1,7 +1,6 @@
 
 
 $(document).ready(function(){
-
     var owl = $('.owl-carousel');
     owl.owlCarousel(
         {
@@ -24,5 +23,17 @@ $(document).ready(function(){
 
     $('#article-action-left').click(function() { owl.trigger('prev.owl.carousel');})
     $('#article-action-right').click(function() { owl.trigger('next.owl.carousel');})
-
 });
+
+let el = document.querySelector('#satisfaction') 
+let myAnimation = new LazyLinePainter(el, {
+  strokeWidth: 2,
+  ease: 'easeInOutExpo'
+});
+el.addEventListener('click', paint, false);
+
+function paint(){ 
+   myAnimation.paint();
+}
+
+paint();

@@ -1,6 +1,5 @@
 @import url(./font.css);
 @import url(./slide.css);
-
 @import url(./qui-somme-nous.css);
 @import url(./nous-rejoindre.css);
 @import url(./offre.css);
@@ -11,6 +10,9 @@
 @import url(./satisfaction.css);
 @import url(./news-letter.css);
 @import url(./footer.css);
+@import url(./svg-satisfaction-animation.css);
+
+@import url(./enjeux/enjeux.css);
 
 
 html,
@@ -101,6 +103,11 @@ nav.fill ul li a:after {
 }
 nav.stroke ul li a:hover:after {
   width: 100%;
+}
+
+nav .social-network a{
+    margin: 2px;
+    padding: 0px;
 }
 
 

@@ -66,13 +66,14 @@ body {
 }
 
 .content h2{
-    font-size: 3.2em;
+    font-size: 3.8em;
     font-weight: bold;
     font-style: italic;
 }
 
 .content p{
-    line-height: 150%;
+    line-height: 200%;
+    margin: 2em 0em;
 }
 
 .content .lighting{
@@ -125,7 +126,7 @@ body {
     border-radius: 5px;
     font-size: 0.85em;
     font-weight: bold;
-    /* border: 2px solid #fff; */
+     border: 2px solid #fff;
     background: #fff;
     /* font-weight: bold; */
     margin: 0.5em 1em 0em 0em;
@@ -138,14 +139,23 @@ body {
     border-radius: 5px;
     font-size: 0.85em;
     font-weight: bold;
-    /* border: 2px solid #fff; */
+     border: 2px solid #434092; 
     background: #434092;
     /* font-weight: bold; */
     margin: 0.5em 1em 0em 0em;
 }
 
-.link-to-linkedIn:hover, .link-to-linkedIn-soft-factory:hover {
-    box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.27);
+.link-to-linkedIn-soft-factory:hover {
+    /*box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.27);*/
+    background: rgba(0, 0, 0, 0.247);
+    transition: 0.3s;
+}
+
+.link-to-linkedIn:hover {
+    /*box-shadow: -1px 0px 13px 1px rgba(0,0,0,0.27);*/
+    background: rgba(0, 0, 0, 0.247);
+    color: white;
+    transition: 0.3s;
 }
 
 .link-to-linkedIn .t, .link-to-linkedIn-soft-factory .t {
