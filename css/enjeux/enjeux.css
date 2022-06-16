@@ -69,6 +69,10 @@
     text-align: center;
 }
 
+.line-shape{
+    height: 73px;
+}
+
 .enjeux-secteur h4 {
     margin: 0em 0em;
     color: #ffab09;
@@ -87,4 +91,119 @@
 
 .enjeux-secteur p {
     color: #3f3f3f;
+}
+
+
+.enjeux-secteur ul{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    height: 93px;
+}
+
+.enjeux-secteur ul li{
+    display: inline-block;
+    width: 334px;
+    height: 100%;
+}
+.enjeux-secteur ul li a{
+    font-size: 1.3em;
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    padding: 1.5em 0em;
+    /* vertical-align: middle; */
+    color: #494949;
+    background: #e6e6e6;
+    border-radius: 10px;
+}
+
+.enjeux-secteur ul li a span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.enjeux-secteur ul li a:hover {
+     font-weight: bold;
+     background: #fbb243;
+     color: #fff;
+     transition: 0.3s;
+}
+
+.enjeux-secteur ul li a:hover span {
+    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.enjeux-secteur-details{
+    height: 446px;
+    width: 1069px;
+    margin: auto;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.enjeux-secteur-details .bloc-image{
+    width: 35%;
+    height: 100%;
+}
+.enjeux-secteur-details .bloc-description{
+    width: 65%;
+    height: 100%;
+    padding: 5em;
+    text-align: left;
+}
+
+.enjeux-secteur-details .bloc-description h3{
+    color: #3d3a8a;
+    font-size: 2.5em;
+    margin: 0px;
+}
+
+.enjeux-secteur-details .bloc-description p{
+    line-height: 156%;
+    font-size: 1.1em;
+}
+
+
+
+.defis{
+    height: 711px;
+    max-width: 1364px;
+    margin: auto;
+    padding: 0em;
+    text-align: center;
+
+}
+
+.defis-title{
+    width: 50%;
+    height: 100%;
+}
+
+.defis-title h4 {
+    margin: 0em 0em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.defis-title h3 {
+    margin: 0em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.defis-content{
+    width: 50%;
+    height: 100%;
 }
