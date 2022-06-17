@@ -168,7 +168,6 @@
 }
 
 .bottom-footer-right .user_link ul li a{
-    text-decoration: underline;
     color: #000;
     line-height: 198%;
     font-size: 0.95em;
@@ -182,6 +181,10 @@
     color: #ffab09;
 }
 
+.orange-download{
+    color: #ffab09;
+
+}
 
 .logo-network{
     height: 150px;
