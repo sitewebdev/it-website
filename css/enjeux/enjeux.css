@@ -171,20 +171,23 @@
     font-size: 1.1em;
 }
 
-
-
 .defis{
     height: 711px;
     max-width: 1364px;
     margin: auto;
     padding: 0em;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 
 }
 
 .defis-title{
     width: 50%;
     height: 100%;
+    text-align: left;
+    padding: 3em 8em;
+    background: #f9f9f9;
 }
 
 .defis-title h4 {
