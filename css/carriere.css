@@ -47,7 +47,7 @@
 
 .carriere-offres-image ul{ 
     display: block;
-    padding: 40px 0px 40px 40px;
+    padding: 40px 0px 40px 23px;
     list-style-image: url('../images/carriere-puce.svg');
 }
 .carriere-offres-image ul li::marker{
