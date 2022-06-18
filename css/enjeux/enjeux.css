@@ -300,3 +300,33 @@
     padding: 4px;
     font-weight: bold;
 }
+/*
+
+<div class="nos-valeurs">
+                <div class="valeur-left"></div>
+                <div class="valeur-right"></div>
+*/
+.nos-valeurs{
+    padding: 2em 0em;
+    margin: auto;
+    max-width: 1076px;
+
+}
+.valeur-subbloc{
+    height: 383px;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0em 6.6em;
+}
+
+.valeur-subbloc-description{
+    height: 100%;
+    width: 50%;
+
+}
+.valeur-subbloc-img{
+    height: 100%;
+    width: 50%;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
