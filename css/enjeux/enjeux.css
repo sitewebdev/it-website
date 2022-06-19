@@ -322,6 +322,8 @@
 .valeur-subbloc-description{
     height: 100%;
     width: 50%;
+    text-align: left;
+    padding: 3em 1em;
 
 }
 .valeur-subbloc-img{
@@ -329,4 +331,118 @@
     width: 50%;
     border: 1px solid #000;
     border-radius: 15px;
+}
+
+
+.valeur-subbloc-description ul {
+    margin: 2em 0em;
+    padding: 0px 26px;
+    width: 215px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+.valeur-subbloc-description li::marker {
+    color: #edb940;
+    list-style-type: circle;
+    font-size: 30px;
+}
+
+.valeur-subbloc-description ul li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 198%;
+    font-size: 0.95em;
+} 
+.valeur-subbloc-description li a:hover{
+    font-weight: bold;
+}
+
+.enjeux-testimonial {
+    background-image: url(../../images//testimonial.png);
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 884px;
+    padding: 5em;
+}
+
+.bloc-testimonial {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: #fbb03b;
+    /* opacity: 0.5; */
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1069px;
+}
+.testimonial-resume{
+    width: 50%;
+    height: 100%;
+    padding: 3em 4em 1em 3em;
+    
+}
+
+.testimonial-resume h4 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.testimonial-resume h3 {
+    margin: 0.3em 0em;
+    color: #3f3f3f;
+    font-size: 2.1em;
+    font-weight: bold;
+    /* padding: 4px; */
+    font-weight: bold;
+}
+
+.testimonial-resume p {
+    color: #fff;
+    line-height: 200%;
+}
+
+.testimonial-biographie{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-biographie img{
+    height: 50%;
+    width: 100%;
+    background: #fff;
+    border-top-right-radius: 11px;
+
+}
+.testimonial-biographie .presentation{
+    background: #f9f9f9;
+    height: 50%;
+    padding: 1em 2.5em;
+}
+
+
+.testimonial-biographie .presentation h4 {
+    margin: 0em 0em;
+    color: #47419b;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.testimonial-biographie .presentation h3 {
+    margin: 0.4em 0em;
+    color: #fbb03b;
+    font-size: 2.1em;
+    font-weight: bold;
+    /* padding: 4px; */
+    font-weight: bold;
+}
+
+.testimonial-biographie .presentation p {
+    color: #0b0b0b;
+    line-height: 200%;
 }
