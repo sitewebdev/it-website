@@ -2,7 +2,8 @@
     height: 397px;
 }
 .hide{ display: none;}
-#forunisseur-energie{ display: none;}
+
+#metier-eau-dechet{ display: none;}
 #gestion-reseau-distribution{ display: none;}
 
 .header-title-bloc .top-side {
@@ -28,7 +29,7 @@
 }
 
 .header-title-bloc .top-side .body-side .bloc-image{
-    width: 55%;
+    width: 47%;
     height: 100%;
 }
 
@@ -165,6 +166,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
+    margin-bottom: 4em;
 }
 
 .enjeux-secteur-details .bloc-image{
@@ -287,11 +289,11 @@
 .defis-content ul li a .icone g path {
     fill: #3d3a8a;
 }
-
+/*
 .defis-content ul li a:hover .icone g path {
     fill: #fff;
 }
-
+*/
 
 .defis-content ul li a .description{
     padding: 0em 1em;
@@ -308,15 +310,16 @@
 }
 
 
-
+/*
 .defis-content ul li a:hover {
      background: #fff;
      transition: 0.4s;
 }
+
 .defis-content ul li a:hover .icone{
     background: orange;
 }
-
+*/
 .enjeux-valeur{
     margin: auto;
     padding: 4em;
