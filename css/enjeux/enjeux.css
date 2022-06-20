@@ -1,6 +1,9 @@
 .header-title-bloc {
     height: 397px;
 }
+.hide{ display: none;}
+#forunisseur-energie{ display: none;}
+#gestion-reseau-distribution{ display: none;}
 
 .header-title-bloc .top-side {
     height: 285px;
@@ -10,6 +13,10 @@
 }
 .top-side-bg{
     height: 285px;
+    background: url(../../images/whitee_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 431px;
 }
 
 .header-title-bloc .top-side .body-side{
@@ -71,6 +78,10 @@
 
 .line-shape{
     height: 73px;
+    background-image: url(../../images/enjeux-secteur-path.png);
+    background-size: 842px;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .enjeux-secteur h4 {
@@ -110,15 +121,16 @@
     height: 100%;
 }
 .enjeux-secteur ul li a{
-    font-size: 1.3em;
+    font-size: 1.1em;
     display: block;
     text-decoration: none;
     height: 100%;
-    padding: 1.5em 0em;
+    padding: 1.5em 3em;
     /* vertical-align: middle; */
     color: #494949;
     background: #e6e6e6;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .enjeux-secteur ul li a span{
@@ -134,9 +146,15 @@
      transition: 0.3s;
 }
 
+.enjeux-secteur ul li .active{
+    font-weight: bold;
+     background: #fbb243;
+     color: #fff;
+}
+
 .enjeux-secteur ul li a:hover span {
     animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation-duration: 0.8s; /* don't forget to set a duration! */
 }
 
 .enjeux-secteur-details{
@@ -152,6 +170,10 @@
 .enjeux-secteur-details .bloc-image{
     width: 35%;
     height: 100%;
+}
+
+.enjeux-secteur-details .bloc-image img{
+    width: 100%;
 }
 .enjeux-secteur-details .bloc-description{
     width: 65%;
@@ -255,6 +277,22 @@
     border-radius: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
 }
+
+.defis-content ul li a .icone svg {
+    width: 35px;
+    height: 31px;
+}
+
+
+.defis-content ul li a .icone g path {
+    fill: #3d3a8a;
+}
+
+.defis-content ul li a:hover .icone g path {
+    fill: #fff;
+}
+
+
 .defis-content ul li a .description{
     padding: 0em 1em;
 }
@@ -273,7 +311,7 @@
 
 .defis-content ul li a:hover {
      background: #fff;
-     transition: 0.3s;
+     transition: 0.4s;
 }
 .defis-content ul li a:hover .icone{
     background: orange;
@@ -323,26 +361,32 @@
     height: 100%;
     width: 50%;
     text-align: left;
-    padding: 3em 1em;
+    padding: 3em 2em;
 
 }
 .valeur-subbloc-img{
     height: 100%;
     width: 50%;
-    border: 1px solid #000;
     border-radius: 15px;
 }
 
+.valeur-subbloc-img img {
+    border-style: none;
+    width: 100%;
+}
 
 .valeur-subbloc-description ul {
     margin: 2em 0em;
     padding: 0px 26px;
-    width: 215px;
+    width: 100%;
     font-size: 1em;
     font-weight: bold;
     line-height: 100%;
 }
 
+.valeur-subbloc-description li {
+    margin: 1em 0em;
+}
 .valeur-subbloc-description li::marker {
     color: #edb940;
     list-style-type: circle;
@@ -360,7 +404,6 @@
 }
 
 .enjeux-testimonial {
-    background-image: url(../../images//testimonial.png);
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -404,6 +447,7 @@
 .testimonial-resume p {
     color: #fff;
     line-height: 200%;
+    padding: 0.9em 0.5em;
 }
 
 .testimonial-biographie{
@@ -445,4 +489,68 @@
 .testimonial-biographie .presentation p {
     color: #0b0b0b;
     line-height: 200%;
+}
+
+
+.enjeux-video {
+    height: 750px;
+    text-align: center;
+    background-image: url(../../images/bg-satisfaction.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y:bottom;
+    padding: 4em 2em 0em;
+    background-color: #fafafa;
+}
+
+.enjeux-video iframe{
+    margin: 2em;
+    width: 850px;
+    height: 483px;
+    border-radius: 11px;
+}
+
+.enjeux-video h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.enjeux-video h3 {
+    margin: 0em 0em;
+    color: #000;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px
+}
+.enjeux-video .diagram {
+    padding: 3em;
+}
+
+.circle{
+    display: block;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 54px;
+    left: 44%;
+    z-index: -1;
+}
+.send-msg{
+    display: block;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #ffaf06 0%, #ff8c24 100%);
+    border-radius: 54px;
+    left: 75%;
+    z-index: -1;
+    padding: 1.5em;
+}
+
+.send-msg img{
+    height: 28px;
 }

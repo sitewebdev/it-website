@@ -110,19 +110,10 @@ nav .social-network a{
     padding: 0px;
 }
 
-
-
-
-
-
-
-
-
-
 .articles {
-    padding-top: 126px;
-    height: 685px;
-    background-image: url("../images/heolienne-bg.png");
+    padding-top: 5em;
+    height: 637px;
+    background-image: url(../images/heolienne-bg.png);
     background-size: 950px;
     background-repeat: no-repeat;
 }
@@ -404,4 +395,44 @@ nav .social-network a{
 
 .bloc-menu-logo-network{
     float: right;
+}
+
+.center-top-button{
+    display: block;
+    height: 90px;
+    width: 90px;
+    margin: auto;
+    position: absolute;
+    left: 47%;
+    top: 675px;
+    background: #fff;
+    z-index: 5;
+    border-radius: 63px;
+    padding: 1.2em 1.9em;
+    box-shadow: 0px 2px 13px 3px rgb(0 0 0 / 41%);
+}
+
+.center-bottom-button{
+    display: block;
+    height: 90px;
+    width: 90px;
+    margin: -50px 13px;
+    position: absolute;
+    left: 47%;
+    background: #fff;
+    z-index: 5;
+    border-radius: 63px;
+    padding: 1.5em 2em;
+    box-shadow: 0px 2px 13px 3px rgb(0 0 0 / 41%);
+}
+.center-top-button:hover,.center-bottom-button:hover{
+    background: linear-gradient(to bottom, #ffaf06 0%, #ff8c24 100%);
+    box-shadow: 0px 2px 13px 3px rgb(255 255 255 / 41%);
+    transition: 0.3s;
+}
+
+
+
+.center-top-button:hover  path,.center-bottom-button:hover path {
+    fill: #fff;
 }

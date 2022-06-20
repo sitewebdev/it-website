@@ -1,11 +1,11 @@
 
 .carriere {
     height: 560px;
-    background-image: url(../images/carriere.jpg);
+    /* background-image: url(../images/carriere.jpg); */
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
-    padding: 5.8em 2em 0em;
+    padding: 5em 2em 0em;
 }
 
 .carriere-offres-image{
