@@ -20,13 +20,13 @@ $(document).ready(function(){
             }
         }
     );
-    
+
     $('#article-action-left').click(function() { owl.trigger('prev.owl.carousel');})
     $('#article-action-right').click(function() { owl.trigger('next.owl.carousel');})
 
 
 
-    var owl_nr = $('.owl-carousel-nr');
+    var owl_nr = $('#owl-carousel-nr');
     owl_nr.owlCarousel(
         {
             margin: 10,

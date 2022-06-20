@@ -546,8 +546,8 @@
     position: absolute;
     background-image: linear-gradient(to bottom, #ffaf06 0%, #ff8c24 100%);
     border-radius: 54px;
-    left: 75%;
-    z-index: -1;
+    left: 85%;
+    z-index: 2;
     padding: 1.5em;
 }
 
