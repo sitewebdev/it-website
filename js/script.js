@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-    var owl = $('.owl-carousel');
+    var owl = $('#owl-carousel-article');
     owl.owlCarousel(
         {
             margin: 10,

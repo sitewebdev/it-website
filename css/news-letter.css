@@ -53,10 +53,14 @@
     border-radius: 5px;
     border: none;
     color:#3d348b ;
-    border:2px solid #3d348b ;
+    border:2px solid #fff ;
 
 }
 .bloc-news-right input:hover{
+    border:2px solid #fff ;
+}
+
+.bloc-news-right input:focus{
     border:2px solid #fff ;
 }
 

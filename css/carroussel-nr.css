@@ -8,21 +8,20 @@
 
 /* Elements */
 .card-nr__wrapper {
-  padding-top: .1px;
-  padding-bottom: .1px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
   position: relative;
-
   background-color: #ffffff;
   color: #999999;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .05);
-  border-radius: 13px;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%);
+  border-radius: 5px;
 }
 
 .card-nr__wrapper img {
   display: block;
   width: 100%;
-  border-top-left-radius: 13px;
-  border-top-right-radius: 13px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card-nr__wrapper:after {
@@ -167,7 +166,7 @@
 
 .carroussel-action{
   height: 50px;
-  margin: 35px 0px;
+  margin: 27px 0px 0px;
 }
 
 .nous-rejoindre .read-more {
@@ -178,10 +177,10 @@
 .nous-rejoindre .read-more .button {
   background-color: #3d348b;
   color: white;
-  padding: 0.8em 1.5em;
+  padding: 0.9em 2em;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: bold;
   border: 2px solid #3d348b;
 }
@@ -225,7 +224,7 @@
   display: block;
   border: 3px solid #fff;
   cursor: pointer;
-  padding: 9px 9px;
+  padding: 13px 12px;
 
 }
 

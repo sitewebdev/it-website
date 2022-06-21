@@ -30,36 +30,51 @@ body {
 .page {}
 
 .header {
-    height: 71px;
+    height: 100px;
+}
+
+.logo-menu{
+    height: 100%;
+    margin: auto;
+    max-width: 1334px;
 }
 .bloc-logo{
     float: left;
     margin: auto;
-    width: 30%;
+    width: 20%;
     text-align: center;
-    height: 71px;
-    padding: 17px;
+    height: 100px;
+    /* padding: 17px;*/
 }
 .bloc-logo img{
     height: 40px;
+    margin: 1.9em 0em;
+
 }
 .bloc-menu{
-    margin: auto;
+    /* margin: auto; */
     float: right;
     margin: auto;
-    width: 70%;
+    width: 80%;
     text-align: center;
-    height: 71px;
+    /* height: 100px; */
+    height: 100%;
 }
 
 /* Menu */
 nav {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 nav ul {
     list-style: none;
     text-align: center;
+    width: 100%;
+    margin: 2em 0em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0em 3em;
 }
 nav ul li {
     display: inline-block;
@@ -69,7 +84,7 @@ nav ul li a {
     padding: 5px;
     text-decoration: none;
     font-weight: 800;
-    margin: 0 6px;
+    margin: 3px 6px;
     font-size: 0.9em;
     color: #000;
 }
@@ -81,6 +96,10 @@ nav ul li a:before {
 
 nav ul li a:hover {
     color: #ffab09;
+}
+
+nav ul .social-network:hover {
+    text-decoration: none;
 }
 
 nav.stroke ul li a,
@@ -162,10 +181,10 @@ nav .social-network a{
 .bloc-articles-carroussel .read-more .button {
     background-color: #3d348b;
     color: white;
-    padding: 0.8em 1.5em;
+    padding: 0.9em 2em;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     border: 2px solid #3d348b;
 }
@@ -199,7 +218,7 @@ nav .social-network a{
     display: block;
     border: 3px solid #3d348b;
     cursor: pointer;
-    padding: 9px 9px;
+    padding: 13px 12px;
 
 }
 
@@ -399,36 +418,40 @@ nav .social-network a{
 
 .center-top-button{
     display: block;
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
     margin: auto;
     position: absolute;
-    left: 47%;
-    top: 675px;
+    left: 48%;
+    top: 720px;
     background: #fff;
     z-index: 5;
     border-radius: 63px;
-    padding: 1.2em 1.9em;
-    box-shadow: 0px 2px 13px 3px rgb(0 0 0 / 41%);
+    padding: 0.6em 1.22em;
+    box-shadow: 0px 2px 13px 3px rgb(0 0 0 / 10%);
 }
 
 .center-bottom-button{
     display: block;
-    height: 90px;
-    width: 90px;
-    margin: -50px 13px;
+    height: 60px;
+    width: 60px;
+    margin: -30px 13px;
     position: absolute;
-    left: 47%;
+    left: 48%;
     background: #fff;
     z-index: 5;
     border-radius: 63px;
-    padding: 1.5em 2em;
-    box-shadow: 0px 2px 13px 3px rgb(0 0 0 / 41%);
+    padding: 0.9em 1.4em;
+    box-shadow: 0px 2px 13px 3px rgb(0 0 0 / 10%);
 }
 .center-top-button:hover,.center-bottom-button:hover{
     background: linear-gradient(to bottom, #ffaf06 0%, #ff8c24 100%);
     box-shadow: 0px 2px 13px 3px rgb(255 255 255 / 41%);
     transition: 0.3s;
+}
+
+.owl-dots{
+    display: none;
 }
 
 
