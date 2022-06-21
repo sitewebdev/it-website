@@ -47,6 +47,30 @@ $(document).ready(function(){
     );
     $('#nr-action-left').click(function() { owl_nr.trigger('prev.owl.carousel');})
     $('#nr-action-right').click(function() { owl_nr.trigger('next.owl.carousel');})
+
+
+    
+    var owl_part = $('#owl-carousel-partenaire');
+    owl_part.owlCarousel(
+        {
+            margin: 10,
+            nav: true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        }
+    );
+    $('#part-action-left').click(function() { owl_part.trigger('prev.owl.carousel');})
+    $('#part-action-right').click(function() { owl_part.trigger('next.owl.carousel');})
 });
 
 let el = document.querySelector('#satisfaction') 
@@ -84,4 +108,12 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "flex";
     document.getElementById(`${cityName}-x`).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+}
+
+function scrollToTop(){
+    window.scrollTo({
+        top: 100,
+        left: 100,
+        behavior: 'smooth'
+      });
+}
