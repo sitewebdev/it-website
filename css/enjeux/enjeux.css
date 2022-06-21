@@ -4,69 +4,6 @@
 #metier-eau-dechet{ display: none;}
 #gestion-reseau-distribution{ display: none;}
 
-.header-title-bloc { height: 397px;}
-
-.header-title-bloc .top-side {
-    height: 285px;
-    background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);
-    border-bottom-left-radius: 65px;
-}
-
-.top-side-bg{
-    height: 285px;
-    background: url(../../images/whitee_bg.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: 431px;
-}
-
-.header-title-bloc .top-side .body-side{
-    max-width: 1069px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.header-title-bloc .top-side .body-side .bloc-image{
-    width: 47%;
-    height: 100%;
-}
-
-.header-title-bloc .top-side .body-side .bloc-image img{
-    width: 100%;
-    height: 332px;
-    margin-top: 65px;
-    border-radius: 15px;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title{
-    width: 45%;
-    height: 100%;
-    padding: 5em 0em 0em 5em;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title h4 {
-    margin: 0em 0em;
-    padding: 0.3em;
-    color: #ffab09;
-    font-size: 0.9em;
-    font-weight: bold;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title h3 {
-    margin: 0em 0em;
-    color: #fff;
-    font-size: 2.2em;
-    font-weight: bold;
-    padding: 4px;
-    text-transform: uppercase;
-    font-style: italic;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title p { color: #fff; }
-
-
 .enjeux-secteur{
     height: 400px;
     width: 1069px;
@@ -164,7 +101,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 .enjeux-secteur-details .bloc-image{
@@ -198,7 +135,7 @@
 
 }
 .defis{
-    height: 711px;
+    height: 660px;
     /* margin: auto; */
     padding: 0em;
     text-align: center;
@@ -212,7 +149,7 @@
 
 .defis-content{
     width: 1167px;
-    padding: 4em 3em;
+    padding: 3em 3em;
     height: 100%;
     margin: auto;
     text-align: center;
@@ -321,7 +258,7 @@
 */
 .enjeux-valeur{
     margin: auto;
-    padding: 4em;
+    padding: 4em 4em 0em;
     text-align: center;
 }
 
@@ -524,13 +461,12 @@
 
 
 .enjeux-video {
-    height: 750px;
     text-align: center;
     background-image: url(../../images/bg-satisfaction.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y:bottom;
-    padding: 4em 2em 0em;
+    padding: 4em 2em 4em;
     background-color: #fafafa;
 }
 

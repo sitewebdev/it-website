@@ -2,10 +2,11 @@
 .footer{
     height: 335px;
     background: #f9f9f9;
-    /*background-image: url(../images/footer.jpg);*/
+    /* background-image: url(../images/footer.jpg); */
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
+    padding: 1.5em 1em 0em;
 }
 
 .top-footer{
@@ -65,7 +66,7 @@
 
 .footer-adresse h4 {
     margin: 0em 0em;
-    padding: 0.3em;
+    padding: 0.3em 0em;
     color: #3d348b;
     font-size: 1.7em;
     font-weight: bold;
