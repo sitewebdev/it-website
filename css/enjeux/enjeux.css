@@ -270,6 +270,7 @@
     border-radius: 10px;
     flex-direction: row;
     align-items: center;
+    text-align: left;
 }
 
 .defis-content ul li a .icone{

@@ -1,16 +1,21 @@
-@import url(./font.css);
-@import url(./slide.css);
-@import url(./qui-somme-nous.css);
-@import url(./nous-rejoindre.css);
-@import url(./offre.css);
-@import url(./metier.css);
-@import url(./partenaire.css);
-@import url(./reference.css);
-@import url(./carriere.css);
-@import url(./satisfaction.css);
-@import url(./news-letter.css);
-@import url(./footer.css);
-@import url(./svg-satisfaction-animation.css);
+@import url(./home/font.css);
+@import url(./home/slide.css);
+@import url(./home/qui-somme-nous.css);
+@import url(./home/nous-rejoindre.css);
+@import url(./home/offre.css);
+@import url(./home/metier.css);
+@import url(./home/partenaire.css);
+@import url(./home/reference.css);
+@import url(./home/carriere.css);
+@import url(./home/satisfaction.css);
+@import url(./home/news-letter.css);
+@import url(./home/footer.css);
+@import url(./home/svg-satisfaction-animation.css);
+
+@import url(./home/carroussel-article.css);
+@import url(./home/carroussel-nr.css);
+@import url(./home/carroussel-partenaire.css);
+
 @import url(./enjeux/enjeux.css);
 
 

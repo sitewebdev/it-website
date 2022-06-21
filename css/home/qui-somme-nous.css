@@ -5,7 +5,7 @@
 
 .qui-sommes-nous-background-photo {
     height: 415px;
-    background: url('../images/img_about.jpg');
+    background: url('../../images/img_about.jpg');
     background-size: 1300px;
 }
 
@@ -19,7 +19,7 @@
     top: 207px;
     border-radius: 11px;
 
-    background-image: url(../images/multicon.png);
+    background-image: url(../../images/multicon.png);
     background-repeat: no-repeat;
     background-size: 495px;
     background-position-x: right;

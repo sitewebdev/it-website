@@ -1,36 +1,36 @@
 @font-face {
     font-family: "Lato";
-    src: url("Lato/Lato-Regular.ttf");
+    src: url("../Lato/Lato-Regular.ttf");
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("Lato/Lato-Bold.ttf");
+    src: url("../Lato/Lato-Bold.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("Lato/Lato-Italic.ttf");
+    src: url("../Lato/Lato-Italic.ttf");
     font-style: italic;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("Lato/Lato-BlackItalic.ttf");
+    src: url("../Lato/Lato-BlackItalic.ttf");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("Lato/DejaVuSans-Oblique.ttf");
+    src: url("../Lato/DejaVuSans-Oblique.ttf");
     font-style: oblique;
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("Lato/DejaVuSans-BoldOblique.ttf");
+    src: url("../Lato/DejaVuSans-BoldOblique.ttf");
     font-weight: bold;
     font-style: oblique;
 }

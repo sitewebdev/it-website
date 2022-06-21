@@ -48,7 +48,7 @@
 .carriere-offres-image ul{ 
     display: block;
     padding: 40px 0px 40px 23px;
-    list-style-image: url('../images/carriere-puce.svg');
+    list-style-image: url('../../images/carriere-puce.svg');
 }
 .carriere-offres-image ul li::marker{
     display: block;
@@ -65,7 +65,7 @@
     font-size: 1.2em;
     color: #fff;
     line-height: 200%;
-    background-image: url(../images/group-link.png);
+    background-image: url(../../images/group-link.png);
     background-position-x: right;
     background-repeat: no-repeat;
     background-size: 20px;

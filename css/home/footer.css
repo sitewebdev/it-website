@@ -30,7 +30,7 @@
 }
 
 #linkedInLogo {
-    background-image: url(../images/linkedin.png);
+    background-image: url(../../images/linkedin.png);
     background-repeat: no-repeat;
     display: block;
     margin: 30px 15px 0px 0px;
@@ -41,7 +41,7 @@
   }
 
   #youtubeLogo {
-    background-image: url(../images/youtube.png);
+    background-image: url(../../images/youtube.png);
     background-repeat: no-repeat;
     float: left;
     display: block;
