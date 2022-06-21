@@ -1,17 +1,17 @@
-.header-title-bloc {
-    height: 397px;
-}
+
 .hide{ display: none;}
 
 #metier-eau-dechet{ display: none;}
 #gestion-reseau-distribution{ display: none;}
 
+.header-title-bloc { height: 397px;}
+
 .header-title-bloc .top-side {
     height: 285px;
     background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);
     border-bottom-left-radius: 65px;
-    /*opacity: 0.5;*/
 }
+
 .top-side-bg{
     height: 285px;
     background: url(../../images/whitee_bg.png);
@@ -64,9 +64,7 @@
     font-style: italic;
 }
 
-.header-title-bloc .top-side .body-side .bloc-title p {
-    color: #fff;
-}
+.header-title-bloc .top-side .body-side .bloc-title p { color: #fff; }
 
 
 .enjeux-secteur{
