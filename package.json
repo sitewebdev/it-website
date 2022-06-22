@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "lazy-line-painter": "^1.9.6"
+    "lazy-line-painter": "^1.9.6",
+    "wow.js": "^1.2.2"
   }
 }

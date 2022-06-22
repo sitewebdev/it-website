@@ -1,588 +1,91 @@
-.header-title-bloc {
-    height: 397px;
-}
-.hide{ display: none;}
-
-#metier-eau-dechet{ display: none;}
-#gestion-reseau-distribution{ display: none;}
-
-.header-title-bloc .top-side {
-    height: 285px;
-    background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);
-    border-bottom-left-radius: 65px;
-    /*opacity: 0.5;*/
-}
-.top-side-bg{
-    height: 285px;
-    background: url(../../images/whitee_bg.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: 431px;
-}
-
-.header-title-bloc .top-side .body-side{
-    max-width: 1069px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.header-title-bloc .top-side .body-side .bloc-image{
-    width: 47%;
-    height: 100%;
-}
-
-.header-title-bloc .top-side .body-side .bloc-image img{
-    width: 100%;
-    height: 332px;
-    margin-top: 65px;
-    border-radius: 15px;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title{
-    width: 45%;
-    height: 100%;
-    padding: 5em 0em 0em 5em;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title h4 {
-    margin: 0em 0em;
-    padding: 0.3em;
-    color: #ffab09;
-    font-size: 0.9em;
-    font-weight: bold;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title h3 {
-    margin: 0em 0em;
-    color: #fff;
-    font-size: 2.2em;
-    font-weight: bold;
-    padding: 4px;
-    text-transform: uppercase;
-    font-style: italic;
-}
-
-.header-title-bloc .top-side .body-side .bloc-title p {
-    color: #fff;
-}
-
-
-.enjeux-secteur{
-    height: 400px;
-    width: 1069px;
-    margin: auto;
-    padding: 5em 0em 2em 0em;
-    text-align: center;
-}
-
-.line-shape{
-    height: 73px;
-    background-image: url(../../images/enjeux-secteur-path.png);
-    background-size: 842px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-}
-
-.enjeux-secteur h4 {
-    margin: 0em 0em;
-    color: #ffab09;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.enjeux-secteur h3 {
-    margin: 0em 0em;
-    color: #3f3f3f;
-    font-size: 2.1em;
-    font-weight: bold;
-    padding: 4px;
-    font-weight: bold;
-}
-
-.enjeux-secteur p {
-    color: #3f3f3f;
-}
-
-
-.enjeux-secteur ul{
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    align-items: center;
-    justify-content: space-between;
-    height: 93px;
-}
-
-.enjeux-secteur ul li{
-    display: inline-block;
-    width: 334px;
-    height: 100%;
-}
-.enjeux-secteur ul li a{
-    font-size: 1.1em;
-    display: block;
-    text-decoration: none;
-    height: 100%;
-    padding: 1.5em 3em;
-    /* vertical-align: middle; */
-    color: #494949;
-    background: #e6e6e6;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.enjeux-secteur ul li a span{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-}
-
-.enjeux-secteur ul li a:hover {
-     font-weight: bold;
-     background: #fbb243;
-     color: #fff;
-     transition: 0.3s;
-}
-
-.enjeux-secteur ul li .active{
-    font-weight: bold;
-     background: #fbb243;
-     color: #fff;
-}
-
-.enjeux-secteur ul li a:hover span {
-    animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 0.8s; /* don't forget to set a duration! */
-}
-
-.enjeux-secteur-details{
-    height: 446px;
-    width: 1069px;
-    margin: auto;
-    padding: 1em 2em 1em 2em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 4em;
-}
-
-.enjeux-secteur-details .bloc-image{
-    width: 35%;
-    height: 100%;
-}
-
-.enjeux-secteur-details .bloc-image img{
-    width: 100%;
-}
-.enjeux-secteur-details .bloc-description{
-    width: 65%;
-    height: 100%;
-    padding: 5em;
-    text-align: left;
-}
-
-.enjeux-secteur-details .bloc-description h3{
-    color: #3d3a8a;
-    font-size: 2.5em;
-    margin: 0px;
-}
-
-.enjeux-secteur-details .bloc-description p{
-    line-height: 156%;
-    font-size: 1.1em;
-}
-
-.defis-bg{
-    background: #f9f9f9;
-
-}
-.defis{
-    height: 711px;
-    /* margin: auto; */
-    padding: 0em;
-    text-align: center;
-    background-image: url(../../images/defis_arriereplan.png);
-    background-size: 799px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-
-}
-
-
-.defis-content{
-    width: 1167px;
-    padding: 4em 3em;
-    height: 100%;
-    margin: auto;
-    text-align: left;
-}
-
-
-.defis-content h4 {
-    margin: 0em 0em;
-    color: #ffab09;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.defis-title{
-    width: 50%;
-    height: 100%;
-    text-align: left;
-    padding: 3em 8em;
-    background: #f9f9f9;
-}
-
-
-.defis-content h3 {
-    margin: 0em 0em;
-    color: #3f3f3f;
-    font-size: 2.1em;
-    font-weight: bold;
-    padding: 4px;
-    font-weight: bold;
-}
-
-
-.defis-content ul{
-    display: flex;
-    padding: 0em;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1.6em 0em;
-}
-.defis-content ul li{
-    display: inline-block;
-    width: 48%;
-    margin: 0em 0em 2em;
-}
-.defis-content ul li a{
-    display: flex;
-    text-decoration: none;
-    height: 100%;
-    padding: 0.5em 2em;
-    color: #494949;
-    border-radius: 10px;
-    flex-direction: row;
-    align-items: center;
-}
-
-.defis-content ul li a .icone{
-    display: block;
-    background: #fff;
-    padding: 1.2em;
-    border-radius: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
-}
-
-.defis-content ul li a .icone svg {
-    width: 35px;
-    height: 31px;
-}
-
-
-.defis-content ul li a .icone g path {
-    fill: #3d3a8a;
-}
-/*
-.defis-content ul li a:hover .icone g path {
-    fill: #fff;
-}
-*/
-
-.defis-content ul li a .description{
-    padding: 0em 1em;
-}
-.defis-content ul li a .description h5{
-    margin: 1em 0em 1em 0.8em;
-    color: #3d3a8a;
-    font-size: 1.1em;
-}
-
-.defis-content ul li a .description p{
-    font-size: 0.8em;
-    margin-left: 1.1em;
-}
-
-
-/*
-.defis-content ul li a:hover {
-     background: #fff;
-     transition: 0.4s;
-}
-
-.defis-content ul li a:hover .icone{
-    background: orange;
-}
-*/
-.enjeux-valeur{
-    margin: auto;
-    padding: 4em;
-    text-align: center;
-}
-
-.enjeux-valeur h4 {
-    margin: 0em 0em;
-    color: #413e8c;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.enjeux-valeur h3 {
-    margin: 0em 0em;
-    color: #3f3f3f;
-    font-size: 2.1em;
-    font-weight: bold;
-    padding: 4px;
-    font-weight: bold;
-}
-/*
-
-<div class="nos-valeurs">
-                <div class="valeur-left"></div>
-                <div class="valeur-right"></div>
-*/
-.nos-valeurs{
-    padding: 2em 0em;
-    margin: auto;
-    max-width: 1076px;
-
-}
-.valeur-subbloc{
-    height: 383px;
-    display: flex;
-    flex-direction: row;
-    margin: 1em 0em 6.6em;
-}
-
-.valeur-subbloc-description{
-    height: 100%;
-    width: 50%;
-    text-align: left;
-    padding: 3em 2em;
-
-}
-.valeur-subbloc-img{
-    height: 100%;
-    width: 50%;
-    border-radius: 15px;
-}
-
-.valeur-subbloc-img img {
-    border-style: none;
-    width: 100%;
-}
-
-.valeur-subbloc-description ul {
-    margin: 2em 0em;
-    padding: 0px 26px;
-    width: 100%;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 100%;
-}
-
-.valeur-subbloc-description li {
-    margin: 1em 0em;
-}
-.valeur-subbloc-description li::marker {
-    color: #edb940;
-    list-style-type: circle;
-    font-size: 30px;
-}
-
-.valeur-subbloc-description ul li a{
-    text-decoration: none;
-    color: #000;
-    line-height: 198%;
-    font-size: 0.95em;
-} 
-.valeur-subbloc-description li a:hover{
-    font-weight: bold;
-}
-
-.enjeux-testimonial {
+.bloc-list-offre{
+    /*background-image: url(../../images/nos-04-offres.png);*/
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 884px;
-    padding: 5em;
+    height: 1149px;
 }
-
-.bloc-testimonial {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    background: #fbb03b;
-    /* opacity: 0.5; */
-    border-radius: 10px;
+.bloc-list-card-offre{
     margin: auto;
     max-width: 1069px;
-}
-.testimonial-resume{
-    width: 50%;
-    height: 100%;
-    padding: 3em 4em 1em 3em;
-    
-}
-
-
-.testimonial-resume ul{
+    padding: 1.5em 4em;
     display: flex;
-    list-style: none;
-    padding: 0px;
-    width: 220px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.testimonial-resume ul li{
-}
-.testimonial-resume ul li a{
-    display: block;
-    border-radius: 10px;
-    border: 3px solid #0000;
-    height: 69px;
-}
-.testimonial-resume ul li a img{
-    width: 63px;
+.card-offre{
+    padding: 3em 0em 0em 3em;
+    width: 47%;
+    height: 456px;
+    text-align: left;
+    border-radius: 6px;
+    margin: 0em 0em 4.4em;
 }
 
-.testimonial-resume ul li a:hover{
-    border: 3px solid #0003;
+.card-offre:nth-child(2) {
+    margin-top: 9em
+}
+
+.card-offre:nth-child(3) {
+    margin-top: -9em
+}
+
+.card-offre h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 1.9em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+    max-width: 85%;
+}
+
+.card-offre p {
+    color: #fff;
+    font-size: 1.03em;
+}
+
+.card-offre .read-more{
+    padding: 1em 0em 0em;
+}
+
+.card-offre .button {
+    background-color: #fff;
+    padding: 0.9em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: inline-block;
+    border: 2px solid #fff;
+}
+
+.card-offre .button:hover {
+    color: #fff;
+    background-color: transparent;
+
     transition: 0.3s;
 }
 
-
-.testimonial-resume h4 {
-    margin: 0em 0em;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
+.card-offre .bloc-image {
+    text-align: right;
 }
 
-.testimonial-resume h3 {
-    margin: 0.3em 0em;
-    color: #3f3f3f;
-    font-size: 2.1em;
-    font-weight: bold;
-    /* padding: 4px; */
-    font-weight: bold;
-}
+.card-offre .bloc-image img {
 
-.testimonial-resume p {
-    color: #fff;
-    line-height: 200%;
-    padding: 0.9em 0.5em;
-    height: 470px;
-}
-
-.testimonial-biographie{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.testimonial-biographie img{
-    height: 50%;
-    width: 100%;
-    background: #fff;
-    border-top-right-radius: 11px;
-
-}
-.testimonial-biographie .presentation{
-    background: #f9f9f9;
-    height: 50%;
-    padding: 1em 2.5em;
 }
 
 
-.testimonial-biographie .presentation h4 {
-    margin: 0em 0em;
-    color: #47419b;
-    font-size: 1em;
-    font-weight: bold;
-}
+.card-orange1   {   background-color: #ff8e23;  }
+.card-orange1 .button   {   color:#ff8e23;    }
 
-.testimonial-biographie .presentation h3 {
-    margin: 0.4em 0em;
-    color: #fbb03b;
-    font-size: 2.1em;
-    font-weight: bold;
-    /* padding: 4px; */
-    font-weight: bold;
-}
+.card-orange2   {   background-color: #fbb03b;  }
+.card-orange2 .button   {   color:#fbb03b;    }
 
-.testimonial-biographie .presentation p {
-    color: #0b0b0b;
-    line-height: 200%;
-}
+.card-blue1   {   background-color: #757ce6;  }
+.card-blue1 .button   {   color:#757ce6;    }
 
-
-.enjeux-video {
-    height: 750px;
-    text-align: center;
-    background-image: url(../../images/bg-satisfaction.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y:bottom;
-    padding: 4em 2em 0em;
-    background-color: #fafafa;
-}
-
-.enjeux-video iframe{
-    margin: 2em;
-    width: 850px;
-    height: 483px;
-    border-radius: 11px;
-}
-
-.enjeux-video h4 {
-    margin: 0em 0em;
-    padding: 0.3em;
-    color: #ffab09;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.enjeux-video h3 {
-    margin: 0em 0em;
-    color: #000;
-    font-size: 2.1em;
-    font-weight: bold;
-    padding: 4px
-}
-.enjeux-video .diagram {
-    padding: 3em;
-}
-
-.circle{
-    display: block;
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    background-color: #f9f9f9;
-    border-radius: 54px;
-    left: 44%;
-    z-index: -1;
-}
-.send-msg{
-    display: block;
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #ffaf06 0%, #ff8c24 100%);
-    border-radius: 54px;
-    left: 85%;
-    z-index: 2;
-    padding: 1.5em;
-}
-
-.send-msg img{
-    height: 28px;
-}
+.card-blue2   {   background-color: #3b3786;  }
+.card-blue2 .button   {   color:#3b3786;    }
