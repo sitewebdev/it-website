@@ -1,6 +1,6 @@
 
 .header-title-bloc { height: 397px;}
-.big-bloc { height: 595px!important;}
+.big-bloc { height: 640px!important;}
 .bg-grey{
     background-color: #fafafa
 }
@@ -9,10 +9,17 @@
     border-bottom-left-radius: 65px;
 }
 
+.height_390{
+    height: 390px!important;
+}
+
 /*Liste des couleurs degradée*/
 .top-side-bg-grey{ background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);}
 .top-side-bg-blue{ background-image: linear-gradient(102deg, #3b3786 0%, #757ce6 100%);}
+
 .top-side-bg-orange{ background-color:#ff8e23;}
+.top-side-bg-orange-claire{ background-color:#fbb03b;}
+.top-side-bg-bleu-nuit{ background-color:#3b3786;}
 
 .top-side-bg{
     height: 285px;
