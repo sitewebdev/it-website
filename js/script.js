@@ -71,6 +71,8 @@ $(document).ready(function(){
     );
     $('#part-action-left').click(function() { owl_part.trigger('prev.owl.carousel');})
     $('#part-action-right').click(function() { owl_part.trigger('next.owl.carousel');})
+
+    loaTestimonial();
 });
 
 /*
@@ -139,4 +141,32 @@ function startWow() {
       wow.init();
       console.log(wow)
 }
-startWow();
+///startWow();
+
+
+function loaTestimonial() {
+    tabcontent = document.getElementsByClassName("bloc-testimonial");
+    for (i = 0; i <= tabcontent.length - 1; i++) {
+        if(i == 0){
+            openTestimonial(null, tabcontent[i].id)
+            break;
+        }
+    }
+}
+
+
+function openTestimonial(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("bloc-testimonial");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "flex";
+    console.log(cityName)
+    evt.currentTarget.className += " active";
+}

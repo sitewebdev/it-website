@@ -1,5 +1,6 @@
 
 .header-title-bloc { height: 397px;}
+.big-bloc { height: 595px!important;}
 .bg-grey{
     background-color: #fafafa
 }
@@ -17,6 +18,29 @@
     height: 285px;
     background-repeat: no-repeat!important;
 }
+
+/* Details des pages */
+
+.page-details h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #ffab09;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.page-details h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 4px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.page-details p { color: #fff; }
+
 
 
 .top-side-bg-position-right{background-position-x: right!important;}
@@ -54,14 +78,14 @@
     border-radius: 15px;
 }
 
+.bloc-title-left{ padding: 5em 0em 0em 5em;}
+.bloc-title-right{ padding: 5em 5em 0em 0em}
+.bloc-title-top{ padding: 3em 0em 0em 0em}
+
 .header-title-bloc .top-side .body-side .bloc-title{
     width: 45%;
     height: 100%;
 }
-
-.bloc-title-left{ padding: 5em 0em 0em 5em;}
-.bloc-title-right{ padding: 5em 5em 0em 0em}
-.bloc-title-top{ padding: 3em 0em 0em 0em}
 
 .header-title-bloc .top-side .body-side .bloc-title h4 {
     margin: 0em 0em;
@@ -97,6 +121,8 @@
 
 .header-title-bloc .top-side .body-vertical-align .bloc-image{
     height: 100%;
+    width: 85%;
+    margin: auto;
 }
 
 .header-title-bloc .top-side .body-vertical-align .bloc-image img{
@@ -106,27 +132,38 @@
     border-radius: 15px;
 }
 
-.header-title-bloc .top-side .body-vertical-align .bloc-title{
+.bloc-title-details{
+    width: 64%;
     height: 100%;
+    margin: auto;
 }
 
-.header-title-bloc .top-side .body-vertical-align .bloc-title h4 {
+ .bloc-title-details h4 {
     margin: 0em 0em;
     padding: 0.3em;
-    color: #ffab09;
-    font-size: 0.9em;
+    color: #3d3989;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-.header-title-bloc .top-side .body-vertical-align .bloc-title h3 {
+.bloc-title-details h3 {
     margin: 0em 0em;
     color: #fff;
     font-size: 2.2em;
     font-weight: bold;
     padding: 4px;
-    text-transform: uppercase;
-    font-style: italic;
 }
 
-.header-title-bloc .top-side .body-vertical-align .bloc-title p { color: #fff; }
+ .bloc-title-details p { color: #fff; }
 
+ .bloc-title-details a { 
+    font-size: 1em;
+    text-decoration: none;
+    padding: 4px;
+    border-bottom: 2px dotted #fff;
+    color: #fff;
+  }
+
+  .bloc-title-details a path { 
+    fill: #fff;
+  }
