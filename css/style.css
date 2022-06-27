@@ -460,9 +460,6 @@ nav .social-network a{
 .owl-dots{
     display: none;
 }
-
-
-
-.center-top-button:hover  path,.center-bottom-button:hover path {
+.center-bottom-button:hover path {
     fill: #fff;
 }
