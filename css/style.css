@@ -34,7 +34,7 @@ body {
     overflow-x:hidden;
 }
 
-.page {}
+.page { overflow: hidden;}
 
 .header {
     height: 100px;

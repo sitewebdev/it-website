@@ -145,7 +145,7 @@
     margin-top: 3em;
   }
 
-.offre-valeur-vignette svg{ height: 75px;}
+.offre-valeur-vignette svg{ height: 65px;}
 
 .offre-valeur-vignette h5{
     font-size: 1.2em;
@@ -262,3 +262,59 @@
     padding: 4px;
     font-weight: bold;
 }
+
+.dev-tab-link-group{
+    padding: 1.5em;
+}
+
+.dev-tab-link{
+    padding: 0.5em 1.1em;
+    color: #757ce6;
+    font-weight: bold;
+    border: 2px solid #757ce6;
+    border-radius: 2em;
+    margin: 0em 0.6em;
+    cursor: pointer;
+}
+
+.dev-tab-link:hover{
+    background-color: #757ce6;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.dev-tab-active{
+    background-color: #757ce6;
+    color: #fff;
+}
+
+.dev-tab-content{
+    padding: 1em 2em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dev-tab-vignette {
+    width: 203px;
+    height: 130px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dev-tab-vignette img {
+    height: 65px;
+}
+
+.dev-tab-vignette img:hover {
+    animation-duration: 0.3s; /* don't forget to set a duration! */
+    transform: scale(1.1);
+    transition: 0.2s;
+    height: 70px;
+}
+

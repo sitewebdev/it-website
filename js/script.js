@@ -72,7 +72,10 @@ $(document).ready(function(){
     $('#part-action-left').click(function() { owl_part.trigger('prev.owl.carousel');})
     $('#part-action-right').click(function() { owl_part.trigger('next.owl.carousel');})
 
+    //startWow();
+
     loaTestimonial();
+    loadDevTabContent();
 });
 
 /*
@@ -111,7 +114,39 @@ function openTab(evt, cityName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "flex";
     document.getElementById(`${cityName}-x`).style.display = "block";
-    evt.currentTarget.className += " active";
+    if(evt.currentTarget) evt.currentTarget.className += " active";
+}
+
+function loadDevTabContent() {
+    tabcontent = document.getElementsByClassName("dev-tab-content");
+    console.log(tabcontent)
+
+    for (i = 0; i <= tabcontent.length - 1; i++) {
+        if(i == 0){
+            openDevTab({}, tabcontent[i].id)
+            break;
+        }
+    }
+}
+function openDevTab(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("dev-tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("dev-tab-link");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace("dev-tab-active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "flex";
+    if(evt.currentTarget) evt.currentTarget.className += " dev-tab-active";
 }
 
 function scrollToTop(){
@@ -141,20 +176,17 @@ function startWow() {
       wow.init();
       console.log(wow)
 }
-///startWow();
 
 
 function loaTestimonial() {
     tabcontent = document.getElementsByClassName("bloc-testimonial");
     for (i = 0; i <= tabcontent.length - 1; i++) {
         if(i == 0){
-            openTestimonial(null, tabcontent[i].id)
+            openTestimonial({}, tabcontent[i].id)
             break;
         }
     }
 }
-
-
 function openTestimonial(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -168,5 +200,5 @@ function openTestimonial(evt, cityName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "flex";
     console.log(cityName)
-    evt.currentTarget.className += " active";
+    if(evt.currentTarget) evt.currentTarget.className += " active";
 }
