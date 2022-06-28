@@ -23,7 +23,7 @@
 .top-side-bg-bleu-nuit{ background-color:#3b3786;}
 
 .top-side-bg{
-    height: 285px;
+    height: 400px;
     background-repeat: no-repeat!important;
 }
 
@@ -62,6 +62,12 @@
 .top-side-bg-heolienne-black{
     background-image: url(../images/heo.png);
     background-size: 431px;
+}
+
+
+.top-side-bg-web-header{
+    background-image: url(../images/bg_web_header.svg);
+    background-size: 450px;
 }
 
 /* Alignement header left Right */

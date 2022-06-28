@@ -394,6 +394,11 @@
     transition: 0.3s;
 }
 
+.testimonial-resume ul li .active{
+    border: 3px solid #0003;
+    transition: 0.3s;
+}
+
 
 .testimonial-resume h4 {
     margin: 0em 0em;

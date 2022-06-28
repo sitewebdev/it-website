@@ -101,20 +101,31 @@
 .offre-valeur-ajoutee{
     padding: 0em;
     text-align: center;
-    background-image: url(../../images/heo.png);
+    background-image: url(../../images/bg_eoliene_offre_grand.png);
     background-size: 799px;
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
 
-.offre-valeur-ajoutee h4 {
+
+.offre-valeur-ajoutee-web{
+    padding: 0em;
+    text-align: center;
+    background-image: url(../../images/bg_web.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+
+.offre-valeur-ajoutee h4, .offre-valeur-ajoutee-web h4 {
     margin: 0em 0em;
     color: #ffab09;
     font-size: 1.2em;
     font-weight: bold;
 }
 
-.offre-valeur-ajoutee h3 {
+.offre-valeur-ajoutee h3, .offre-valeur-ajoutee-web h3 {
     margin: 0em 0em;
     color: #3f3f3f;
     font-size: 2.1em;
@@ -123,7 +134,7 @@
     font-weight: bold;
 }
 
-.offre-valeur-ajoutee .liste-valeur {
+.offre-valeur-ajoutee .liste-valeur, .offre-valeur-ajoutee-web .liste-valeur{
     display: flex;
     width: 1115px;
     margin: auto;
@@ -148,9 +159,10 @@
 .offre-valeur-vignette svg{ height: 65px;}
 
 .offre-valeur-vignette h5{
-    font-size: 1.2em;
+    font-size: 1.35em;
     display: block;
     margin: 0.8em 0;
+    font-weight: bold;
 }
 
 .offre-valeur-vignette p{
@@ -170,9 +182,8 @@
 .v-blue2  h5  {   color: #3b3786;  }
 
 
-.domaine-intervention{
-   padding: 3em;
-}
+.domaine-intervention{ padding: 3em;}
+.domaine-intervention svg{ height: 677;}
 
 
 
@@ -238,6 +249,7 @@
     color: #fff;
     line-height: 198%;
     font-size: 1.05em;
+    cursor: default;
 } 
 
 .nos-technos{
