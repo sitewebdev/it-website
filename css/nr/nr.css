@@ -102,7 +102,7 @@
 
 
 .reason{
-    width: 1069px;
+    width: 1295px;
     margin: auto;
     padding: 5em 0em 2em 0em;
     text-align: center;
@@ -134,15 +134,18 @@
 
 .reason p {
     color: #3f3f3f;
+    line-height: 170%;
 }
 
 
 
 .reason-subbloc{
-    height: 351px;
+    height: 355px;
     display: flex;
     flex-direction: row;
     margin: 1em 0em 1.6em;
+    padding: 1.5em;
+    border-radius: 10px;
 }
 
 .reason-subbloc h5{
@@ -169,7 +172,211 @@
 
 .reason-subbloc-img img {
     border-style: none;
-    width: 90%;
+    height: 100%;
 }
 
+
+.reason-subbloc:nth-child(even){
+    height: 355px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1em 0em 1.6em;
+    background: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.reason-subbloc:nth-child(even) h5{
+    margin: 0em 0em;
+    color: #ff8c24;
+    font-size: 1.8em;
+    padding: 4px;
+    font-weight: bold;
+}
   
+
+.nr-carriere{
+    background: #757ce6;
+    padding: 3em;
+}
+
+.carriere-zone{
+    max-width: 1295px;
+    margin: auto;
+}
+
+.nr-carriere .title-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nr-carriere .title-bar .button {
+    background-color: #fff;
+    color: #3d348b;
+    padding: 0.9em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+  
+.nr-carriere .title-bar .button:hover {
+    color: #fff;
+    background-color: transparent;
+    transition: 0.3s;
+    border: 2px solid #fff;
+}
+
+.nr-carriere h4 {
+    margin: 0em 0em;
+    color: #42347f;
+    font-size: 1.2em;
+}
+
+.nr-carriere h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.carriere-offre-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 0em;
+    flex-wrap: wrap;
+}
+.carriere-offre{
+    width: 49%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    display: flex;
+    margin: 1em 0em;
+}
+.carriere-offre .carriere-offre-description{
+    width: 80%;
+}
+.carriere-offre .carriere-offre-description h5{
+    font-size: 1.25em;
+    display: block;
+    margin: 0.4em 0em;
+    color: #757ce6;
+    font-weight: 500;
+}
+.carriere-offre .carriere-offre-description b{}
+.carriere-offre .carriere-offre-description span{}
+.carriere-offre .offre-location{}
+.carriere-offre .carriere-offre-action{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.carriere-offre .button {
+    background-color: #ffab09;
+    color: #fafafa;
+    padding: 0.6em 0em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: 2px solid #ffab09;
+    display: flex;
+    /* font-weight: bold; */
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  
+.carriere-offre .button:hover {
+    color: #ffab09;
+    background-color: transparent;
+    transition: 0.3s;
+    border: 2px solid #ffab09;
+}
+
+
+.nr-temoignage-bg{ 
+    background-color: #ffab09;
+}
+.nr-temoignage{
+    padding: 0em;
+    text-align: center;
+    background-image: url(../../images/heolienne-bg.png);
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    height: 555px;
+    padding: 3em;
+}
+
+
+.nr-temoignage h4 {
+    margin: 0em 0em;
+    color: 
+    #3d348b;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nr-temoignage h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.g-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .g-column-20 {max-width: 15%!important;}
+  .g-column-30 {max-width: 25%!important;}
+  .g-column-35 {max-width: 30%!important;}
+  .g-column-50 {max-width: 48%!important;}
+  
+  .g-row-grid{
+
+  }
+  .g-column {
+    /*flex: 20%;*/
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .g-column img {
+    margin-top: 25px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .g-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .g-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
