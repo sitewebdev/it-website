@@ -72,6 +72,36 @@ $(document).ready(function(){
     $('#part-action-left').click(function() { owl_part.trigger('prev.owl.carousel');})
     $('#part-action-right').click(function() { owl_part.trigger('next.owl.carousel');})
 
+
+
+    var owl_vid = $('#owl-carousel-vid');
+    owl_vid.owlCarousel(
+        {
+            items:1,
+            merge:true,
+            loop:true,
+            margin:30,
+            video:true,
+            lazyLoad:true,
+            center:true,
+
+            videoWidth: false, // Default false; Type: Boolean/Number
+            videoHeight: false, // Default false; Type: Boolean/Number
+
+            responsive:{
+                480:{
+                    items:2
+                },
+                600:{
+                    items:4
+                }
+            }
+        }
+    );
+
+    $('#vid-action-left').click(function() { owl_vid.trigger('prev.owl.carousel');})
+    $('#vid-action-right').click(function() { owl_vid.trigger('next.owl.carousel');})
+
     //startWow();
 
     loaTestimonial();

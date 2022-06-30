@@ -9,9 +9,9 @@
     border-bottom-left-radius: 65px;
 }
 
-.height_390{
-    height: 390px!important;
-}
+.height_390{ height: 390px!important; }
+.height_350{ height: 350px!important; }
+.height_345{ height: 345px!important; }
 
 /*Liste des couleurs degradée*/
 .top-side-bg-grey{ background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);}
