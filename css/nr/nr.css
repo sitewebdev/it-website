@@ -580,3 +580,61 @@
     line-height: 153%;
     text-align: justify;
 }
+
+.bloc-process-recutement{
+    background: #6f75dd;
+    padding: 1em;
+}
+.bloc-form-postuler{
+    background: #3f3b8b;
+    padding: 1em;
+}
+.bloc-form-postuler .form-postuler{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em 0em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.line-form{
+    display: flex;
+    width: 100%;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0.5em;
+}
+.input label{ margin: 0.5em; }
+.input input{
+    padding: 0.7em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 2px;
+}
+
+.input input[type=file]{
+    border: 1px dashed #fff;
+    background-color: #595ab6;
+}
+.input label span{ color: red;}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    width: 100%;
+}
+.input-area textarea{
+    padding: 0.7em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+}
+.input-area label{ margin: 0.5em; }
