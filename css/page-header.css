@@ -13,6 +13,9 @@
 .height_350{ height: 350px!important; }
 .height_345{ height: 345px!important; }
 
+.no_radius{ border-radius: 0px!important; }
+
+
 /*Liste des couleurs degradée*/
 .top-side-bg-grey{ background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);}
 .top-side-bg-blue{ background-image: linear-gradient(102deg, #3b3786 0%, #757ce6 100%);}
@@ -56,6 +59,12 @@
 
 .top-side-bg-heolienne-white{
     background-image: url(../images/whitee_bg.png)!important;;
+    background-size: 431px;
+}
+
+
+.top-side-bg-heolienne-white-reverse{
+    background-image: url(../images/whitee_bg_reverse.png)!important;;
     background-size: 431px;
 }
 

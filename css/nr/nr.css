@@ -1,3 +1,5 @@
+@import url(./sidenav.css);
+
 .nr-valeur{
     max-width: 1295px;
     margin: auto;
@@ -583,8 +585,40 @@
 
 .bloc-process-recutement{
     background: #6f75dd;
-    padding: 1em;
+    padding: 3em;
+    color: #fff;
+    text-align: center;
 }
+
+.bloc-process-recutement img{
+    height: 330px;
+}
+
+
+
+.bloc-process-recutement h4 {
+    margin: 0em 0em;
+    color: #ffab09;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.bloc-process-recutement h3 {
+    margin: 0em 0em;
+    font-size: 2.1em;
+    font-weight: bold;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.bloc-process-recutement p {
+    line-height: 170%;
+}
+
+
+
+
+
 .bloc-form-postuler{
     background: #3f3b8b;
     padding: 1em;
@@ -635,6 +669,43 @@
     margin: 0.5em;
     border: none;
     border-radius: 2px;
-    width: 100%;
+    width: 99%;
+    height: 125px;
 }
+
 .input-area label{ margin: 0.5em; }
+
+.line-form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+
+}
+.line-form-button button {
+    background-color: #ff941c;
+    border: 2px solid #ff941c;
+    color: white;
+    padding: 0.9em 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    width: 150px;
+}
+
+
+.line-form-button button:hover {
+    background: transparent;
+    border: 2px solid #ff941c;
+    color: #ff941c;
+    padding: 0.9em 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    width: 150px;
+}
+

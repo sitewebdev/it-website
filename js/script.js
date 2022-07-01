@@ -1,5 +1,18 @@
 
 
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    console.log('hello')
+    document.getElementById("mySidenav").style.width = "600px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  
 $(document).ready(function(){
     var owl = $('#owl-carousel-article');
     owl.owlCarousel(
