@@ -8,10 +8,9 @@
     right: 0;
     background-color: #fff;
     overflow-x: hidden;
-    padding-top: 60px;
     transition: 0.5s;
-
     box-shadow: -4px 4px 7px -5px rgba(0,0,0,0.75);
+    padding: 1em 0em;
   }
   
   /* The navigation menu links */
@@ -31,11 +30,10 @@
   
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    position: absolute;
+    top: 25px;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -49,3 +47,80 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+
+.side-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1em;
+
+}
+
+.side-row h4 {
+  margin: 0em 0em;
+  color: #ffab09;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.side-row h3 {
+  margin: 0em 0em;
+  color: #3f3b8b;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.side-row p {
+  color: #3f3f3f;
+  line-height: 170%;
+}
+
+
+.sidenav .bloc-form-postuler {
+  background: #fff;
+  padding: 1em;
+}
+
+.sidenav .bloc-form-postuler .form-postuler {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em 0em 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #3f3b8b;
+}
+
+.sidenav .input input {
+  padding: 0.7em;
+  margin: 0.5em;
+  border: 1px solid #757ce6;
+  border-radius: 2px;
+}
+
+.sidenav .input input[type=file]{
+  border: 1px dashed #595ab6;
+  background-color: #fff;
+}
+
+.sidenav .input-area textarea{
+  padding: 0.7em;
+  margin: 0.5em;
+  border: 1px solid #757ce6;
+  border-radius: 2px;
+  width: 99%;
+  height: 125px;
+}
+
+.sidenav .input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0.2em;
+}
