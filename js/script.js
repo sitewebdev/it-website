@@ -5,6 +5,7 @@
 function openNav() {
     console.log('hello')
     document.getElementById("mySidenav").style.width = "750px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
   
   /* Set the width of the side navigation to 0 */
