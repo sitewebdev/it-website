@@ -14,7 +14,21 @@
   
     background: #2caae1;
   }
+
+#owl-carousel-vid  .owl-stage {
+  width: 1295px!important;
+}
   
+  #owl-carousel-vid .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;  
+}
   
   #owl-carousel-vid  .owl-carousel .item {
     text-align: center;
@@ -22,10 +36,23 @@
   
   #owl-carousel-vid .owl-item {
     width: 400px !important;
+    height: 250px;
+
+  }
+
+  #owl-carousel-vid .active {
+    display: flex;
+    width: 400px !important;
+    height: 250px;
+    border-radius: 1em;
+
   }
   
   #owl-carousel-vid .owl-stage {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   #owl-carousel-vid .owl-video-wrapper{
@@ -93,11 +120,13 @@
 #owl-carousel-vid .item-video {
     width: 400px;
     height: 250px;
+    border: 1px dashed #000;
+
 }
 
 #owl-carousel-vid .center {
-  width: 450px!important;
-  height: 250px;
+  width: 500px!important;
+  height: 320px;
 }
 
 .carousel-vid-action {
@@ -141,3 +170,21 @@
   transition: 0.3s
 }
 
+
+
+.play-button {
+  display: block;
+    padding: 1.5em;
+    position: absolute;
+    bottom: 0em;
+    left: 1em;
+    border-radius: 9em;
+}
+
+.play-button svg {
+    height: 75px;
+}
+
+.play-button:hover {
+
+}

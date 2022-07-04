@@ -30,12 +30,39 @@
   
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
-    font-size: 36px;
-    /* margin-left: 50px; */
+    margin-left: 28px;
     position: absolute;
-    top: 25px;
+    top: 42px;
+    padding: 5px 11px 5px 8px;
+    font-size: 0.8em;
+    border-radius: 41px;
+    background: #595ab6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #595ab6;
   }
-  
+
+  .sidenav .closebtn:hover { background: #fff;  color: #595ab6;}
+  .sidenav .closebtn:hover .icon { background: #595ab6; color: #fff; }
+  .sidenav .closebtn .icon{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #595ab6;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-right: 0.3em;
+  }
+  .sidenav .closebtn .text{}
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;

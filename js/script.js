@@ -92,21 +92,17 @@ $(document).ready(function(){
         {
             items:1,
             merge:true,
-            loop:true,
+            merge:true,
             margin:30,
-            video:true,
             lazyLoad:true,
             center:true,
-
-            videoWidth: false, // Default false; Type: Boolean/Number
-            videoHeight: false, // Default false; Type: Boolean/Number
 
             responsive:{
                 480:{
                     items:2
                 },
                 600:{
-                    items:4
+                    items:3
                 }
             }
         }
