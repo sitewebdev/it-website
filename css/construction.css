@@ -163,6 +163,55 @@ body {
 
 
 
+@media only screen and (max-width: 1280px) {
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .main {
+        flex-grow: 0;
+        padding: 3em;
+    }
+
+    .logo {
+        /* width: 35%; */
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .content {
+    width: 39%;
+}
+.bloc-image img {
+    height: 350px;
+}
+
+.content h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+    font-style: italic;
+}
+    html,body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Lato";
+        transform: rotate(-180deg);
+        background-image: linear-gradient(301deg, #fbb03b 4%, #e1642b 99%);
+        width: inherit;
+        height: 100%;
+        color: #fff;
+        height: 750px;
+    }
+    
+
+    .main {
+        flex-grow: 0;
+        padding: 3em;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .header {
         /* height: 50px; */
@@ -185,43 +234,23 @@ body {
         transform: rotate(-180deg);
         background-image: linear-gradient(301deg, #fbb03b 4%, #e1642b 99%);
         width: 498px;
-        height: 1228px;
+        height: 1140px;
         color: #fff;
     }
-
-    .main {
-        flex-grow: 0;
-        padding: 3em;
+    .content h2 {
+        font-size: 2.8em;
+        font-weight: bold;
+        font-style: italic;
     }
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .header {
-        /* height: 50px; */
+    .bloc-image img {
+        height: 315px;
+    }
+    .body {
+        padding: 3em 0em;
         display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-start;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
-
-    .logo {
-        /* width: 35%; */
-        padding: 5px;
-        margin-bottom: 20px;
-    }
-
-    html,body {
-        margin: 0px;
-        padding: 0px;
-        font-family: "Lato";
-        transform: rotate(-180deg);
-        background-image: linear-gradient(301deg, #fbb03b 4%, #e1642b 99%);
-        width: inherit;
-        height: 100%;
-        color: #fff;
-    }
-
     .main {
         flex-grow: 0;
         padding: 3em;
@@ -229,42 +258,3 @@ body {
 }
 
 
-@media only screen and (max-width: 1280px) {
-    .header {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .main {
-        flex-grow: 0;
-        padding: 3em;
-    }
-
-    .logo {
-        /* width: 35%; */
-        padding: 5px;
-        margin-bottom: 20px;
-    }
-    .content {
-        width: 43%;
-    }
-
-    html,body {
-        margin: 0px;
-        padding: 0px;
-        font-family: "Lato";
-        transform: rotate(-180deg);
-        background-image: linear-gradient(301deg, #fbb03b 4%, #e1642b 99%);
-        width: inherit;
-        height: 100%;
-        color: #fff;
-        height: 750px;
-    }
-
-    .main {
-        flex-grow: 0;
-        padding: 3em;
-    }
-}
