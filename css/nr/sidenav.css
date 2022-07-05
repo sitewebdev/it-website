@@ -6,15 +6,23 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #fff;
     overflow-x: hidden;
+    background: #00000052;
+    display: flex;
+    flex-direction: row-reverse;
     transition: 0.5s;
+
+}
+
+.sidenav-form{
     box-shadow: -4px 4px 7px -5px rgba(0,0,0,0.75);
     padding: 1em 0em;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
+    background-color: #fff;
+    width: 750px;
+}
+
+/* The navigation menu links */
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;

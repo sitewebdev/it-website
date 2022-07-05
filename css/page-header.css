@@ -9,9 +9,11 @@
     border-bottom-left-radius: 65px;
 }
 
+.height_365{ height: 365px!important; }
 .height_390{ height: 390px!important; }
 .height_350{ height: 350px!important; }
 .height_345{ height: 345px!important; }
+.height_750{ height: 750px!important; }
 
 .no_radius{ border-radius: 0px!important; }
 
@@ -19,6 +21,7 @@
 /*Liste des couleurs degradée*/
 .top-side-bg-grey{ background-image: linear-gradient(102deg, #2e2e2e 0%, #525252 100%);}
 .top-side-bg-blue{ background-image: linear-gradient(102deg, #3b3786 0%, #757ce6 100%);}
+.top-side-bg-orange-vairant{ background-image: linear-gradient(102deg, #ff8c24 0%, #ffac08 100%);}
 
 .top-side-bg-orange{ background-color:#ff8e23;}
 .top-side-bg-orange-claire{ background-color:#fbb03b;}
@@ -101,6 +104,8 @@
     border-radius: 15px;
 }
 
+
+
 .bloc-title-left{ padding: 5em 0em 0em 5em;}
 .bloc-title-right{ padding: 5em 5em 0em 0em}
 .bloc-title-top{ padding: 3em 0em 0em 0em}
@@ -155,6 +160,13 @@
     border-radius: 15px;
 }
 
+
+.header-title-bloc .top-side .body-vertical-align .bloc-image iframe{
+    margin: 2em;
+    width: 100%;
+    height: 610px;
+    border-radius: 11px;
+}
 .bloc-title-details{
     width: 64%;
     height: 100%;

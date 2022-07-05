@@ -723,3 +723,22 @@
     font-weight: bold;
     padding: 4px;
 }
+
+.partage-network{
+    display: flex;
+    padding: 1em 0em;
+}
+
+.partage-network a{
+}
+
+.partage-network a svg{
+    height: 25px;
+}
+
+.reason-gallery {
+    width: auto;
+    margin: auto;
+    padding: 5em 0em 2em 0em;
+    text-align: center;
+}
