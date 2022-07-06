@@ -90,19 +90,18 @@ $(document).ready(function(){
     var owl_vid = $('#owl-carousel-vid');
     owl_vid.owlCarousel(
         {
-            items:1,
-            merge:true,
-            merge:true,
-            margin:30,
-            lazyLoad:true,
-            center:true,
-
-            responsive:{
-                480:{
-                    items:2
+            margin: 10,
+            nav: true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive: {
+                0: {
+                    items: 1
                 },
-                600:{
-                    items:3
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
                 }
             }
         }
@@ -112,6 +111,15 @@ $(document).ready(function(){
     $('#vid-action-right').click(function() { owl_vid.trigger('next.owl.carousel');})
 
     //startWow();
+    $('[data-fancybox]').fancybox({
+        youtube : {
+            controls : 0,
+            showinfo : 0
+        },
+        vimeo : {
+            color : 'f00'
+        }
+    })
 
     loaTestimonial();
     loadDevTabContent();
