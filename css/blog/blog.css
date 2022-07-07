@@ -95,10 +95,8 @@
 
 
 .card_video{
-    background: #fff;
     width: 370px;
     height: 300px;
-    padding: 1.5em;
     text-align: left;
     border-radius: 11px;
     display: flex;
@@ -106,7 +104,20 @@
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
+}
 
+.card_video_layer:hover{
+    background: linear-gradient(0deg, #ff8c245e 26%, #00000026 40%);
+    transition: 0.3s;
+
+}
+
+.card_video_layer{
+    padding: 1.5em;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #00000061 26%, #00000026 40%);
+    border-radius: 11px;
 }
 .card_video .bloc-play{
     height: 57%;
@@ -135,4 +146,53 @@
 .card_video a{
     color: #ffab09;
     font-size: 0.75em;
+}
+
+.blog-content {
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 2em;
+    color: #3f3f3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content h6 {
+    border-radius: 47px;
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+    padding: 7px;
+    margin: 3em;
+    width: 108px;
+    font-size: 0.8em;
+}
+
+.blog-content h3{ 
+    margin: 0em 0em;
+    font-size: 2.1em;
+    font-weight: bold;
+ }
+
+ .blog-content .content{
+    text-align: justify;
+    line-height: 200%;
+    margin: 4em 0em;
+    font-size: 0.98em;
+ }
+
+.blog-content  .bloc-partage {
+    width: 100%;
+    text-align: left;
+}
+
+.blog-conten .bloc-partage .describe-poste h3 {
+    margin: 0em 0em;
+    color: #3b3786;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* padding: 4px; */
 }
