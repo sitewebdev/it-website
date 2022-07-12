@@ -203,3 +203,13 @@
   .bloc-title-details a path { 
     fill: #fff;
   }
+
+
+.st-arrondie {
+    position: absolute;
+    width: 50%;
+    height: 920px;
+    background: #fafafa;
+    z-index: -1;
+    border-bottom-right-radius: 5em;
+}
