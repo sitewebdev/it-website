@@ -466,3 +466,107 @@ nav .social-network a{
 .center-bottom-button:hover path {
     fill: #fff;
 }
+
+.bloc404 {
+    background-image: linear-gradient(127deg, #fbb03b 0%, #e1642b 100%);
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloc404 .bloc{
+    width: 1295px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+.bloc404 .bloc .image{width: 50%;}
+.bloc404 .bloc .description{width: 50%; padding: 2em;
+}
+.bloc404 .bloc h4{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #3e3b8b;
+    margin: 0em;
+}
+.bloc404 .bloc h2{
+    font-size: 8em;
+    font-weight: bolder;
+    margin: 0em;
+    font-style: italic;
+}
+.bloc404 .bloc p{
+    font-size: 1.5em;
+}
+
+.bloc404 .bloc .description .button {
+    background-color: #3e3b8b;;
+    padding: 0.9em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-block;
+    border: 2px solid #3e3b8b;
+    color: #fff;
+    transition: 0.3s;
+
+}
+
+.bloc404 .bloc .description .button:hover {
+    color: #3e3b8b;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bloc500 {
+    background-image: linear-gradient(127deg, #3b3786 0%, #757ce6 100%);
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloc500 .bloc{
+    width: 1295px;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #fff;
+}
+.bloc500 .bloc .image{width: 50%;}
+.bloc500 .bloc .description{width: 50%; padding: 2em;
+}
+.bloc500 .bloc h4{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #ff941d;
+    margin: 0em;
+}
+.bloc500 .bloc h2{
+    font-size: 8em;
+    font-weight: bolder;
+    margin: 0em;
+    font-style: italic;
+}
+.bloc500 .bloc p{
+    font-size: 1.5em;
+}
+
+.bloc500 .bloc .description .button {
+    background-color: #ff941d;;
+    padding: 0.9em 2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-block;
+    border: 2px solid #ff941d;
+    color: #fff;
+    transition: 0.3s;
+
+}
+
+.bloc500 .bloc .description .button:hover {
+    color: #ff941d;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 0.3s;
+}
