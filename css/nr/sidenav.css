@@ -116,12 +116,12 @@
 }
 
 
-.sidenav .bloc-form-postuler {
+.sidenav-form .bloc-form-postuler {
   background: #fff;
   padding: 1em;
 }
 
-.sidenav .bloc-form-postuler .form-postuler {
+.sidenav-form .bloc-form-postuler .form-postuler {
   max-width: 1000px;
   margin: auto;
   padding: 1em 0em 3em;
@@ -132,19 +132,19 @@
   color: #3f3b8b;
 }
 
-.sidenav .input input {
+.sidenav-form .input input {
   padding: 0.7em;
   margin: 0.5em;
   border: 1px solid #757ce6;
   border-radius: 2px;
 }
 
-.sidenav .input input[type=file]{
+.sidenav-form .input input[type=file]{
   border: 1px dashed #595ab6;
   background-color: #fff;
 }
 
-.sidenav .input-area textarea{
+.sidenav-form .input-area textarea{
   padding: 0.7em;
   margin: 0.5em;
   border: 1px solid #757ce6;
