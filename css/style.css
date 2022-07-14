@@ -570,3 +570,146 @@ nav .social-network a{
     font-weight: bold;
     transition: 0.3s;
 }
+
+
+.form-contact{
+    margin: auto !important;
+    box-shadow: none !important;
+    width: 100%;
+    
+    padding: 5em;
+
+}
+
+.form-contact .bloc-form-postuler {
+    background: #fff;
+    padding: 1em;
+    margin: auto;
+    width: 1069px;
+    border-radius: 1em;
+}
+
+.form-contact .form-postuler {
+    max-width: 1069px;
+    margin: auto;
+    padding: 1em 0em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3f3b8b;
+}
+
+.contact_news_letter{
+    display: flex;
+    width: 1069px;
+    margin: 4em auto;
+    height: 1000px;
+
+}
+
+.contact_nous{
+    background: #fbb03b;
+    color: #fff;
+    padding: 2em;
+    border-radius: 1em;
+    height: 580px;
+    z-index: 1;
+}
+
+.contact_news_letter .news-letter{
+    height: 300px;
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 0em 0em 0em 3em;
+}
+
+.contact_news_letter  .bloc-news-letter-main {
+    border-radius: 12px;
+    margin: 0px auto;
+    max-width: 1069px;
+    height: 333px;
+    background: linear-gradient(98deg, #3d348b 1%, #757ce6 100%);
+}
+
+.contact_news_letter  .bloc-news-letter {
+    margin: 0px auto;
+    max-width: 1069px;
+    height: 100%;
+    padding: 2.6em;
+    background: url(../images//Mask_group.png) no-repeat;
+    background-size: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_news_letter .bloc-news-letter h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.contact_news_letter .bloc-news-letter p {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 1em;
+    padding: 4px;
+}
+
+.contact_news_letter  .bloc-news-letter input {
+    padding: 0.7em;
+    border-radius: 5px;
+    border: none;
+    color: #3d348b;
+    border: 2px solid #fff;
+    width: 70%;
+    margin-right: 1em;
+}
+
+.contact_news_letter  .bloc-news-left {
+    float: none;
+}
+.contact_news_letter  .bloc-news-right {
+    float: none;
+    margin: 1.5em 0em;
+}
+.contact-adresse{}
+
+.contact-adresse svg g path {
+    fill: #3d348b;
+  }
+
+.contact-adresse  hr {
+    border: 1px solid #e29b2c;
+}
+
+.contact-adresse h4{
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #42347f;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.contact-adresse h3{
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 4px;
+}
+
+
+.contact-adresse h5{
+    color: #373737;
+    font-weight: bold;
+    margin: 6px 0px;
+    font-size: 1em;
+}
+
+.violet-text {
+    color: #3d348b!important;
+}

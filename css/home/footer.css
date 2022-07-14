@@ -88,6 +88,15 @@
     margin: 6px 0px;
 }
 
+.footer-adresse-details-content{
+    display: flex;
+    align-items: center;
+}
+
+.footer-adresse-details-content svg{
+    margin: 1em;
+}
+
 .footer-adresse-details-content img{
     float: left;
     height: 20px;
