@@ -742,3 +742,25 @@
     padding: 5em 0em 2em 0em;
     text-align: center;
 }
+
+
+.reason-gallery h4 {
+    margin: 0em 0em;
+    color: #47419b;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.reason-gallery h3 {
+    margin: 0.4em 0em;
+    color: #fbb03b;
+    font-size: 2.1em;
+    font-weight: bold;
+    /* padding: 4px; */
+    font-weight: bold;
+}
+
+.reason-gallery p {
+    color: #0b0b0b;
+    line-height: 200%;
+}

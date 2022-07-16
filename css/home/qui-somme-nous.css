@@ -120,3 +120,43 @@
     transition: 0.3s;
   }
   
+.ceo {
+    background-color: #ffab09;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 420px;
+}
+
+.ceo .photo {
+    width: 50%;
+    height: 100%;
+}
+
+.ceo .description {
+    width: 50%;
+    padding: 3em;
+}
+
+.ceo .description h4 {
+    margin: 0em 0em;
+    padding: 0.3em;
+    color: #2b2778;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ceo .description h3 {
+    margin: 0em 0em;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.ceo .description p {
+    line-height: 155%;
+    width: 570px;
+    text-align: justify;
+}
