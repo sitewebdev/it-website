@@ -92,8 +92,9 @@
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    font-size: 0.76em;
+    font-size: 0.8em;
     padding: 25px;
+    font-weight: bold;
 }
 
 .arrow-orange{ border-bottom-color: #ffab09!important;}

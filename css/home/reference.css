@@ -52,7 +52,7 @@
 }
 
 .reference-vignette img{
-    width: 110px;
+    width: 70%;
     opacity: 0.8;
     -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
     filter: grayscale(100%); /* Firefox */

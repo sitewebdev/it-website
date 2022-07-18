@@ -39,7 +39,7 @@ body {
 .page { overflow: hidden;}
 
 .header {
-    height: 100px;
+    height: 80px;
 }
 
 .logo-menu{
@@ -52,12 +52,12 @@ body {
     margin: auto;
     width: 20%;
     text-align: center;
-    height: 100px;
+    height: 80px;
     /* padding: 17px;*/
 }
 .bloc-logo img{
     height: 40px;
-    margin: 1.9em 0em;
+    margin: 1.4em 0em;
 
 }
 .bloc-menu{
@@ -79,7 +79,7 @@ nav ul {
     list-style: none;
     text-align: center;
     width: 100%;
-    margin: 2em 0em;
+    margin: 1.5em 0em;
     display: flex;
     width: 100%;
     justify-content: space-evenly;

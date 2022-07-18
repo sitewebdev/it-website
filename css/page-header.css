@@ -59,17 +59,17 @@
 
 
 .top-side-bg-position-right{background-position-x: right!important;}
-.top-side-bg-position-left{background-position-x: left!important;}
+.top-side-bg-position-left{background-position-x: left!important; background-position-y: bottom;}
 
 .top-side-bg-heolienne-white{
     background-image: url(../images/whitee_bg.png)!important;;
-    background-size: 431px;
+    background-size: 555px;
 }
 
 
 .top-side-bg-heolienne-white-reverse{
     background-image: url(../images/whitee_bg_reverse.png)!important;;
-    background-size: 431px;
+    background-size: 555px;
 }
 
 .top-side-bg-heolienne-black{
@@ -108,7 +108,7 @@
 
 
 .bloc-title-left{ padding: 5em 0em 0em 5em;}
-.bloc-title-right{ padding: 5em 5em 0em 0em}
+.bloc-title-right{ padding: 5em 5em 0em 1.3em;}
 .bloc-title-top{ padding: 3em 0em 0em 0em}
 
 .header-title-bloc .top-side .body-side .bloc-title{

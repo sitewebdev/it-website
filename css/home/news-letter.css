@@ -72,7 +72,15 @@
     border-radius: 5px;
     font-size: 0.8em;
     font-weight: bold;
-    border: none;
+    border: 1.9px solid #ffab09;
+}
+
+
+.bloc-news-right  button:hover {
+    background-color: transparent;
+    color: #ffab09;
+    border: 1.9px solid #ffab09;
+    transition: 0.3s;
 }
 
 .bloc-news-right  button img {
