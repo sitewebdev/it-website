@@ -132,6 +132,7 @@
 .ceo .photo {
     width: 50%;
     height: 100%;
+    background: url(../../images/dg.jpg);background-size: 900px; background-repeat: no-repeat;
 }
 
 .ceo .description {
@@ -163,7 +164,7 @@
 
 .hands-groups{
     height: 320px;
-    background-image: url(../../images/group-hand.png);
+    background-image: url(../../images/mask-group.jpg);
     background-size: 1600px;
     background-position-x: center;
 }
@@ -187,7 +188,7 @@
 }
 
 .specialite-grid .card{
-    width: 350px;
+    width: 425px;
     height: 300px;
     border: 1px solid #eee;
     margin: 1em 0;
@@ -200,7 +201,7 @@
 }
 
 .specialite-grid .mini-card {
-    width: 170px;
+    width: 200px;
     min-height: 170px;
     border: 1px solid #eee;
     margin: 1em 0;
@@ -218,7 +219,7 @@
 }
 .specialite-grid .card-p {
     color: #fff;
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 0.5em 0em;
 }
 

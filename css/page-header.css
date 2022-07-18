@@ -59,7 +59,8 @@
 
 
 .top-side-bg-position-right{background-position-x: right!important;}
-.top-side-bg-position-left{background-position-x: left!important; background-position-y: bottom;}
+.top-side-bg-position-left{background-position-x: left!important;}
+.top-side-bg-position-bottom{ background-position-y: bottom!important;}
 
 .top-side-bg-heolienne-white{
     background-image: url(../images/whitee_bg.png)!important;;
