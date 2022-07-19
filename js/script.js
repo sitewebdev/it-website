@@ -85,8 +85,6 @@ $(document).ready(function(){
     $('#part-action-left').click(function() { owl_part.trigger('prev.owl.carousel');})
     $('#part-action-right').click(function() { owl_part.trigger('next.owl.carousel');})
 
-
-
     var owl_vid = $('#owl-carousel-vid');
     owl_vid.owlCarousel(
         {
@@ -111,15 +109,21 @@ $(document).ready(function(){
     $('#vid-action-right').click(function() { owl_vid.trigger('next.owl.carousel');})
 
     //startWow();
-    $('[data-fancybox]').fancybox({
-        youtube : {
-            controls : 0,
-            showinfo : 0
-        },
-        vimeo : {
-            color : 'f00'
-        }
-    })
+    try {
+        $('[data-fancybox]').fancybox({
+            youtube : {
+                controls : 0,
+                showinfo : 0
+            },
+            vimeo : {
+                color : 'f00'
+            }
+        })
+    }
+    catch(e){
+        console.log(e)
+    }
+    
 
     loaTestimonial();
     loadDevTabContent();
@@ -229,6 +233,7 @@ function loaTestimonial() {
     tabcontent = document.getElementsByClassName("bloc-testimonial");
     for (i = 0; i <= tabcontent.length - 1; i++) {
         if(i == 0){
+            console.log(tabcontent[i].id)
             openTestimonial({}, tabcontent[i].id)
             break;
         }

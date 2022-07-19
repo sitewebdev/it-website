@@ -34,6 +34,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     overflow-x:hidden;
+    scroll-behavior: smooth;
 }
 
 .page { overflow: hidden;}
@@ -131,6 +132,12 @@ nav.fill ul li a:after {
 }
 nav.stroke ul li a:hover:after {
   width: 100%;
+}
+
+
+nav.stroke ul li a.active{
+    border-bottom: 2px solid #ffab09;
+    color: #ffab09;
 }
 
 nav .social-network a{
@@ -432,7 +439,7 @@ nav .social-network a{
     margin: auto;
     position: absolute;
     left: 48%;
-    top: 720px;
+    top: 698px;
     background: #fff;
     z-index: 5;
     border-radius: 63px;

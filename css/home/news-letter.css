@@ -77,7 +77,7 @@
 
 
 .bloc-news-right  button:hover {
-    background-color: transparent;
+    background-color: #fff;
     color: #ffab09;
     border: 1.9px solid #ffab09;
     transition: 0.3s;
