@@ -352,6 +352,7 @@
   }
 
   .g-column-20 {max-width: 15%!important;}
+  .g-column-25 {max-width: 20%!important;}
   .g-column-30 {max-width: 25%!important;}
   .g-column-35 {max-width: 30%!important;}
   .g-column-50 {max-width: 48%!important;}
@@ -362,11 +363,11 @@
   .g-column {
     /*flex: 20%;*/
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 0.5em;
   }
   
   .g-column img {
-    margin-top: 25px;
+    margin-top: 1em;
     vertical-align: middle;
     width: 100%;
   }
