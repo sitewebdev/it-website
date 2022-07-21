@@ -720,3 +720,11 @@ nav .social-network a{
 .violet-text {
     color: #3d348b!important;
 }
+
+@media only screen and (max-width: 1100px) {
+    .bloc-articles-right {
+        height: auto;
+        padding: 2em;
+        width: 100%;
+    }
+}

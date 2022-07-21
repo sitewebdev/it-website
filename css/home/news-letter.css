@@ -17,10 +17,14 @@
 .bloc-news-letter{
     margin: 0px auto;
     max-width: 1069px;
-    height: 148px;
+    height: auto;
     padding: 2.6em;
     background: url('../../images//Mask_group.png') no-repeat;
     background-size: 167px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .bloc-news-letter h4 {
@@ -39,13 +43,10 @@
 }
 
 
-.bloc-news-left{
-    float: left;
-}
+.bloc-news-left{}
 
 .bloc-news-right{
-    float: right;
-    margin: 1.5em;
+    margin: 1.5em 0;
 }
 
 .bloc-news-right input{
@@ -54,6 +55,7 @@
     border: none;
     color:#3d348b ;
     border:2px solid #fff ;
+    margin: 0.2em;
 
 }
 .bloc-news-right input:hover{
@@ -86,4 +88,14 @@
 .bloc-news-right  button img {
     height: 15px;
     margin-right: 6px;
+}
+
+
+/* Responsive*/
+@media only screen and (max-width: 1100px) {
+    .news-letter { height: auto; }
+    .bloc-news-letter-main {height: auto;}
+    .bloc-news-letter {
+        flex-direction: column;
+    }
 }

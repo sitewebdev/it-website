@@ -3,7 +3,6 @@
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 1149px;
 }
 .bloc-list-card-offre{
     margin: auto;
@@ -330,3 +329,14 @@
     height: 70px;
 }
 
+/* Responsive*/
+@media only screen and (max-width: 1120px) {
+    .bloc-list-card-offre{
+        flex-direction: column;
+    }
+    .card-offre:nth-child(2) { margin-top: 0em; }
+    .card-offre:nth-child(3) { margin-top: 0em; }
+
+    .card-offre { width: auto;  }
+    .card-offre p { padding-right: 3em; }
+}

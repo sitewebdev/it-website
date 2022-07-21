@@ -1,5 +1,4 @@
 .offre {
-    height: 689px;
     background-image: url(../../images/heolienne-panneau.png);
     background-size: 934px;
     background-repeat: no-repeat;
@@ -30,7 +29,7 @@
 
 .offre-description p {
     line-height: 126%;
-    width: 816px;
+    max-width: 816px;
     padding: 5px;
     text-align: center;
     margin: auto;
@@ -41,9 +40,8 @@
 }
 
 .offre-list-vignette {
-    height: 330px;
     max-width: 950px;
-    margin: auto;
+    margin: 3em auto;
 
     display: flex;
     flex-direction: row;
@@ -59,6 +57,7 @@
     border-radius: 10px;
     border: 1px solid #ccc;
     text-align: center;
+    margin: 3em 0;
 }
 
 .offre-vignette img {

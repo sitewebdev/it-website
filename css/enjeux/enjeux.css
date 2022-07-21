@@ -94,8 +94,8 @@
 }
 
 .enjeux-secteur-details{
-    height: 446px;
-    width: 1069px;
+    /*height: 446px;*/
+    max-width: 1069px;
     margin: auto;
     padding: 1em 2em 1em 2em;
     text-align: center;
@@ -136,7 +136,6 @@
 
 }
 .defis{
-    height: 660px;
     /* margin: auto; */
     padding: 0em;
     text-align: center;
@@ -149,7 +148,7 @@
 
 
 .defis-content{
-    width: 1167px;
+    max-width: 1167px;
     padding: 3em 3em;
     height: 100%;
     margin: auto;
@@ -526,4 +525,9 @@
 
 .send-msg img{
     height: 28px;
+}
+
+@media only screen and (max-width: 900px)  {
+    .defis-content ul{ flex-direction: column; }
+    .defis-content ul li{ width: auto;}
 }

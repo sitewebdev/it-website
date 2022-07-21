@@ -104,7 +104,7 @@
 
 
 .reason{
-    width: 1295px;
+    max-width: 1295px;
     margin: auto;
     padding: 5em 0em 2em 0em;
     text-align: center;
@@ -765,3 +765,58 @@
     color: #0b0b0b;
     line-height: 200%;
 }
+
+
+/* Responsive */
+@media only screen and (max-width: 900px)  {
+    .reason-subbloc, .reason-subbloc:nth-child(even){
+        height: auto;
+        display: flex;
+        margin: 1em 0em 1.6em;
+        padding: 1.5em;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .reason-subbloc:nth-child(even) {
+        background: #f9f9f9;
+    }
+    .reason-subbloc-img {
+        height: auto;
+        width: 100%;
+        border-radius: 15px;
+    }
+    .reason-subbloc-img img {
+        border-style: none;
+        height: auto;
+        width: 100%;
+    }
+    .reason-subbloc-description {
+        height: auto;
+        width: 100%;
+    }
+
+    .carriere-offre-list {
+        display: flex;
+        padding: 2em 0em;
+        flex-direction: column;
+    }
+    .carriere-offre {
+        width: auto;
+    }
+
+    .nr-valeur {
+        max-width: 1295px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2em 0em;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .nr-valeur .valeur-title {
+        width: auto;
+    }
+}
+

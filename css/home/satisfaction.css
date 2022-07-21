@@ -1,5 +1,4 @@
 .satisfaction {
-    height: 700px;
     text-align: center;
     background-image: url(../../images/bg-satisfaction.png);
     background-repeat: no-repeat;
@@ -26,4 +25,8 @@
 }
 .satisfaction .diagram {
     padding: 3em;
+}
+
+.satisfaction svg {
+    max-width: 880px;
 }

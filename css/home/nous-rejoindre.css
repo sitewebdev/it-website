@@ -63,3 +63,27 @@
     padding: 2em;
 }
 
+@media only screen and (max-width: 1100px) {
+    .nous-rejoindre-bloc-image {
+        display: none;
+    }
+    .nous-rejoindre-title {
+        height: auto;
+    }
+    .nous-rejoindre-bloc-text {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+
+    .nous-rejoindre-bloc-text p {
+        line-height: 126%;
+        width: auto;
+        padding: 5px;
+    }
+    .espace-offre {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+}

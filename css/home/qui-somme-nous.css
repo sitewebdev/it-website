@@ -10,7 +10,7 @@
 }
 
 .qui-sommes-nous-bloc-description {
-    height: 415px;
+    height: auto;
     width: 65%;
     float: right;
     background-color: #3d348b;
@@ -45,7 +45,6 @@
 .qui-sommes-nous-bloc-description p {
     padding: 0px;
     line-height: 126%;
-    width: 816px;
     padding: 5px;
     text-align: left;
     color: #fff;
@@ -268,4 +267,25 @@
     color: #fff;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+/* Responsive*/
+@media only screen and (max-width: 1100px) {
+    .qui-sommes-nous-bloc-description {
+        width: 100%;
+        right: 0px;
+        border-radius: 0px;
+    }
+
+    .valeur-list-vignette {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        align-items: flex-start;
+    }
+    .valeur-vignette {
+
+        width: 70%;
+    }
 }

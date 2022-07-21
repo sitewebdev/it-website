@@ -1,6 +1,5 @@
 
 .carriere {
-    height: 560px;
     /* background-image: url(../images/carriere.jpg); */
     background-size: 1366px;
     background-repeat: no-repeat;
@@ -14,19 +13,25 @@
     background: #757ce6;
     border-radius: 14px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .carriere-offres-image .bloc-offres{
     width: 50%;
-    float: left;
     height: 100%;
     padding: 2em;
 }
 
 .carriere-offres-image .bloc-image{
     width: 50%;
-    float: right;
     height: 100%;
+}
+
+.carriere-offres-image .bloc-image img {
+    width: auto;
+    height: 480px;
 }
 
 .carriere-offres-image h4 {
@@ -110,4 +115,27 @@
     font-size: 0.8em;
     transition: 0.3s;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1100px) {
+    .carriere-offres-image {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .carriere-offres-image .bloc-image {
+         width: auto;
+        height: auto;
+    }
+
+    .carriere-offres-image .bloc-image img {
+        width: 100%;
+        height: auto;
+   }
+
+   .carriere-offres-image .bloc-offres {
+        width: 100%;
+    }
 }
