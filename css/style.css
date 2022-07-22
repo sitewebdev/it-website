@@ -592,8 +592,8 @@ nav .social-network a{
     background: #fff;
     padding: 1em;
     margin: auto;
-    width: 1069px;
     border-radius: 1em;
+    max-width: 1069px;
 }
 
 .form-contact .form-postuler {
@@ -625,7 +625,7 @@ nav .social-network a{
 }
 
 .contact_news_letter .news-letter{
-    height: 300px;
+    height: auto;
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -756,5 +756,17 @@ nav .social-network a{
         position:inherit;
         margin: 0;
         height: 300px;
+    }
+    .contact_news_letter .bloc-news-letter-main {
+        border-radius: 0;
+        height: auto;
+    }
+
+    .form-contact {
+        padding: 0em;
+    }
+
+    .form-contact .bloc-form-postuler {
+        border-radius: 0em;
     }
 }

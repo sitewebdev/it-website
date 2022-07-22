@@ -5,7 +5,7 @@
 #gestion-reseau-distribution{ display: none;}
 
 .enjeux-secteur{
-    height: 400px;
+    /*height: 400px;*/
     max-width: 1069px;
     margin: auto;
     padding: 5em 0em 2em 0em;
@@ -48,13 +48,13 @@
     padding: 0px;
     align-items: center;
     justify-content: space-between;
-    height: 93px;
+    height: auto;
 }
 
 .enjeux-secteur ul li{
     display: inline-block;
     width: 334px;
-    height: 100%;
+    height: 93px;
 }
 .enjeux-secteur ul li a{
     font-size: 1.1em;
@@ -542,6 +542,7 @@
     }
     .valeur-subbloc-description{
         width: auto;
+        padding: 1em 0em;
     }
 
     .enjeux-video iframe {
@@ -551,5 +552,41 @@
 
     .enjeux-secteur-details{ flex-direction: column; }
     .enjeux-secteur-details .bloc-image{ width: auto; }
-    .enjeux-secteur-details .bloc-description{ width: auto; }
+        
+    .enjeux-secteur-details .bloc-description{ width: auto; padding: 1em;}
+
+
+    .enjeux-testimonial{ padding: 0;}
+    .bloc-testimonial {flex-direction: column-reverse;}
+    .testimonial-biographie {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-biographie img {
+        border-top-right-radius: 0px;
+    }
+    .testimonial-resume {
+        width: 100%;
+        height: auto;
+        padding: 2em;
+    }
+
+    .enjeux-secteur ul{
+        flex-direction: column;
+    }
+
+    .enjeux-secteur ul li{
+        width: 100%;
+    }
+    .enjeux-secteur ul li a{ border-radius: 0;}
+    .defis-content { padding: 3em 2em;}
+    .defis-content ul li a {
+        padding: 0.5em 0em;
+    }
+
+    .enjeux-valeur {  padding: 2em 2em 0em; }
+    .valeur-subbloc-description li {
+        margin: 0em 0em;
+    }
+    .enjeux-valeur h3 { font-size: 1.5em; }
 }
