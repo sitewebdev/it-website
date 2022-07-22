@@ -135,7 +135,7 @@
 
 .offre-valeur-ajoutee .liste-valeur, .offre-valeur-ajoutee-web .liste-valeur{
     display: flex;
-    width: 1115px;
+    max-width: 1115px;
     margin: auto;
     padding: 5em 1em;
     justify-content: space-between;
@@ -153,7 +153,7 @@
 
 .offre-valeur-vignette:nth-child(even) {
     margin-top: 3em;
-  }
+}
 
 .offre-valeur-vignette svg{ height: 65px;}
 
@@ -198,7 +198,7 @@
 .expertise .bloc-image {
     display: flex;
     height: 100%;
-    width: 1115px;
+    max-width: 1115px;
     margin: auto;
     /* padding: 5em 1em; */
     justify-content: space-between;
@@ -252,7 +252,7 @@
 } 
 
 .nos-technos{
-    width: 1295px;
+    max-width: 1295px;
     margin: auto;
     padding: 3em 1em;
     text-align: center;
@@ -276,6 +276,10 @@
 
 .dev-tab-link-group{
     padding: 1.5em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .dev-tab-link{
@@ -284,7 +288,7 @@
     font-weight: bold;
     border: 2px solid #757ce6;
     border-radius: 2em;
-    margin: 0em 0.6em;
+    margin: 0.6em;
     cursor: pointer;
 }
 
@@ -301,9 +305,10 @@
 
 .dev-tab-content{
     padding: 1em 2em 0em;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .dev-tab-vignette {
@@ -339,4 +344,35 @@
 
     .card-offre { width: auto;  }
     .card-offre p { padding-right: 3em; }
+
+    .domaine-intervention svg {
+        width: 100%;
+        height: auto;
+    }
+
+    .offre-valeur-ajoutee .liste-valeur, .offre-valeur-ajoutee-web .liste-valeur {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offre-valeur-vignette:nth-child(even) { margin-top: 3em; }
+    .offre-valeur-vignette { margin-top: 3em; }
+
+    .expertise .bloc-image {
+        flex-direction: column;
+    }
+    .expertise .bloc-image .image {
+        height: auto;
+        width: 100%;
+    }
+    .expertise .bloc-image .image img {
+        width: 100%;
+        height: auto;
+    }
+    .expertise .bloc-image .bloc{ width: 100%; }
+
+    .article-similaire {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
