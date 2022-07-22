@@ -338,11 +338,12 @@
 @media only screen and (max-width: 1120px) {
     .bloc-list-card-offre{
         flex-direction: column;
+        padding: 0em;
     }
     .card-offre:nth-child(2) { margin-top: 0em; }
     .card-offre:nth-child(3) { margin-top: 0em; }
 
-    .card-offre { width: auto;  }
+    .card-offre { width: auto; height: auto;  }
     .card-offre p { padding-right: 3em; }
 
     .domaine-intervention svg {

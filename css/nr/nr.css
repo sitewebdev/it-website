@@ -806,17 +806,24 @@
     }
 
     .nr-valeur {
-        max-width: 1295px;
+        width: auto;
+        height: auto;
         margin: auto;
         display: flex;
-        flex-direction: column;
-        padding: 2em 0em;
-        height: 100%;
-        align-items: flex-start;
+        flex-direction: column-reverse;;
+        padding: 0em;
+        align-items: center;
+        align-content: center;
     }
-
+    .nr-valeur .valeur-cards{width: auto;}
     .nr-valeur .valeur-title {
         width: auto;
+    }
+
+
+    .nr-carriere .title-bar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 

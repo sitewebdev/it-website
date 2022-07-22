@@ -609,7 +609,7 @@ nav .social-network a{
 
 .contact_news_letter{
     display: flex;
-    width: 1069px;
+    max-width: 1069px;
     margin: 4em auto;
     height: 1000px;
 
@@ -721,10 +721,40 @@ nav .social-network a{
     color: #3d348b!important;
 }
 
+.map-frame{
+    width: 100%;position: absolute;margin: -690px 0px;height: 710px;
+}
+
 @media only screen and (max-width: 1100px) {
     .bloc-articles-right {
         height: auto;
         padding: 2em;
         width: 100%;
+    }
+    .articles { padding-top: 0em;}
+
+    .contact_news_letter {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .contact_nous {
+        border-radius: 0;
+        height: auto;
+    }
+
+    .contact_news_letter {
+        flex-direction: column-reverse;
+    }
+
+    .contact_news_letter .news-letter {
+        padding: 0em;
+    }
+
+    .map-frame {
+        width: 100%;
+        position:inherit;
+        margin: 0;
+        height: 300px;
     }
 }
