@@ -557,7 +557,7 @@
 
 
     .enjeux-testimonial{ padding: 0;}
-    .bloc-testimonial {flex-direction: column-reverse;}
+    .bloc-testimonial {flex-direction: column-reverse; border-radius: 0px;}
     .testimonial-biographie {
         height: auto;
         width: 100%;

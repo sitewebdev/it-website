@@ -1,0 +1,119 @@
+.header {
+    height: 80px;
+}
+
+.logo-menu{
+    height: 100%;
+    margin: auto;
+    max-width: 1334px;
+}
+.bloc-logo{
+    float: left;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    height: 80px;
+    /* padding: 17px;*/
+}
+.bloc-logo img{
+    height: 40px;
+    margin: 1.4em 0em 0;
+
+}
+.bloc-menu{
+    /* margin: auto; */
+    float: right;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    /* height: 100px; */
+    height: 100%;
+}
+
+/* Menu */
+nav {
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    margin: 1.5em 0em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0em 7em;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 3px 6px;
+    font-size: 0.9em;
+    color: #000;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #ffab09;
+}
+
+nav ul .social-network:hover {
+    text-decoration: none;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffab09;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+
+nav.stroke ul li a.active{
+    border-bottom: 2px solid #ffab09;
+    color: #ffab09;
+}
+
+nav .social-network a{
+    margin: 2px;
+    padding: 0px;
+}
+@media only screen and (max-width: 1100px) {
+    .header { height: auto; }
+    .bloc-logo { float: none; width: auto;  text-align: left; padding: 0em 2em; height: auto;}
+    .bloc-menu { float: none; width: auto; }
+
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0em 2em;
+    }
+    nav ul li a {    padding: 5px 0px; margin: 3px 0px;}
+}
