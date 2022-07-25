@@ -326,6 +326,7 @@
     margin: 0;
     padding: 0;
     top: 350px;
+    width: 100%;
   }
 
   .slideshow .slide .caption {
@@ -345,6 +346,5 @@
 
   .center-top-button {
     left: 45% !important;
-    top: 985px !important;
   }
 }

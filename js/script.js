@@ -130,6 +130,34 @@ $(document).ready(function(){
 
     loaTestimonial();
     loadDevTabContent();
+
+
+     
+// Get the navbar
+const ulx = document.getElementsByClassName("enjeux-secteur-title-bar");
+ul = ulx[0];
+console.log(ulx)
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickyEnjeuxFunc()};
+
+
+
+// Get the offset position of the navbar
+var sticky = ul.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyEnjeuxFunc() {
+        try{
+            if (window.pageYOffset >= sticky) {
+                ul.classList.add("sticky-enjeux-menu")
+            } else {
+                ul.classList.remove("sticky-enjeux-menu");
+            }
+        }
+        catch(e){}
+        
+    }
 });
 
 /*
@@ -173,8 +201,6 @@ function openTab(evt, cityName) {
 
 function loadDevTabContent() {
     tabcontent = document.getElementsByClassName("dev-tab-content");
-    console.log(tabcontent)
-
     for (i = 0; i <= tabcontent.length - 1; i++) {
         if(i == 0){
             openDevTab({}, tabcontent[i].id)
@@ -263,4 +289,26 @@ function openTestimonial(evt, cityName) {
     document.getElementById(cityName).style.display = "flex";
     console.log(cityName)
     if(evt.currentTarget) evt.currentTarget.className += " active";
+}
+
+let menuIsOpened = false;
+function openMenu(){
+    const Mx = document.getElementsByClassName("bloc-menu");
+    const m = Mx[0];
+
+    const Bx = document.getElementsByClassName("center-top-button");
+    const b = Bx[0];
+
+
+    console.log(Mx, m)
+    if(menuIsOpened){
+        menuIsOpened = false;
+        m.classList.add("menu-closed")
+        m.classList.remove("menu-opened");
+    }
+    else{
+        menuIsOpened = true;
+        m.classList.add("menu-opened")
+        m.classList.remove("menu-closed");
+    }
 }
