@@ -619,7 +619,19 @@ body {
     width: 100%;position: absolute;margin: -690px 0px;height: 710px;
 }
 
+.menu-button{ display: none; }
+
 @media only screen and (max-width: 1100px) {
+    .menu-button {
+        background-color: #2b95ff;
+        display: block;
+        width: 70px;
+        text-decoration: none;
+        color: #fff;
+        padding: 1.4em 1em;
+        text-align: center;
+    }
+
     .bloc-articles-right {
         height: auto;
         padding: 2em;

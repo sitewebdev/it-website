@@ -319,3 +319,32 @@
   fill: #fff;
   transition: left 0.2s ease;
 }
+
+/* Responsive*/
+@media only screen and (max-width: 1120px) {
+  .slideshow .slide-content {
+    margin: 0;
+    padding: 0;
+    top: 350px;
+  }
+
+  .slideshow .slide .caption {
+    width: auto;
+    height: 300px;
+    border-radius: 0;
+    background-color: #ffffffde;
+  }
+
+  .slideshow .pagination{
+    top: 329px;
+    left: 32px;
+  }
+
+  .slideshow .arrows .prev { left: auto; right: 5.5em; top: 360px;  }
+  .slideshow .arrows .next { left: auto; right: 2em; top: 360px; }
+
+  .center-top-button {
+    left: 45% !important;
+    top: 985px !important;
+  }
+}

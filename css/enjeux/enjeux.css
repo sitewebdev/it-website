@@ -40,7 +40,6 @@
     color: #3f3f3f;
 }
 
-
 .enjeux-secteur ul{
     margin: 0px;
     display: flex;
@@ -56,6 +55,7 @@
     width: 334px;
     height: 93px;
 }
+
 .enjeux-secteur ul li a{
     font-size: 1.1em;
     display: block;

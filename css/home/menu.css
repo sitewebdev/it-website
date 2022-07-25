@@ -105,7 +105,15 @@ nav .social-network a{
 }
 @media only screen and (max-width: 1100px) {
     .header { height: auto; }
-    .bloc-logo { float: none; width: auto;  text-align: left; padding: 0em 2em; height: auto;}
+    .bloc-logo {     float: none;
+        width: auto;
+        text-align: left;
+        padding: 0em 0em 0em 2em;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .bloc-menu { float: none; width: auto; }
 
 
