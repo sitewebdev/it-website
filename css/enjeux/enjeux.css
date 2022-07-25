@@ -528,6 +528,38 @@
     height: 28px;
 }
 
+.sticky-enjeux-menu{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.sticky-enjeux-menu li {
+    display: inline-block;
+    width: 371px !important;
+    height: 64px !important;
+}
+
+.sticky-enjeux-menu li a {
+    font-size: 1.1em;
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    padding: 1em 3em;
+    /* vertical-align: middle; */
+    color: #494949;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
 @media only screen and (max-width: 900px)  {
     .defis-content ul{ flex-direction: column; }
     .defis-content ul li{ width: auto;}

@@ -307,5 +307,9 @@
 
     .specialite-grid .card { width: 100%;}
     .specialite-grid .mini-card { width: 100%;}
+
+    .qui-sommes-nous {
+        height: 758px;
+    }
     
 }
