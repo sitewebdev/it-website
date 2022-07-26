@@ -11,9 +11,9 @@
     float: left;
     margin: auto;
     width: 20%;
-    text-align: center;
+    text-align: left;
     height: 80px;
-    /* padding: 17px;*/
+    padding-left: 20px;
 }
 .bloc-logo img{
     height: 40px;
@@ -114,7 +114,7 @@ nav .social-network a{
         flex-direction: row;
         justify-content: space-between;
     }
-    .bloc-menu { float: none; width: auto; height: 0;  transition: 0.3s; }
+    .bloc-menu { float: none; overflow: hidden; width: auto; height: 0;  transition: 0.3s; }
 
 
     nav ul {

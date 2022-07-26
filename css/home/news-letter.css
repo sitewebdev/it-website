@@ -98,4 +98,8 @@
     .bloc-news-letter {
         flex-direction: column;
     }
+    .bloc-news-right {
+        display: flex;
+        flex-direction: column;
+    }
 }

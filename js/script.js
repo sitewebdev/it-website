@@ -211,7 +211,7 @@ function loadDevTabContent() {
 function openDevTab(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
-  
+
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("dev-tab-content");
     for (i = 0; i < tabcontent.length; i++) {
@@ -227,6 +227,8 @@ function openDevTab(evt, cityName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "flex";
     if(evt.currentTarget) evt.currentTarget.className += " dev-tab-active";
+    console.log('hioooi');
+
 }
 
 function scrollToTop(){

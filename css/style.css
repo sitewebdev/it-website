@@ -617,7 +617,7 @@ body {
 }
 
 .map-frame{
-    width: 100%;position: absolute;margin: -690px 0px;height: 710px;
+    width: 100%;position: absolute;margin: -690px 0px;height: 690px;;
 }
 
 .menu-button{ display: none; }

@@ -324,14 +324,14 @@
 }
 
 .dev-tab-vignette img {
-    height: 65px;
+    height: 40%;
 }
 
 .dev-tab-vignette img:hover {
     animation-duration: 0.3s; /* don't forget to set a duration! */
     transform: scale(1.1);
     transition: 0.2s;
-    height: 70px;
+    height: 42%;
 }
 
 /* Responsive*/
