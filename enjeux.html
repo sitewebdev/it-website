@@ -6,20 +6,20 @@
     <title>Les enjeux du secteur</title>
     <link href="css/theme.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/carroussel-article.css" />
-    <link rel="stylesheet" href="css/carroussel-nr.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
     <script src="js/jquery.min.js"></script>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="js/OwlCarousel/dist/owl.carousel.min.js"></script>
-
     <link rel="stylesheet" href="js/OwlCarousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="js/OwlCarousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/lib/animate.css">
+    <link rel="stylesheet" href="css/lib/animate.css"/>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
 
-    <script src="js/slide.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+
 </head>
 
 <body>
@@ -81,10 +81,10 @@
             <div class="top-side top-side-bg-grey">
                 <div class="top-side-bg top-side-bg-position-right top-side-bg-heolienne-white">
                     <div class="body-side">
-                        <div class="bloc-image">
+                        <div class="bloc-image wow animate__slideInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                             <img src="images/p-solaire.png" alt="waves">
                         </div>
-                        <div class="bloc-title bloc-title-left">
+                        <div class="bloc-title bloc-title-left wow animate__slideInRight"  data-wow-duration="1s" data-wow-delay="0s">
                             <h4>IT NEWVISION</h4>
                             <h3>Les enjeux du secteur</h3>
                             <p>
@@ -119,10 +119,10 @@
             </a>-->
 
             <div id="forunisseur-energie" class="enjeux-secteur-details hide animate__animated animate__fadeIn tabcontent">
-                <div class="bloc-image">
+                <div class="bloc-image wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/3.png" />
                 </div>
-                <div class="bloc-description">
+                <div class="bloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <h3>Fournisseur D'énergie</h3>
                     <p>
                         Consistence de la profonde transformation que connait le secteur de l'énergie, nous proposant de
@@ -133,10 +133,10 @@
             </div>
 
             <div id="gestion-reseau-distribution" class="enjeux-secteur-details hide animate__animated animate__fadeIn tabcontent">
-                <div class="bloc-image">
+                <div class="bloc-image wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/2.png" />
                 </div>
-                <div class="bloc-description">
+                <div class="bloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <h3>Gestionnaires De Réseaux De Distribution</h3>
                     <p>
                         Consistence de la profonde transformation que connait le secteur de l'énergie, nous proposant de
@@ -147,10 +147,10 @@
             </div>
 
             <div id="metier-eau-dechet" class="enjeux-secteur-details animate__animated animate__fadeIn tabcontent">
-                <div class="bloc-image">
+                <div class="bloc-image wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/1.png" />
                 </div>
-                <div class="bloc-description">
+                <div class="bloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <h3>Metier de L'Eau et Des Déchets</h3>
                     <p>
                         Consistence de la profonde transformation que connait le secteur de l'énergie, nous proposant de
@@ -334,7 +334,7 @@
             </div>
             <div id="metier-eau-dechet-x"class="nos-valeurs  animate__animated animate__fadeIn tabcontent">
                 <div class="valeur-subbloc">
-                    <div class="valeur-subbloc-description">
+                    <div class="valeur-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                         <h3>Connaissance Et Culture Métiers Approfondies</h3>
                         <ul>
                             <li><a href="#">Flux GRD</a></li>
@@ -343,13 +343,13 @@
                             <li><a href="#">Portail Client</a></li>
                         </ul>
                     </div>
-                    <div class="valeur-subbloc-img">
+                    <div class="valeur-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                         <img src="images/photo-1.png" />
                     </div>
                 </div>
                 <div class="valeur-subbloc">
                     
-                    <div class="valeur-subbloc-description">
+                    <div class="valeur-subbloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                         <h3>Maitrise Des Solutions Et De L'intégration Des Systèmes</h3>
                         <ul>
                             <li><a href="#">Oracle Utilities</a></li>
@@ -359,7 +359,7 @@
                             <li><a href="#">Opinum</a></li>
                         </ul>
                     </div>
-                    <div class="valeur-subbloc-img">
+                    <div class="valeur-subbloc-img wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                         <img src="images/photo-2.png" />
                     </div>
                 </div>
@@ -367,7 +367,7 @@
             </div>
             <div id="gestion-reseau-distribution-x"  class="nos-valeurs hide animate__animated animate__fadeIn tabcontent">
                 <div class="valeur-subbloc">
-                    <div class="valeur-subbloc-description">
+                    <div class="valeur-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                         <h3>Expertise Reconnue Des Metiers De L'eau</h3>
                         <ul>
                             <li><a href="#">Maitrise du Cycle De L'eau</a></li>
@@ -377,13 +377,13 @@
                             <li><a href="#">ParamConnaissance Des KPI's</a></li>
                         </ul>
                     </div>
-                    <div class="valeur-subbloc-img">
+                    <div class="valeur-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                         <img src="images/photo-1.png" />
                     </div>
                 </div>
                 <div class="valeur-subbloc">
                     
-                    <div class="valeur-subbloc-description">
+                    <div class="valeur-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                         <h3>Maitrise Des Flux Financiers</h3>
                         <ul>
                             <li><a href="#">Maitrise du Cycle De L'eau</a></li>
@@ -393,7 +393,7 @@
                             <li><a href="#">ParamConnaissance Des KPI's</a></li>
                         </ul>
                     </div>
-                    <div class="valeur-subbloc-img">
+                    <div class="valeur-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                         <img src="images/photo-2.png" />
                     </div>
                 </div>
@@ -402,7 +402,7 @@
 
             <div id="forunisseur-energie-x"  class="nos-valeurs hide  animate__animated animate__fadeIn tabcontent">
                 <div class="valeur-subbloc">
-                    <div class="valeur-subbloc-description">
+                    <div class="valeur-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                         <h3>Expertise Metiers</h3>
                         <ul>
                             <li><a href="#">Dispositifs Communicantes</a></li>
@@ -411,13 +411,13 @@
                             <li><a href="#">Construction Des Flux Vers Les Fournisseurs</a></li>
                         </ul>
                     </div>
-                    <div class="valeur-subbloc-img">
+                    <div class="valeur-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                         <img src="images/rectangle.png" />
                     </div>
                 </div>
                 <div class="valeur-subbloc">
                     
-                    <div class="valeur-subbloc-description">
+                    <div class="valeur-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                         <h3>Connaissance Approfondie Des Solutions Du Marché</h3>
                         <ul>
                             <li><a href="#">Opinum</a></li>
@@ -426,7 +426,7 @@
                             
                         </ul>
                     </div>
-                    <div class="valeur-subbloc-img">
+                    <div class="valeur-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                         <img src="images/opinum.png" />
                     </div>
                 </div>
@@ -535,7 +535,7 @@
 
         </div>
 
-        <div class="partenaire">
+        <div class="partenaire wow animate__fadeIn"  data-wow-duration="2s" data-wow-delay="0s">
             <div>
                 <h4>NOS PARTENAIRES PRODUITS</h4>
                 <h3>Ils Nous Font Confiance</h3>
@@ -642,7 +642,7 @@
 
 
         </div>
-        <div class="news-letter">
+        <div class="news-letter wow animate__fadeIn"  data-wow-duration="2s" data-wow-delay="0s">
             <div class="bloc-news-letter-main">
                 <div class="bloc-news-letter">
                     <div class="bloc-news-left">
@@ -659,7 +659,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer wow slideInLeft"  data-wow-duration="2s" data-wow-delay="5s">
+        <div class="footer wow animate__slideInUp"  data-wow-duration="1s" data-wow-delay="0s">
             <a href="#" class="center-bottom-button">
                 <svg width="16" height="31" viewBox="0 0 26 41" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="scrollToTop()">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.631 0 0 15.436h8.13V40.13h9.002V15.436h8.112L12.63 0z" fill="#EDB940"/>
