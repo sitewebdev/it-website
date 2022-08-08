@@ -12,6 +12,18 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+
+function openPostCandidate() {
+    document.getElementById("post-candidate-overlay").style.display = "flex";
+    document.getElementById("post-candidate-overlay").style.top = window.pageYOffset;
+    window.scrollTo(0,0)
+}
+  
+  /* Set the width of the side navigation to 0 */
+function closePostCandidate() {
+    document.getElementById("post-candidate-overlay").style.display = "none";
+}
+
   
 $(document).ready(function(){
     var owl = $('#owl-carousel-article');
@@ -140,6 +152,7 @@ try{
     
     // When the user scrolls the page, execute myFunction
     window.onscroll = function() {stickyEnjeuxFunc()};
+ 
     
     
     

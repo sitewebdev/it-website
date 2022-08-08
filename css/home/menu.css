@@ -44,6 +44,7 @@ nav ul {
     width: 100%;
     justify-content: space-evenly;
     padding: 0em 7em;
+    height: 40px;
 }
 nav ul li {
     display: inline-block;
@@ -103,6 +104,11 @@ nav .social-network a{
     margin: 2px;
     padding: 0px;
 }
+
+.sc-nw{
+    height: 25px;
+    margin: 0.4em 0.5em;
+}
 @media only screen and (max-width: 1100px) {
     .header { height: auto; }
     .bloc-logo {     float: none;
@@ -116,6 +122,10 @@ nav .social-network a{
     }
     .bloc-menu { float: none; overflow: hidden; width: auto; height: 0;  transition: 0.3s; }
 
+    .sc-nw {
+        margin: 0.4em 0em;
+    }
+
 
     nav ul {
         width: 100%;
@@ -123,6 +133,7 @@ nav .social-network a{
         align-items: flex-start;
         padding: 0em 2em;
         margin: 0;
+        height: auto;
     }
     nav ul li a {    padding: 5px 0px; margin: 3px 0px;}
 
