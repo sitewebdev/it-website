@@ -1,0 +1,18 @@
+.bounce-mouse {
+    animation: scroll 1.5s ease infinite;
+}
+  
+  @keyframes scroll {
+    0% { 
+      opacity: 0;
+      cy: 481;
+    }
+    33% {
+      opacity: 1;
+    }
+    100% { 
+      opacity: 0;
+      cy: 231;
+    }
+  }
+  

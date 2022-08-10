@@ -6,7 +6,7 @@
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
-    padding: 1.5em 1em 0em;
+    padding: 1.5em 1em 1em;
 }
 
 .top-footer{
@@ -207,7 +207,7 @@
 .bottom-footer-left .copyright {
     text-align: left;
     float: right;
-    width: 261px;
+    width: 300px;;
 }
 
 /* Responsive*/

@@ -21,6 +21,7 @@
 @import url(./page-header.css);
 @import url(./enjeux/enjeux.css);
 @import url(./offres/offre.css);
+@import url(./anim-svg.css);
 
 
 html,
@@ -225,7 +226,13 @@ body {
     vertical-align: bottom;
     font-size: 0.8em;
     padding: 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.card__type .date svg {
+    margin: 5px;
 }
 
 
@@ -633,6 +640,8 @@ body {
     font-size: 0.9em;
     font-weight: bold;
     border: 2px solid #ffab09;
+    height: 36px;
+
 }
 
 .contact-nous:hover {

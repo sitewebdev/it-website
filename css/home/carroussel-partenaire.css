@@ -21,6 +21,7 @@
   
   #owl-carousel-partenaire .owl-stage {
     width: 2500px !important;
+    display: flex;
   }
   
   .owl-carousel .nav-btn {

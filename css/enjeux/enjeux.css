@@ -393,9 +393,18 @@
     border: 3px solid #0000;
     height: 69px;
 }
+
+.testimonial-resume ul li a:focus {
+    outline: none;
+  }
 .testimonial-resume ul li a img{
     width: 63px;
 }
+
+.testimonial-resume ul li a img:focus {
+    outline: none;
+  }
+
 
 .testimonial-resume ul li a:hover{
     border: 3px solid #0003;
@@ -428,7 +437,8 @@
     color: #fff;
     line-height: 200%;
     padding: 0.9em 0.5em;
-    /*height: 470px;*/
+    height: 405px;
+    overflow: auto;
 }
 
 .testimonial-biographie{

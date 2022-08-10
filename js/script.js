@@ -3,15 +3,22 @@
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    console.log('hello')
     document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.opacity = "1";
+    document.getElementById("mySidenavForm").style.width = "750px";
   }
   
   /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.opacity = "0";
+    document.getElementById("mySidenavForm").style.width = "0";
   }
 
+function scrollToBlock(x, y){
+    window.scrollTo(x, y)
+
+}
 
 function openPostCandidate() {
     document.getElementById("post-candidate-overlay").style.display = "flex";
@@ -80,6 +87,7 @@ $(document).ready(function(){
         {
             margin: 10,
             nav: true,
+            loop: true,
             navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
             responsive: {
                 0: {
@@ -234,13 +242,16 @@ function openDevTab(evt, cityName) {
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("dev-tab-content");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
+        tabcontent[i].style.display = "none";
+    } 
+    
   
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("dev-tab-link");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("dev-tab-active", "");
+        if(evt.view){
+            tablinks[i].className = tablinks[i].className.replace("dev-tab-active", "");
+        }
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab

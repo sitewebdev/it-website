@@ -199,8 +199,9 @@
     padding: 1.5em;
 }
 
+.specialite-grid .margin-left { margin-left: 10px!important;}
 .specialite-grid .mini-card {
-    width: 200px;
+    width: 190px;
     min-height: 170px;
     border: 1px solid #eee;
     margin: 1em 0;
@@ -212,6 +213,7 @@
     align-content: center;
     padding: 1em;
 }
+
 .specialite-grid .card-h4 {
     color: #fff;
     font-size: 2em;
@@ -268,6 +270,41 @@
     font-size: 1.5em;
     font-weight: bold;
 }
+
+.fly-card{}
+
+.fly-card:hover .fly-description {
+    opacity: 1;
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.fly-description {
+    position: relative;
+    top: 0;
+    height: 150px;
+    margin-top: -150px;
+    background: linear-gradient(0deg, #ff8c24e3 40%, #00000000 97%);
+    transition: 0.3s;
+    padding: 2em 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    opacity: 0;
+}
+.fly-description h4{
+    font-size: 1.35em!important;
+    color: #fff!important;
+    text-align: left;
+}
+.fly-description p{
+    margin: 0;
+    color: #fff!important;
+}
+.fly-description .sc-nw{}
+.fly-description .sc-nw{}
 
 /* Responsive*/
 @media only screen and (max-width: 1100px) {

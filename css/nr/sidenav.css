@@ -10,15 +10,16 @@
     background: #00000052;
     display: flex;
     flex-direction: row-reverse;
-    transition: 0.5s;
-
+    opacity: 0;
 }
 
 .sidenav-form{
     box-shadow: -4px 4px 7px -5px rgba(0,0,0,0.75);
     padding: 1em 0em;
     background-color: #fff;
-    width: 750px;
+    width: 500px;
+    transition: 0.5s;
+    
 }
 
 /* The navigation menu links */

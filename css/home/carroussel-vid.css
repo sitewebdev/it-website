@@ -41,17 +41,16 @@
   #owl-carousel-vid .owl-item {
     width: 400px !important;
     height: 250px;
-    margin: 3em;
+    margin: 1.5em;
     transition: 0.2s;
 
   }
 
-  #owl-carousel-vid .owl-item:hover {
-    /*width: 464.667px!important;*/
+  /*#owl-carousel-vid .owl-item:hover {
     margin-right: 1em;
     height: 311px;
     transition: 0.2s;
-  }
+  }*/
 
  /* 
   #owl-carousel-vid .owl-stage {

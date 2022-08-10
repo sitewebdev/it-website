@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="js/OwlCarousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="js/OwlCarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/lib/animate.css"/>
+    <link rel="stylesheet" href="js/fancybox/fancybox.css"/>
     <script src="node_modules/wow.js/dist/wow.min.js"></script>
+
+    <script src="js/fancybox/fancybox.js"></script>
+
 
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>
@@ -28,7 +32,18 @@
             <div class="logo-menu">
                 <div class="bloc-logo">
                     <a href="index.html"><img src="images/logo.png" alt="waves" height="160"></a>
-                    <a  onclick="openMenu()" class="menu-button">M</a>
+                    <a  onclick="openMenu()" class="menu-button">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="24.75px" height="24.75px" viewBox="0 0 24.75 24.75" style="enable-background:new 0 0 24.75 24.75;" xml:space="preserve"
+                        >
+                                <g>
+                                    <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2
+                                        c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2
+                                        c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z" style="fill: #fff;"/>
+                                </g>
+                                
+                        </svg>
+                    </a> 
                 </div>
                 <div class="bloc-menu">
                     <nav class="stroke">
@@ -157,7 +172,7 @@
                         the industry's</p>
 
                     <div class="read-more">
-                        <a href="#" class="button">
+                        <a class="button"  onclick="scrollToBlock(0,3500)">
                             <svg height="22" viewBox="0 0 33 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#j3on6k2m3a)">
                                     <path
@@ -188,10 +203,10 @@
             </p>
 
             <div class="reason-subbloc">
-                <div class="reason-subbloc-img">
+                <div class="reason-subbloc-img wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/img_1.jpg" />
                 </div>
-                <div class="reason-subbloc-description">
+                <div class="reason-subbloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <h5>Approchable Top Management : A Horizontal And Result-Oriented Organization</h5>
                     <p>
                         Our Company Is humain-Sized And Allows Each Consultant To Have A manager Involved In The Company's Strategy.
@@ -202,10 +217,10 @@
 
 
             <div class="reason-subbloc">
-                <div class="reason-subbloc-img">
+                <div class="reason-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/img_@.jpg" />
                 </div>
-                <div class="reason-subbloc-description">
+                <div class="reason-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <h5>Internationnal Mobility : Europe, French-Speaking Africa</h5>
                     <p>
                         Our Company Is humain-Sized And Allows Each Consultant To Have A manager Involved In The Company's Strategy.
@@ -216,10 +231,10 @@
 
 
             <div class="reason-subbloc">
-                <div class="reason-subbloc-img">
+                <div class="reason-subbloc-img wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/img_3.jpg" />
                 </div>
-                <div class="reason-subbloc-description">
+                <div class="reason-subbloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <h5>Challenging Missions : Mastering Complex Solutions, Approaching Our Clients Core Business</h5>
                     <p>
                         Our Company Is humain-Sized And Allows Each Consultant To Have A manager Involved In The Company's Strategy.
@@ -229,10 +244,10 @@
             </div>
 
             <div class="reason-subbloc">
-                <div class="reason-subbloc-img">
+                <div class="reason-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/img_4.jpg" />
                 </div>
-                <div class="reason-subbloc-description">
+                <div class="reason-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <h5>Internationnal Mobility : Europe, French-Speaking Africa</h5>
                     <p>
                         Our Company Is humain-Sized And Allows Each Consultant To Have A manager Involved In The Company's Strategy.
@@ -242,10 +257,10 @@
             </div>
 
             <div class="reason-subbloc">
-                <div class="reason-subbloc-img">
+                <div class="reason-subbloc-img wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/img_5.jpg" />
                 </div>
-                <div class="reason-subbloc-description">
+                <div class="reason-subbloc-description wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <h5>Challenging Missions : Mastering Complex Solutions, Approaching Our Clients Core Business</h5>
                     <p>
                         Our Company Is humain-Sized And Allows Each Consultant To Have A manager Involved In The Company's Strategy.
@@ -255,10 +270,10 @@
             </div>
 
             <div class="reason-subbloc">
-                <div class="reason-subbloc-img">
+                <div class="reason-subbloc-img wow animate__fadeInRight"  data-wow-duration="1s" data-wow-delay="0s">
                     <img src="images/img_6.jpg" />
                 </div>
-                <div class="reason-subbloc-description">
+                <div class="reason-subbloc-description wow animate__fadeInLeft"  data-wow-duration="1s" data-wow-delay="0s">
                     <h5>Internationnal Mobility : Europe, French-Speaking Africa</h5>
                     <p>
                         Our Company Is humain-Sized And Allows Each Consultant To Have A manager Involved In The Company's Strategy.
@@ -649,7 +664,7 @@
     </div>
     
     <div id="mySidenav" class="sidenav">
-        <div class="sidenav-form">
+        <div id="mySidenavForm" class="sidenav-form">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                 <span class="icon">&times;</span>
                 <span class="text">Fermer</span>
