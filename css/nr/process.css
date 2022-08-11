@@ -1,0 +1,42 @@
+.process-area{
+    margin: auto;
+    width: 914px;
+    height: 330px;
+    background-image: url(../../images/process.png);
+    background-repeat: no-repeat;
+    background-size: 950px;
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+}
+
+.process-area .step{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.4em 0.5em;
+}
+
+.process-area .step .cercle{
+    width: 170px;
+    height: 170px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 7em;
+}
+
+.process-area .step .describe {
+    padding: 1em;
+}
+
+.process-area .step h4 {
+    padding: 0em;
+    font-size: 1em;
+    color: #fff;
+}
+.process-area .step p {
+    margin: 0;
+}

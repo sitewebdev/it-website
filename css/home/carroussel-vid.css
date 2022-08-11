@@ -179,15 +179,21 @@
 
 .play-button {
   display: block;
-    padding: 1.5em;
-    position: absolute;
-    bottom: 0em;
-    left: 1em;
-    border-radius: 9em;
+  padding: 0em;
+  position: absolute;
+  bottom: 0.5em;
+  left: 1.5em;
+  border-radius: 9em;
+}
+
+.play-title {
+  position: absolute;
+  bottom: 21px;
+  right: 17px;
 }
 
 .play-button svg {
-    height: 75px;
+  height: 59px;
 }
 
 .play-button:hover {
