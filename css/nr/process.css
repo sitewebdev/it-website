@@ -4,10 +4,10 @@
     height: 330px;
     background-image: url(../../images/process.png);
     background-repeat: no-repeat;
-    background-size: 950px;
+    background-size: 704px;
     display: flex;
     flex-direction: row;
-    background-position: center;
+    background-position: top 92px center;
 }
 
 .process-area .step{
@@ -26,17 +26,43 @@
     background: #fff;
     border: 1px solid #000;
     border-radius: 7em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
-
+.process-area .step img{ height: 50px;}
+.process-area .step .mini-cercle{
+    width: 25px;
+    height: 25px;
+    border: 6px solid #ccc;
+    border-radius: 3em;
+    margin-bottom: -12px;
+    position: relative;
+    bottom: -52px;
+}
 .process-area .step .describe {
-    padding: 1em;
+    padding: 1em 0em 0em;
 }
 
 .process-area .step h4 {
     padding: 0em;
     font-size: 1em;
     color: #fff;
+    font-weight: 100;
 }
 .process-area .step p {
     margin: 0;
+    font-size: 0.9em;
 }
+
+.process-area .step .orange{ background-color: #edb940; }
+.process-area .step .violet-light{ background-color: #a991e3; }
+.process-area .step .green-light{ background-color: #2cd79c; }
+.process-area .step .violet{ background-color: #3b3786; }
+
+.process-area .step .b-orange{ border-color: #edb940; }
+.process-area .step .b-violet-light{ border-color: #a991e3; }
+.process-area .step .b-green-light{ border-color: #2cd79c; }
+.process-area .step .b-violet{ border-color: #3b3786; }
