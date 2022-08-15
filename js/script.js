@@ -279,8 +279,15 @@ function startWow() {
               mobile:       true,       // trigger animations on mobile devices (default is true)
               live:         true,       // act on asynchronously loaded content (default is true)
               callback:     function(box) {
-                console.log(box)
+
+                if(box.id=="x"){
+                    
+                }
+                
+                console.log(box.innerHTML)
                 // the callback is fired every time an animation is started
+
+
                 // the argument that is passed in is the DOM node being animated
               },
               scrollContainer: null,    // optional scroll container selector, otherwise use window,
