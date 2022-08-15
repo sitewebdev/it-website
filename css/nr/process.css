@@ -21,8 +21,8 @@
 }
 
 .process-area .step .cercle{
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     background: #fff;
     border: 1px solid #000;
     border-radius: 7em;
@@ -38,7 +38,7 @@
     height: 25px;
     border: 6px solid #ccc;
     border-radius: 3em;
-    margin-bottom: -12px;
+    margin-bottom: 5px;
     position: relative;
     bottom: -52px;
 }
@@ -53,7 +53,7 @@
     font-weight: 100;
 }
 .process-area .step p {
-    margin: 0;
+    margin: 1em;
     font-size: 0.9em;
 }
 

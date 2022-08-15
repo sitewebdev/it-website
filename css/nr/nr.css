@@ -963,3 +963,13 @@
     flex-direction: column;
     justify-content: center;
   }
+
+#phone{
+    width: 97%;
+    margin: 5px;
+}
+
+.iti--allow-dropdown {
+    padding: 0.6em 0;
+}
+.iti__country-list{ color: #000;}

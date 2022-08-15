@@ -33,6 +33,22 @@ function closePostCandidate() {
 
   
 $(document).ready(function(){
+
+    try{
+        var input = document.getElementById("phone");
+        window.intlTelInput(input, {
+            // any initialisation options go here
+        });
+    }
+    catch(e){
+
+        console.log(e)
+    }
+
+    $('#sPrev').click(function() { console.log('hi') })
+    $('#sNext').click(function() { console.log('hi')})
+
+
     var owl = $('#owl-carousel-article');
     owl.owlCarousel(
         {
@@ -281,7 +297,7 @@ function startWow() {
               callback:     function(box) {
 
                 if(box.id=="x"){
-                    
+
                 }
                 
                 console.log(box.innerHTML)
