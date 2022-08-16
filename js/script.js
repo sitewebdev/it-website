@@ -45,8 +45,29 @@ $(document).ready(function(){
         console.log(e)
     }
 
-    $('#sPrev').click(function() { console.log('hi') })
-    $('#sNext').click(function() { console.log('hi')})
+    $('#sPrev').click(function() {
+        const items = document.getElementsByClassName('caption');
+        for( let i = 0; i<= items.length - 1; i++){
+            const item = items[i];
+            item.style.display = 'none';
+            setTimeout(()=>{
+                item.style.display = 'block';
+
+            },1000)
+        }
+
+    })
+    $('#sNext').click(function() { 
+        const items = document.getElementsByClassName('caption');
+        for( let i = 0; i<= items.length - 1; i++){
+            const item = items[i];
+            item.style.display = 'none';
+            setTimeout(()=>{
+                item.style.display = 'block';
+
+            },1000)
+        }
+    })
 
 
     var owl = $('#owl-carousel-article');
