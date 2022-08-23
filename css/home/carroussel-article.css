@@ -17,6 +17,7 @@
 
 .owl-carousel .item {
   text-align: center;
+  min-width: 100px;
 }
 
 .owl-item {

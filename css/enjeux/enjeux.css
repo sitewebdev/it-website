@@ -149,7 +149,7 @@
 
 .defis-content{
     max-width: 1167px;
-    padding: 3em 3em;
+    padding: 3em 3em 0.1em;
     height: 100%;
     margin: auto;
     text-align: center;
@@ -259,7 +259,7 @@
 */
 .enjeux-valeur{
     margin: auto;
-    padding: 4em 4em 0em;
+    padding: 3em 4em 0em;
     text-align: center;
 }
 
@@ -302,7 +302,7 @@
     height: 100%;
     width: 50%;
     text-align: left;
-    padding: 3em 2em 0em 0em;
+    padding: 0em 2em 0em 0em;
 
 }
 .valeur-subbloc-img{
@@ -348,14 +348,14 @@
     flex-direction: row-reverse;
 }
 
-.valeur-subbloc:nth-child(even) .valeur-subbloc-description { padding: 3em 2em 0em 3em; }
+.valeur-subbloc:nth-child(even) .valeur-subbloc-description { padding: 0em 2em 0em 3em; }
 
 .enjeux-testimonial {
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
     /*height: 884px;*/
-    padding: 5em;
+    padding: 4em 0em 0em;
 }
 
 .bloc-testimonial {
@@ -489,8 +489,8 @@
     background-image: url(../../images/bg-satisfaction.png);
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y:bottom;
-    padding: 4em 2em 4em;
+    background-position-y: bottom;
+    padding: 1em 2em 0em;
     background-color: #fafafa;
 }
 

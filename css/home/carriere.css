@@ -4,7 +4,7 @@
     background-size: 1366px;
     background-repeat: no-repeat;
     background-position-x: center;
-    padding: 5em 2em 0em;
+    padding: 3em 2em 0em;
 }
 
 .carriere-offres-image{
@@ -52,8 +52,8 @@
 
 .carriere-offres-image ul{ 
     display: block;
-    padding: 40px 0px 40px 23px;
-    list-style-image: url('../../images/carriere-puce.svg');
+    padding: 1em 0px 81px 23px;
+    list-style-image: url(../../images/carriere-puce.svg);
 }
 .carriere-offres-image ul li::marker{
     display: block;

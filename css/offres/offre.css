@@ -137,7 +137,7 @@
     display: flex;
     max-width: 1115px;
     margin: auto;
-    padding: 5em 1em;
+    padding: 3em 1em;
     justify-content: space-between;
 }
 
@@ -182,7 +182,7 @@
 
 
 .domaine-intervention{ padding: 3em;}
-.domaine-intervention svg{ height: 677px;}
+.domaine-intervention svg{ height: 550px;}
 
 
 

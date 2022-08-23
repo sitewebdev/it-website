@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/lib/animate.css"/>
     <script src="node_modules/wow.js/dist/wow.min.js"></script>
 
+    <link rel="stylesheet" href="./js/pyselect/css/intlTelInput.min.css"/>
+    <script src="js/pyselect/js/intlTelInput.min.js"></script>
+
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>
 
@@ -129,8 +132,8 @@
                             <input type="text"  placeholder="Exemple: Hamza@Company.com" />
                         </div>
                         <div class="input">
-                            <label>Votre Téléphone <span>*</span></label>
-                            <input type="text"  placeholder="Exemple: +0033 998 998  345" />
+                            <label>Votre Téléphone</label>
+                            <input id="phone" type="text"  placeholder="Exemple: +0033 998 998  345" />
                         </div>
                         
                     </div>
@@ -147,7 +150,12 @@
                     </div>
 
 
-                    
+                    <div class="line-form">
+                        <div class="input">
+                            <label>Pièce jointe</label>
+                            <input type="file"  placeholder="Fichier" />
+                        </div>
+                    </div>
 
                     <div class="line-form">
                         <div class="input-area">

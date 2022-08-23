@@ -275,6 +275,7 @@
   border: 3px solid #ffab09;
   border-radius: 37px;
   background: #fff;
+  opacity: 1;
 }
 .slideshow .arrows .prev:hover{
   background: #ffab09;
@@ -307,7 +308,7 @@
   border: 3px solid #ffab09;
   border-radius: 37px;
   background: #fff;
-  opacity: 0.9;
+  opacity: 1;
 }
 .slideshow .arrows .next:hover .svg {
   left: 10px;

@@ -125,7 +125,7 @@
 .sidenav-form .bloc-form-postuler .form-postuler {
   max-width: 1000px;
   margin: auto;
-  padding: 1em 0em 3em;
+  padding: 1em 0em 0em;
   display: flex;
   flex-direction: column;
   align-items: center;

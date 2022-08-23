@@ -1,6 +1,6 @@
 
 .qui-sommes-nous {
-    height: 622px;
+    height: 614px;
 }
 
 .qui-sommes-nous-background-photo {
@@ -169,7 +169,7 @@
 }
 
 .specialite{
-    padding: 4em;
+    padding: 1em 0em 0em;
     text-align: center;
     background-image: url(../../images/heolienne-bg-2.png);
     background-repeat: no-repeat;
@@ -270,7 +270,10 @@
     font-size: 1.5em;
     font-weight: bold;
 }
-
+.gallery-button:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
 .fly-card{}
 
 .fly-card:hover .fly-description {

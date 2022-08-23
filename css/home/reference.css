@@ -1,5 +1,5 @@
 .reference {
-    padding: 5em 2em 5em;
+    padding: 3em 2em 0em;
     /*height: 760px;*/
 }
 
@@ -47,7 +47,7 @@
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 

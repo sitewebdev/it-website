@@ -5,7 +5,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    padding: 2em 0em;
+    padding: 0em 0em;
     height: 100%;
     align-items: center;
 }
@@ -106,7 +106,7 @@
 .reason{
     max-width: 1295px;
     margin: auto;
-    padding: 5em 0em 2em 0em;
+    padding: 3em 0em 2em 0em;
     text-align: center;
 }
 
@@ -744,7 +744,7 @@
 .reason-gallery {
     width: auto;
     margin: auto;
-    padding: 5em 0em 2em 0em;
+    padding: 3em 0em 2em 0em;
     text-align: center;
 }
 
