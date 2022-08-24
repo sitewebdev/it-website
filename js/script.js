@@ -318,10 +318,14 @@ function startWow() {
               callback:     function(box) {
 
                 if(box.id=="x"){
-
+                    try{
+                        console.log(document.getElementById('xsatisfaction').contentWindow)
+                        document.getElementById('xsatisfaction').contentWindow.location.reload(true);
+                    }
+                    catch(e){
+                        console.log(e)
+                    }
                 }
-                
-                console.log(box.innerHTML)
                 // the callback is fired every time an animation is started
 
 
