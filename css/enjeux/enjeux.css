@@ -646,6 +646,12 @@
     .defis-content ul li a {
         padding: 0.5em 0em;
     }
+    .valeur-subbloc:nth-child(even){
+        flex-direction: column;
+    }
+    .valeur-subbloc:nth-child(even) .valeur-subbloc-description {
+        padding: 0em 2em 0em 0em;
+    }
 
     .enjeux-valeur {  padding: 2em 2em 0em; }
     .valeur-subbloc-description li {
