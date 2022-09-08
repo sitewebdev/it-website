@@ -238,8 +238,6 @@ catch(e){
     paint();
 */
 
-
-
 function openTab(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -260,6 +258,7 @@ function openTab(evt, cityName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "flex";
     document.getElementById(`${cityName}-x`).style.display = "block";
+    document.getElementById(`${cityName}-d`).style.display = "block";
     if(evt.currentTarget) evt.currentTarget.className += " active";
 }
 

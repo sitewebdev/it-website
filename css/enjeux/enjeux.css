@@ -4,6 +4,9 @@
 #metier-eau-dechet{ display: none;}
 #gestion-reseau-distribution{ display: none;}
 
+#metier-eau-dechet-d{ display: none;}
+#gestion-reseau-distribution-d{ display: none;}
+
 .enjeux-secteur{
     /*height: 400px;*/
     max-width: 1069px;
