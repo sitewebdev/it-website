@@ -185,7 +185,6 @@ $(document).ready(function(){
     }
     
 
-    loaTestimonial();
     loadDevTabContent();
 
 
@@ -259,7 +258,26 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "flex";
     document.getElementById(`${cityName}-x`).style.display = "block";
     document.getElementById(`${cityName}-d`).style.display = "block";
+    document.getElementById(`${cityName}-v`).style.display = "block";
+    document.getElementById(`${cityName}-t`).style.display = "block";
     if(evt.currentTarget) evt.currentTarget.className += " active";
+
+console.log(cityName)
+    //Active testimonial
+    switch(cityName){
+        case 'forunisseur-energie':{
+            openTestimonial(evt,'edf-t');
+            break;
+        }
+        case 'gestion-reseau-distribution':{
+            openTestimonial(evt,'');
+            break;
+        }
+        case 'metier-eau-dechet':{
+            openTestimonial(evt,'suez-t');
+            break;
+        }
+    }
 }
 
 function loadDevTabContent() {

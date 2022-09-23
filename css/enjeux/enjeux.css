@@ -7,6 +7,15 @@
 #metier-eau-dechet-d{ display: none;}
 #gestion-reseau-distribution-d{ display: none;}
 
+#metier-eau-dechet-t{ display: none;}
+#gestion-reseau-distribution-t{ display: none;}
+
+#metier-eau-dechet-v{ display: none;}
+#gestion-reseau-distribution-v{ display: none;}
+
+
+#radeej-t{ display: none;}
+
 .enjeux-secteur{
     /*height: 400px;*/
     max-width: 1069px;
@@ -385,23 +394,30 @@
     padding: 0px;
     width: 220px;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
 }
 
 .testimonial-resume ul li{
+    margin: 2px;
 }
 .testimonial-resume ul li a{
-    display: block;
+    display: flex;
     border-radius: 10px;
     border: 3px solid #0000;
     height: 69px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: #fff;
 }
 
 .testimonial-resume ul li a:focus {
     outline: none;
   }
 .testimonial-resume ul li a img{
-    width: 63px;
+    width: 52px;
+    height: 48px;
 }
 
 .testimonial-resume ul li a img:focus {
@@ -434,13 +450,14 @@
     font-weight: bold;
     /* padding: 4px; */
     font-weight: bold;
+    
 }
 
 .testimonial-resume p {
     color: #fff;
     line-height: 200%;
     padding: 0.9em 0.5em;
-    height: 405px;
+    height: 396px;
     overflow: auto;
 }
 
@@ -600,6 +617,31 @@
     color: #494949;
     border-radius: 0!important;
 }
+
+
+
+ul.details {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    height: 396px;
+}
+
+ul.details li {
+    padding: 0.3em;
+
+} 
+
+ul.details li::marker {
+    color: #fff;
+    list-style-type: circle;
+    font-size: 20px;
+}
+
+ul.details li p{
+    height: auto;
+    margin: 0;
+} 
 
 @media only screen and (max-width: 900px)  {
 
