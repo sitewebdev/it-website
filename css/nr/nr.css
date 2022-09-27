@@ -372,6 +372,7 @@
     margin-top: 1em;
     vertical-align: middle;
     width: 100%;
+    border-radius: 0.5em;
   }
   @media screen and (max-width: 800px) {
     .g-column {
