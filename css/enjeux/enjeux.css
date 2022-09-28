@@ -73,8 +73,9 @@
 }
 
 .enjeux-secteur ul li a{
+    
     font-size: 1.1em;
-    display: block;
+    display: flex;
     text-decoration: none;
     height: 100%;
     padding: 1.5em 3em;
@@ -83,6 +84,9 @@
     background: #e6e6e6;
     border-radius: 10px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .enjeux-secteur ul li a span{
