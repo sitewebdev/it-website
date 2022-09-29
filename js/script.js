@@ -250,6 +250,7 @@ function openTab(evt, cityName) {
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className="tablinks"
       tablinks[i].className = tablinks[i].className.replace("active", "");
       console.log('hi')
     }
@@ -262,22 +263,28 @@ function openTab(evt, cityName) {
     document.getElementById(`${cityName}-t`).style.display = "block";
     if(evt.currentTarget) evt.currentTarget.className += " active";
 
-console.log(cityName)
-    //Active testimonial
-    switch(cityName){
-        case 'forunisseur-energie':{
-            openTestimonial(evt,'edf-t');
-            break;
+    try{
+        //Active testimonial
+        switch(cityName){
+            case 'forunisseur-energie':{
+                openTestimonial(evt,'edf-t');
+                break;
+            }
+            case 'gestion-reseau-distribution':{
+                openTestimonial(evt,'');
+                break;
+            }
+            case 'metier-eau-dechet':{
+                openTestimonial(evt,'suez-t');
+                break;
+            }
         }
-        case 'gestion-reseau-distribution':{
-            openTestimonial(evt,'');
-            break;
-        }
-        case 'metier-eau-dechet':{
-            openTestimonial(evt,'suez-t');
-            break;
-        }
+
     }
+    catch(e){
+        console.log(e)
+    }
+    
 }
 
 function loadDevTabContent() {
@@ -384,7 +391,6 @@ function openTestimonial(evt, cityName) {
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "flex";
-    console.log(cityName)
     if(evt.currentTarget) evt.currentTarget.className += " active";
 }
 

@@ -198,6 +198,7 @@
     align-items: flex-start;
     padding: 1.5em;
     justify-content: flex-end;
+    cursor: default!important;
 }
 
 .specialite-grid .margin-left { margin-left: 10px!important;}
