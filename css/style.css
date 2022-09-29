@@ -64,7 +64,7 @@ body {
 
 .bloc-articles-right h4 {
     margin: 0em 0em;
-    padding: 0.3em;
+    padding: 0.3em 0;
     color: #3d348b;
     font-size: 1.2em;
     font-weight: bold;
@@ -662,6 +662,7 @@ body {
     font-weight: bold;
     border: 2px solid #ffab09;
     height: 36px;
+    margin: 0px 10px;
 
 }
 

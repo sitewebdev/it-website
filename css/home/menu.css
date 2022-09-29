@@ -47,7 +47,8 @@ nav ul {
     height: 40px;
 }
 nav ul li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 nav ul li a {
     display: block;
