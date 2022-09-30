@@ -655,7 +655,7 @@ body {
 .contact-nous {
     background-color: #ffab09;
     color: white;
-    padding: 0.5em 1em;
+    padding: 0em 1em;
     text-decoration: none;
     border-radius: 5px;
     font-size: 0.9em;
@@ -663,7 +663,8 @@ body {
     border: 2px solid #ffab09;
     height: 36px;
     margin: 0px 10px;
-
+    display: flex;
+    align-items: center;
 }
 
 .contact-nous:hover {
@@ -685,6 +686,10 @@ body {
         padding: 1.4em 1em;
         text-align: center;
         cursor: pointer;
+    }
+
+    .contact-nous {
+    margin: 0;
     }
 
     .bloc-articles-right {

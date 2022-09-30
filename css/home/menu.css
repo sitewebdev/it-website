@@ -142,6 +142,6 @@ nav .social-network a{
         height: 36px;
         margin: 0.7em 0em 0;
     }
-    .menu-opened{ height: 270px !important; transition:height 0.3s ease-out;}
+    .menu-opened{ height: 320px !important; transition:height 0.3s ease-out;}
     .menu-closed{ height: 0 !important; transition: 0.3s;}
 }
