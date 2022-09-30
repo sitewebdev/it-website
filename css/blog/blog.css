@@ -134,7 +134,10 @@
 }
 .card_video .date{
     font-size: 0.75em;
+    display: flex;
+    align-items: center;
 }
+.card_video .date span{ padding:0 10px; }
 .card_video h2{
     margin: 0.4em 0em;
     font-size: 1.3em;

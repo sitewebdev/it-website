@@ -36,7 +36,7 @@
     color: #fff;
     font-size: 1.9em;
     font-weight: bold;
-    padding: 4px;
+    padding: 4px 0;
     font-weight: bold;
     max-width: 85%;
 }
@@ -144,7 +144,7 @@
 .offre-valeur-vignette{
     display: block;
     width: 255px;
-    height: 280px;
+    height: 310px;
     background: #fff;
     border-radius: 10px;
     text-align: center;
@@ -223,7 +223,7 @@
 
 .expertise .bloc-image .bloc h4 {
     margin: 0.5em 0em;
-    padding: 0.3em;
+    padding: 0.3em 0;
     color: #fff;
     font-size: 2em;
     font-weight: bold;  

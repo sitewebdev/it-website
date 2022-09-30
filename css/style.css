@@ -577,7 +577,7 @@ body {
 
 .contact_news_letter .bloc-news-letter h4 {
     margin: 0em 0em;
-    padding: 0.3em;
+    padding: 0.3em 0;
     color: #fff;
     font-size: 1.8em;
     font-weight: bold;
@@ -619,7 +619,7 @@ body {
 
 .contact-adresse h4{
     margin: 0em 0em;
-    padding: 0.3em;
+    padding: 0.3em 0;
     color: #42347f;
     font-size: 1.2em;
     font-weight: bold;
@@ -629,7 +629,7 @@ body {
     color: #fff;
     font-size: 2.5em;
     font-weight: bold;
-    padding: 4px;
+    padding: 4px 0;
 }
 
 

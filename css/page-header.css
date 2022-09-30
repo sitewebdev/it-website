@@ -137,7 +137,9 @@
     font-style: italic;
 }
 
-.header-title-bloc .top-side .body-side .bloc-title p { color: #fff; }
+.header-title-bloc .top-side .body-side .bloc-title p {     
+    color: #fff;
+    padding: 0 4px;}
 
 
 /* Horizontal */

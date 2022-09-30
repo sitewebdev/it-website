@@ -100,6 +100,7 @@
     color: #6b74e3;
     font-weight: bold;
     margin: 6px 0px;
+    padding: 0em 0.1em;
 }
 
 .footer-adresse-details-content{
@@ -125,7 +126,7 @@
 
 .top-footer-bloc-list h4 {
     margin: 0em 0em;
-    padding: 0.3em;
+    padding: 0.3em 0.2em;
     color: #3d348b;
     font-size: 1.7em;
     font-weight: bold;
