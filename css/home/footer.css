@@ -34,34 +34,34 @@
 }
 
 #linkedInLogo {
-    background-image: url(../../images/linkedin.png);
-    background-repeat: no-repeat;
+    /*background-image: url(../../images/linkedin.png);
+    background-repeat: no-repeat;*/
     display: block;
     margin: 30px 15px 0px 0px;
     float: left;
-    text-indent: -9999px;
+    
     width: 41px;
     height: 41px;
   }
 
   #youtubeLogo {
-    background-image: url(../../images/youtube.png);
-    background-repeat: no-repeat;
+    /*background-image: url(../../images/youtube.png);
+    background-repeat: no-repeat;*/
     float: left;
     display: block;
     margin: 30px 15px 0px 0px;
-    text-indent: -9999px;
+    
     width: 41px;
     height: 41px;
   }
 
   #instaLogo {
-    background-image: url(../../images/instagram.svg);
-    background-repeat: no-repeat;
+    /*background-image: url(../../images/instagram.svg);
+    background-repeat: no-repeat;*/
     float: left;
     display: block;
     margin: 30px 15px 0px 0px;
-    text-indent: -9999px;
+    
     width: 41px;
     height: 41px;
   }

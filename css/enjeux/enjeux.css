@@ -593,6 +593,8 @@
 
 .send-msg img{
     height: 28px;
+    margin-top: 4px;
+    margin-right: 3px;
 }
 
 .sticky-enjeux-menu{

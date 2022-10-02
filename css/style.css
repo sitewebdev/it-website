@@ -606,6 +606,7 @@ body {
 .contact_news_letter  .bloc-news-right {
     float: none;
     margin: 1.5em 0em;
+    width: 100%;
 }
 .contact-adresse{}
 

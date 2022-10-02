@@ -679,6 +679,7 @@
 }
 
 .input-area label{ margin: 0.5em; }
+.input-area label span{ color: red;}
 
 .line-form-button {
     display: flex;

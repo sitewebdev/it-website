@@ -32,7 +32,8 @@
     justify-content: center;
     align-items: center;
 }
-.process-area .step img{ height: 50px;}
+.process-area .step img{     height: 50px;
+    margin-top: 26px;}
 .process-area .step .mini-cercle{
     width: 25px;
     height: 25px;
@@ -40,7 +41,7 @@
     border-radius: 3em;
     margin-bottom: 5px;
     position: relative;
-    bottom: -52px;
+    bottom: -37px;
 }
 .process-area .step .describe {
     padding: 1em 0em 0em;
