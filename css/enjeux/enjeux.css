@@ -315,7 +315,7 @@
 .valeur-subbloc{
     display: flex;
     flex-direction: row;
-    margin: 1em 0em 6.6em;
+    margin: 1em 0em 3.5em;
 }
 
 .valeur-subbloc-description{
@@ -498,7 +498,7 @@
 }
 
 .testimonial-biographie .presentation h3 {
-    margin: 0.4em 0em;
+    margin: 0.4em -0.1em;
     color: #fbb03b;
     font-size: 2.1em;
     font-weight: bold;
