@@ -750,7 +750,7 @@ body {
 }
 
 .discuss-project .bloc-text{
-    max-width: 1069px;
+    max-width: 850px;
     margin: auto;
     display: flex;
     justify-content: space-between;
