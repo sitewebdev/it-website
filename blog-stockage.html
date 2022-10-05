@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stockage des données</title>
+    <link href="css/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="js/OwlCarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="js/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/lib/animate.css"/>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="logo-menu">
+                <div class="bloc-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="waves" height="160"></a>
+                    <a  onclick="openMenu()" class="menu-button">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                width="24.75px" height="24.75px" viewBox="0 0 24.75 24.75" style="enable-background:new 0 0 24.75 24.75;" xml:space="preserve"
+                        >
+                                <g>
+                                    <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2
+                                        c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2
+                                        c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z" style="fill: #fff;"/>
+                                </g>
+                                
+                        </svg>
+                    </a> 
+                </div>
+                <div class="bloc-menu">
+                    <nav class="stroke">
+                        <ul>
+                            <li><a href="offres.html">Nos offres</a></li>
+                            <li><a href="enjeux.html">Les enjeux du secteur</a></li>
+                            <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                            <li><a href="nous-rejoindre.html">Rejoindre l'ITeam</a></li>
+                            <li><a href="blog.html" class="active">Blog</a></li>
+                            <a class="contact-nous" href="contact.html">Discutons de vos projets</a>
+
+                                <a class="sc-nw" href="https://www.linkedin.com/company/itnewvision/" target="_blank">
+                                    <svg height="25" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#174a79h1la)" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M9.075 0h22.036a9.102 9.102 0 0 1 9.075 9.075v21.853A9.101 9.101 0 0 1 31.111 40H9.075A9.101 9.101 0 0 1 0 30.928V9.075A9.101 9.101 0 0 1 9.075 0z"
+                                                fill="#0A66C2" />
+                                            <path
+                                                d="M16.087 15.505h5.079v2.616h.072c.71-1.269 2.436-2.616 5.017-2.616 5.36 0 6.35 3.336 6.35 7.675v9.177h-5.294v-8.156c0-1.868-.04-4.271-2.754-4.271s-3.178 2.03-3.178 4.137v8.306h-5.292V15.506zm-3.005-5.109a2.754 2.754 0 1 1-5.509 0 2.754 2.754 0 0 1 5.508 0zM7.58 15.505h5.5v16.852h-5.5V15.505z"
+                                                fill="#fff" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="174a79h1la">
+                                                <path fill="#fff" d="M0 0h40.186v40H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a><a class="sc-nw" href="https://www.youtube.com/channel/UCK_QogosW_hCdKvkzFU1txg"  target="_blank">
+                                    <svg height="25" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.203 0h23.594A8.226 8.226 0 0 1 40 8.203v23.594A8.226 8.226 0 0 1 31.797 40H8.203A8.226 8.226 0 0 1 0 31.797V8.203A8.226 8.226 0 0 1 8.203 0z"
+                                            fill="red" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M31.49 15.179s-.227-1.628-.933-2.327a3.346 3.346 0 0 0-2.35-.977c-3.282-.24-8.207-.24-8.207-.24s-4.925 0-8.206.24a3.356 3.356 0 0 0-2.35.977c-.707.71-.932 2.327-.932 2.327a35.51 35.51 0 0 0-.244 3.799v1.777c.01 1.27.089 2.54.235 3.802 0 0 .23 1.628.93 2.328.893.934 2.064.901 2.605 1.002 1.878.18 7.978.235 7.978.235s4.932 0 8.213-.244a3.36 3.36 0 0 0 2.35-.977c.707-.713.935-2.33.935-2.33a35.99 35.99 0 0 0 .23-3.8v-1.793a36.075 36.075 0 0 0-.237-3.799h-.016z"
+                                            fill="#fff" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.568 22.913v-6.591l6.338 3.307-6.338 3.284z" fill="red" />
+                                    </svg>
+                                </a><a class="sc-nw" href="https://instagram.com/__itnv__?igshid=ZDU1ZDhlY2E="  target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="2.842170943040401e-14 0 3364.7 3364.7" height="25"><defs><radialGradient id="a" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="b" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2 3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5s-116.4-140.1-153.5-235.9c-28.2-72.3-61.5-181-70.6-381.1-10-216.3-12-281.2-12-829.2s2.2-612.8 11.9-829.3C21 653.1 54.5 544.6 82.5 472.1 119.8 376.3 164.3 308 236 236c71.8-71.8 140.1-116.4 236-153.5C544.3 54.3 653 21 853.1 11.9 1069.5 2 1134.5 0 1682.3 0c548 0 612.8 2.2 829.3 11.9 200.1 9.1 308.6 42.6 381.1 70.6 95.8 37.1 164.1 81.7 236 153.5s116.2 140.2 153.5 236c28.2 72.3 61.5 181 70.6 381.1 9.9 216.5 11.9 281.3 11.9 829.3 0 547.8-2 612.8-11.9 829.3-9.1 200.1-42.6 308.8-70.6 381.1-37.3 95.8-81.7 164.1-153.5 235.9s-140.2 116.2-236 153.5c-72.3 28.2-181 61.5-381.1 70.6-216.3 9.9-281.3 11.9-829.3 11.9-547.8 0-612.8-1.9-829.1-11.9" fill="url(#a)"/><path d="M853.2 3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5s-116.4-140.1-153.5-235.9c-28.2-72.3-61.5-181-70.6-381.1-10-216.3-12-281.2-12-829.2s2.2-612.8 11.9-829.3C21 653.1 54.5 544.6 82.5 472.1 119.8 376.3 164.3 308 236 236c71.8-71.8 140.1-116.4 236-153.5C544.3 54.3 653 21 853.1 11.9 1069.5 2 1134.5 0 1682.3 0c548 0 612.8 2.2 829.3 11.9 200.1 9.1 308.6 42.6 381.1 70.6 95.8 37.1 164.1 81.7 236 153.5s116.2 140.2 153.5 236c28.2 72.3 61.5 181 70.6 381.1 9.9 216.5 11.9 281.3 11.9 829.3 0 547.8-2 612.8-11.9 829.3-9.1 200.1-42.6 308.8-70.6 381.1-37.3 95.8-81.7 164.1-153.5 235.9s-140.2 116.2-236 153.5c-72.3 28.2-181 61.5-381.1 70.6-216.3 9.9-281.3 11.9-829.3 11.9-547.8 0-612.8-1.9-829.1-11.9" fill="url(#b)"/><path d="M1269.25 1689.52c0-230.11 186.49-416.7 416.6-416.7s416.7 186.59 416.7 416.7-186.59 416.7-416.7 416.7-416.6-186.59-416.6-416.7m-225.26 0c0 354.5 287.36 641.86 641.86 641.86s641.86-287.36 641.86-641.86-287.36-641.86-641.86-641.86S1044 1335 1044 1689.52m1159.13-667.31a150 150 0 1 0 150.06-149.94h-.06a150.07 150.07 0 0 0-150 149.94M1180.85 2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28 7.27-505.15c5.55-121.87 26-188 43-232.13 22.72-58.36 49.78-100 93.5-143.78s85.32-70.88 143.78-93.5c44-17.16 110.26-37.46 232.13-43 131.76-6.06 171.34-7.27 505-7.27S2059.13 666 2191 672c121.87 5.55 188 26 232.13 43 58.36 22.62 100 49.78 143.78 93.5s70.78 85.42 93.5 143.78c17.16 44 37.46 110.26 43 232.13 6.06 131.87 7.27 171.34 7.27 505.15s-1.21 373.28-7.27 505.15c-5.55 121.87-25.95 188.11-43 232.13-22.72 58.36-49.78 100-93.5 143.68s-85.42 70.78-143.78 93.5c-44 17.16-110.26 37.46-232.13 43-131.76 6.06-171.34 7.27-505.15 7.27s-373.28-1.21-505-7.27M1170.5 447.09c-133.07 6.06-224 27.16-303.41 58.06-82.19 31.91-151.86 74.72-221.43 144.18S533.39 788.47 501.48 870.76c-30.9 79.46-52 170.34-58.06 303.41-6.16 133.28-7.57 175.89-7.57 515.35s1.41 382.07 7.57 515.35c6.06 133.08 27.16 223.95 58.06 303.41 31.91 82.19 74.62 152 144.18 221.43s139.14 112.18 221.43 144.18c79.56 30.9 170.34 52 303.41 58.06 133.35 6.06 175.89 7.57 515.35 7.57s382.07-1.41 515.35-7.57c133.08-6.06 223.95-27.16 303.41-58.06 82.19-32 151.86-74.72 221.43-144.18s112.18-139.24 144.18-221.43c30.9-79.46 52.1-170.34 58.06-303.41 6.06-133.38 7.47-175.89 7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43s-139.24-112.27-221.33-144.18c-79.56-30.9-170.44-52.1-303.41-58.06-133.3-6.09-175.89-7.57-515.3-7.57s-382.1 1.41-515.45 7.57" fill="#fff"/></svg>
+                                </a>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header-title-bloc">
+            <div class="st-arrondie"></div>
+            <div class="top-side top-side-bg-orange-vairant">
+                <div class="top-side-bg top-side-bg-position-left top-side-bg-heolienne-white-reverse">
+                    <div class="body-vertical-align">
+                        
+                        <div class="bloc-title-details bloc-title-top">
+                            
+                        </div>
+                        <div class="bloc-image">
+                            <img src="images/actu/stockage-donnees.jpg" alt="waves">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <h6 class="blue">ARTICLE</h6>
+            <h3>Stockage des données</h3>
+            <div class="content">
+                <p>
+                    Nous avons constaté dans notre précédent article l’importance de la
+                    collecte des données de consommation énergétiques, à la fois atouts
+                    déterminants pour les fournisseurs d’énergie, moyens pour les usagers
+                    d’agir sur leur consommation et outils indispensables à la transition
+                    énergétique. Mais pour atteindre leurs objectifs, les données doivent être
+                    traitées avec le plus grand soin à chaque étape de leur cycle de vie :
+                    chacune doit faire l’objet de réflexions préalables afin de répondre aux
+                    objectifs à la fois stratégiques, techniques et réglementaires fixés par
+                    l’entreprise.
+                </p>
+                <p>
+                    Les données, dont la quantité collectée ne cesse de croître, sont de plus
+                    en plus encadrées par les instances en charge de leur protection ; il
+                    devient donc primordial d’assurer leur sécurité.
+                </p>
+                <p>
+                    Lorsqu'une entreprise stocke ses données, une stratégie vigoureuse de
+                    sauvegarde et de prévention des pertes doit être mise en place pour en
+                    garantir la sécurité tout au long de leur cycle de vie.
+                </p>
+                <p>
+                    <strong>Le stockage des données</strong>
+                </p>
+                <p>
+                    Les données fraîchement collectées sont stockées et il est primordial pour
+                    ce faire d’évoluer dans un environnement le plus sécurisé et le plus
+                    protégé possible. Un process de restauration robuste doit voir le jour afin
+                    de s’assurer la bonne conservation des datas dans le cycle. A ce stade, les
+                    données sont à l’état « brut » ; il conviendra d’aborder le choix des
+                    données à stocker à des fins d’exploitation à l’issue de la phase de
+                    traitement et la règlementation en matière de durée de stockage lors de la
+                    phase d’archivage.
+                </p>
+                <p>
+                    <strong>Une quantité toujours plus grande de données à stocker :</strong>
+                </p>
+                <p>
+                    Pour les particuliers et petits professionnels, outre les données de
+                consommation journalières collectées par défaut, des    <strong>données de consommation fines</strong> peuvent elles aussi être
+                    collectées par le gestionnaire du réseau de distribution : horaires et/ou à
+                    la demi-heure, les plus fines d’entre elles passeront bientôt à la maille
+                    15 minutes. Cela signifie donc deux fois plus de données à stocker…et il
+                    est probable que la tendance se poursuive. Ces données de consommation
+                    fines ne sont collectées qu’avec l’accord de l’usager ou, de manière
+                    ponctuelle, lorsqu’elles sont nécessaires à l’accomplissement des missions
+                    de service public assignées au gestionnaire du réseau par le code de
+                    l’énergie (par exemple, pour l’entretien et la maintenance du réseau ou
+                    l’intégration des énergies renouvelables).
+                </p>
+                <p>
+                    Elles apportent les informations nécessaires à l’optimisation de la
+                    consommation énergétique : grâce à elle, les fournisseurs d’électricité
+                    peuvent recommander la puissance à souscrire la plus adaptée aux
+                    consommations, analyser la part de la consommation réalisée pendant les
+                    Heures Creuses, détecter des consommations anormales. La transmission des
+                    données de consommation détaillée à des sociétés tierces, notamment à des
+                    fins commerciales, ne peut intervenir qu’avec l’accord de l’abonné.
+                </p>
+                <p>
+                S’ajoutent à ces données<strong>celles des ménages en situation de précarité énergétique</strong>,    <strong>collectées en temps réel</strong> à des fins de régulation et
+                    d’optimisation de leur consommation.
+                </p>
+                <p>
+                    Initialement prévu avant le 1er octobre, les fournisseurs d’électricité et
+                    de gaz naturel devront finalement proposer fin 2022, une offre de
+                    transmission des données qui permettra un accès via :
+                </p>
+                <p>
+                    · Une application digitale,
+                </p>
+                <p>
+                    · Une interface de programmation d’application
+                </p>
+                <p>
+                    · Ou un service web.
+                </p>
+                <p>
+                Nous pouvons également prendre en compte les    <strong>informations collectées par les fournisseurs d’énergie </strong>
+                    dans le cadre de souscriptions à des nouveaux contrats ou de sondages à
+                    visées commerciales.
+                </p>
+                <p>
+                Enfin, aux données des particuliers et petits professionnels, s’ajoutent    <strong>celles des entreprises </strong>: actuellement à la maille 10
+                    minutes, suivant la même tendance que les données de consommation Linky,
+                    elles descendront bientôt à la maille 5 minutes, augmentant ainsi encore la
+                    quantité collectée.
+                </p>
+                <p>
+                    Nous connaissons aujourd’hui la pollution engendrée par les data centers :
+                    leur consommation d’énergie au niveau mondial dépasse déjà̀ celle de la
+                    France entière, et devrait quadrupler d’ici 2030. Selon l’étude de
+                    GreenIT.fr de 2020, les centres informatiques sont responsables de 4 à 15 %
+                    des impacts du numérique français. Il est donc primordial de rationaliser
+                    la collecte et le stockage des données, de les réserver à des fins utiles.
+                    A cette préoccupation environnementale s’ajoutent les normes RGPD,
+                    stipulant, notamment dans les articles 5 et 6, que « l’ensemble des
+                    Traitements de Données à caractère personnel engage les fournisseurs
+                    d’énergie à collecter des données pour des finalités déterminées,
+                    explicites et légitimes ». A l’issue du traitement des données, ces
+                    éléments devront guider le choix des entreprises.
+                </p>
+                <p>
+                    <strong>Un environnement sécurisé : </strong>
+                </p>
+                <p>
+                    Par ailleurs, les données doivent impérativement être sauvegardées dans un
+                    environnement sécurisé et non accessible depuis l’extérieur de
+                    l’entreprise. Les architectes et urbanistes doivent donc mettre en place
+                    des solutions techniques adaptées :
+                </p>
+                <p>
+                    - Environnement en DMZ
+                </p>
+                <p>
+                    - Webservices cryptés avec utilisateurs et mot de passes spécifiques
+                </p>
+                <p>
+                    - Ouverture et configuration des canaux de communications qui sont
+                    surveillés en permanence
+                </p>
+                <p>
+                    - Outils de supervision de l’ensemble de l’infrastructure
+                </p>
+                <p>
+                    - Sondes de tracking des échanges et états des services.
+                </p>
+                <p>
+                    <strong>Solutions de stockage :</strong>
+                </p>
+                <p>
+                    À l’heure actuelle, les possibilités de stockage sont nombreuses et il faut
+                    tenir compte des problématiques et besoins pour choisir la solution la plus
+                    adaptée à l’entreprise. Serveur local ? Cloud ? NAS ? Chaque support offre
+                    des avantages :
+                </p>
+                <p>
+                    <strong>Stockage local/serveur :</strong>
+                </p>
+                <p>
+                    Le serveur est connecté au réseau local de l’entreprise, qui doit
+                    fonctionner en permanence et qui est généralement construit autour de
+                    matériels redondants et fiables pour assurer un service 24 x 7. Il permet
+                    de partager des fichiers ou des bases de données. Cette solution implique
+                    d'investir dans l'achat de serveurs physiques et dans l'installation
+                    d’équipements informatiques adéquats. Leur durée de vie étant limitée, il
+                    faut aussi les renouveler et faire des sauvegardes régulières ; des
+                    dépenses de maintenance d'équipements sont également à prévoir. La capacité
+                    de stockage est limitée, cette solution concerne donc des entreprises de
+                    petites tailles, comme des ELD ayant une partie GRD et un moindre volume de
+                    données à stocker. L'utilisation des supports de stockage implique enfin
+                    une exposition importante à des risques de piratage, pannes matérielles
+                    (problème d'alimentation du serveur, défaillance du processeur…) ou
+                    sinistres (incendies…), pouvant entraîner la perte ou la détérioration des
+                    données.
+                </p>
+                <p>
+                    <strong>Le serveur NAS</strong>
+                    (Network Attached Store) :
+                </p>
+                <p>
+                    Il permet de sauvegarder les fichiers via un réseau local appelé LAN. Son
+                    avantage principal est qu’il centralise toutes les données d’une entreprise
+                    sur son système et facilite le partage de fichiers enregistrés. Les données
+                    ne sont bien sûr accessibles qu’aux utilisateurs disposant des
+                    autorisations et mots de passe requis. Le serveur NAS ne présente pas de
+                    risque de saturation de stockage, il est flexible et évolutif. Il est
+                    facile d’augmenter sa capacité de stockage en ajoutant des disques durs
+                    supplémentaires.
+                </p>
+                <p>
+                    <strong>Le cloud</strong>
+                    assure aux entreprises la sécurité, l'accessibilité à leurs données et
+                    garantit une capacité de stockage quasi-illimitée. Pour tirer le meilleur
+                    parti d'une solution de stockage dans le cloud, il faut choisir un
+                    fournisseur judicieusement, savoir quel type de données il est prévu de
+                    stocker, à quelle fréquence on doit y accéder et suivre les meilleures
+                    pratiques de sécurité répertoriées. Voici les cinq principaux fournisseurs
+                    de stockage cloud :
+                </p>
+                <p>
+                    · Stockage cloud Amazon Web Services (S3)
+                </p>
+                <p>
+                    Amazon Web Services (AWS) S3 stocke et protège les données pour un large
+                    éventail de cas d'usage, avec une grande facilité d'utilisation, pour les
+                    clients de toutes tailles. Amazon S3 est conçu pour prémunir de toute perte
+                    de données. Des tests d'intégrité sont régulièrement effectués. Amazon Web
+                    Services est l'un des pionniers du stockage de données dans le cloud et une
+                    référence du secteur.
+                </p>
+                <p>
+                    · Stockage Azure Cloud
+                </p>
+                <p>
+                    Azure de Microsoft est massivement évolutif et offre un stockage sécurisé
+                    conçu pour les données structurées et non structurées. Il est réputé pour
+                    ses types de stockage Blob flexibles. Azure offre également la possibilité
+                    d'un partage de fichiers sécurisé et puissant pour les charges de travail
+                    importantes, ainsi que des outils de data warehousing faciles à utiliser.
+                    Azure est très utile pour capturer des datasets très volumineux et sa
+                    conception le rend supérieur à toute autre plateforme pour la protection
+                    des données.
+                </p>
+                <p>
+                    · Google Cloud
+                </p>
+                <p>
+                    Google Cloud est idéal pour les développeurs et les entreprises. Il offre
+                    performances, durabilité et fiabilité pour un large éventail de besoins de
+                    stockage d'objets unifiés. Google Cloud s'intègre également bien aux autres
+                    produits Google. Les quatre classes de stockage de la plateforme permettent
+                    d'optimiser les prix et les performances. En outre, les utilisateurs
+                    bénéficient d'un accès instantané aux données de toutes les classes et ont
+                    l'assurance que les données de l'entreprise ne seront jamais perdues. En
+                    revanche, l'interface utilisateur peut être déroutante à la navigation.
+                </p>
+                <ul>
+                    <li>
+                        Snowflake
+                    </li>
+                </ul>
+                <p>
+                    Snowflake est une solution de data warehousing attrayante à un tarif
+                    raisonnable. Elle est réputée pour sa vitesse et son architecture
+                    multi-clusters. Snowflake est compatible avec de nombreux formats de
+                    données connus, tels qu'Avro, JSON, Parquet, XML et ORC. L'architecture de
+                    Snowflake est conçue pour tirer parti des avantages du cloud : elle utilise
+                    le langage de requête SQL standard, tout comme la plupart des entreprises,
+                    de sorte qu'il n'est pas nécessaire de former à nouveau les équipes. La
+                    navigation est aisée. Lorsque la demande est élevée, l'évolutivité
+                    instantanée des data warehouses parvient à contourner les goulets
+                    d'étranglement des informations. En revanche, Snowflake n'est pas une
+                    solution que vous pouvez exécuter dans votre propre data center ou dans un
+                    cloud privé virtuel (VPC).
+                </p>
+                <ul>
+                    <li>
+                        Cloudera
+                    </li>
+                </ul>
+                <p>
+                    Cloudera est une plateforme de gestion de stockage Hadoop très stable et
+                    polyvalente. Elle est conçue pour combiner en mode natif le stockage, le
+                    traitement et l'exploration. Ses capacités analytiques basées sur Hadoop
+                    vous permettent également d'exploiter pleinement vos données. Cloudera est
+                    facile à déployer, conviviale et idéale pour gérer et analyser de grandes
+                    quantités de données analytiques. Malheureusement, l'utilisation de
+                    certaines des fonctionnalités les plus avancées de Cloudera à pleine
+                    capacité requiert une expérience approfondie de gestion des données. En
+                    outre, elle présente également des performances de plateforme plus lentes
+                    que celles de ses concurrents.
+                </p>
+                <p>
+                    <strong>Sauvegarde et continuité d’activité</strong>
+                </p>
+                <p>
+                    Il est impératif d’effectuer des sauvegardes régulières pour limiter
+                    l’impact d’une éventuelle disparition des données. Des copies de sauvegarde
+                    doivent être réalisées et testées régulièrement. Un plan de continuité ou
+                    de reprise d’activité (PRA) anticipant les éventuels incidents, comme une
+                    panne matérielle, doit être préparé et joué régulièrement pour en valider
+                    l’exhaustivité.
+                </p>
+                <p>
+                    · Quelques bonnes pratiques en matière de sauvegarde :
+                </p>
+                <ul type="disc">
+                    <li>
+                        Prévoir des sauvegardes incrémentales quotidiennes et des sauvegardes
+                        complètes à intervalles réguliers.
+                    </li>
+                    <li>
+                        Prévoir le réimport des données à intervalle régulier pour confirmer
+                        l’exhaustivité des sauvegardes incrémentales et complètes.
+                    </li>
+                    <li>
+                        Stocker les sauvegardes sur un site extérieur, si possible dans des
+                        coffres ignifugés et étanches.
+                    </li>
+                    <li>
+                        Protéger les données sauvegardées au même niveau de sécurité que celles
+                        stockées sur les serveurs d’exploitation. Par exemple en chiffrant les
+                        sauvegardes, en prévoyant un stockage dans un lieu sécurisé ou en
+                        encadrant contractuellement une prestation d’externalisation des
+                        sauvegardes.
+                    </li>
+                    <li>
+                        Chiffrer le canal de transmission, si celui-ci n’est pas interne à
+                        l’organisme, lorsque les sauvegardes sont transmises par le réseau.
+                    </li>
+                </ul>
+                <p>
+                    · Quelques bonnes pratiques pour assurer une continuité d’activité :
+                </p>
+                <ul type="disc">
+                    <li>
+                        Rédiger un plan de reprise et de continuité d’activité informatique
+                        même sommaire, incluant la liste des acteurs avec la liste des actions
+                        de chacun et les délais d’intervention
+                    </li>
+                    <li>
+                        S’assurer que les utilisateurs, prestataires et sous-traitants savent
+                        qui alerter en cas d’incidents
+                    </li>
+                    <li>
+                        Tester régulièrement la restauration des sauvegardes et l’application
+                        du plan de continuité ou de reprise de l’activité
+                    </li>
+                    <li>
+                        Utiliser un onduleur pour protéger le matériel servant aux traitements
+                        essentiels ; prévoir une redondance matérielle des matériels de
+                        stockage, par exemple au moyen d’une technologie RAID.
+                    </li>
+                </ul>
+                <p>
+                    <strong>Restauration des données :</strong>
+                </p>
+                <p>
+                    La sauvegarde a pour but de créer une copie des données à des fins de
+                    restauration en cas d'échec des données primaires. Ces échecs peuvent avoir
+                    diverses causes : défaillance matérielle ou logicielle, corruption des
+                    données, événement d'origine humaine (par exemple, attaque par un virus ou
+                    un programme malveillant) ou suppression accidentelle de données. Les
+                    copies de sauvegarde permettent de restaurer les données à un point
+                    antérieur afin que les entreprises puissent les récupérer à la suite d'un
+                    événement imprévu.
+                </p>
+                <p>
+                    La restauration à partir d'une sauvegarde implique généralement la
+                    restauration des données dans leur emplacement d'origine ou dans un autre
+                    emplacement, où elles peuvent être utilisées à la place des données perdues
+                    ou endommagées.
+                </p>
+                <p>
+                    <strong>En conclusion</strong>
+                </p>
+                <p>
+                    Dans un cadre fortement contraint, les conditions de stockage et de
+                    sécurisation dépendent aussi des besoins et des applicatifs des
+                    entreprises. Les données évoluent dans un écosystème vaste et complexe :
+                    pour atteindre leurs objectifs et exprimer leur plein potentiel, elles
+                    doivent être exhaustives, fiables et réutilisables. Vous l’aurez compris,
+                    l’étape (en réalité, les étapes) de stockage joue un rôle primordial dans
+                    la conservation de données qualitatives et exploitables en vue des phases
+                    de traitement, d’analyse, de partage et de réutilisation. L’étape à venir
+                    de traitement promet d’être intéressante !
+                </p>
+            </div>
+
+        </div>
+
+        <div class="offre-valeur-ajoutee-bg">
+            <div class="nos-technos">
+                <div>
+                    <h4>ARTICLES SIMILAIRE</h4>
+                    <h3>En Meme Sujet</h3>
+                </div>
+
+                <div class="article-similaire">
+                    <article class="card">
+                        <div class="card__wrapper">
+
+                            <figure class="card__feature">
+                                <img src="https://www.dropbox.com/s/r06tebu17sjfcca/bridge.jpg?raw=1"
+                                    class="card__img" alt="waves" width="275" height="160">
+                            </figure>
+
+                            <div class="card__box">
+                                <div class="card__item card__header">
+                                    <div class="card__type">
+                                        <h6 class="violet">EVENT</h6>
+                                        <div class="date">
+                                                            <svg height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#wt0vqrjqla)">
+                                                                    <path d="M17.689 20H1.829A1.836 1.836 0 0 1 0 18.17V3.67a1.836 1.836 0 0 1 1.83-1.83h1.687v2.252a2.01 2.01 0 0 0 .76 1.564 2.368 2.368 0 0 0 2.98 0 2.01 2.01 0 0 0 .76-1.564V1.84h3.409v2.25a2.01 2.01 0 0 0 .76 1.565 2.368 2.368 0 0 0 2.98 0 2.01 2.01 0 0 0 .76-1.564V1.84h1.763a1.84 1.84 0 0 1 1.83 1.83v14.5A1.834 1.834 0 0 1 17.688 20zM13.604 9.24h2.62a.337.337 0 0 1 .335.325v2.181a.337.337 0 0 1-.335.326h-2.62a.335.335 0 0 1-.326-.326V9.574a.334.334 0 0 1 .325-.326V9.24zm-5.13 0h2.623a.335.335 0 0 1 .325.325v2.181a.336.336 0 0 1-.325.326H8.475a.335.335 0 0 1-.326-.326V9.574a.335.335 0 0 1 .326-.326V9.24zm-5.181 0h2.622a.335.335 0 0 1 .325.325v2.181a.337.337 0 0 1-.325.326H3.293a.335.335 0 0 1-.334-.326V9.574a.334.334 0 0 1 .334-.326V9.24zm10.31 4.637h2.621a.336.336 0 0 1 .335.325v2.182a.335.335 0 0 1-.335.333h-2.62a.335.335 0 0 1-.326-.333V14.21a.335.335 0 0 1 .325-.326v-.008zm-5.128 0h2.622a.335.335 0 0 1 .325.325v2.182a.335.335 0 0 1-.325.333H8.475a.335.335 0 0 1-.326-.333V14.21a.337.337 0 0 1 .326-.326v-.008zm-5.182 0h2.622a.335.335 0 0 1 .325.325v2.182a.335.335 0 0 1-.325.333H3.293a.335.335 0 0 1-.334-.333V14.21a.335.335 0 0 1 .334-.326v-.008zm9.5-13.153c0-.398.39-.724.879-.724.488 0 .884.326.884.724v3.368c0 .4-.394.724-.884.724s-.882-.325-.882-.724V.724h.003zm-7.91 0c0-.398.397-.724.885-.724.489 0 .882.326.882.724v3.368c0 .4-.393.724-.882.724-.488 0-.885-.324-.885-.724V.724zM.586 7.14v10.836a1.443 1.443 0 0 0 1.439 1.44h15.462a1.444 1.444 0 0 0 1.44-1.44V7.14H.586z" fill="#898989"/>
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="wt0vqrjqla">
+                                                                        <path fill="#fff" d="M0 0h19.518v20H0z"/>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                            <span>21 mars 2020</span>
+                                                        </div>
+                                    </div>
+                                    <h2 class="card__item card__item--small card__title">Blue Ocean
+                                        Waves Crash</h2>
+                                </div>
+                                <section class="card__item card__body">
+                                    <p>See the beautiful oceans of the Pacific coast where the water is
+                                        so
+                                        clean you can see the sand.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+
+                    <a href="blog-video.html" class="card">
+                        <div class="card__wrapper">
+                            <figure class="card__feature">
+                                <img src="https://www.dropbox.com/s/r06tebu17sjfcca/bridge.jpg?raw=1"
+                                    class="card__img" alt="waves" width="275" height="160">
+                            </figure>
+                            <div class="card__box">
+                                <div class="card__item card__header">
+                                    <div class="card__type">
+                                        <h6 class="red">VIDEO</h6>
+                                        <div class="date">
+                                                            <svg height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#wt0vqrjqla)">
+                                                                    <path d="M17.689 20H1.829A1.836 1.836 0 0 1 0 18.17V3.67a1.836 1.836 0 0 1 1.83-1.83h1.687v2.252a2.01 2.01 0 0 0 .76 1.564 2.368 2.368 0 0 0 2.98 0 2.01 2.01 0 0 0 .76-1.564V1.84h3.409v2.25a2.01 2.01 0 0 0 .76 1.565 2.368 2.368 0 0 0 2.98 0 2.01 2.01 0 0 0 .76-1.564V1.84h1.763a1.84 1.84 0 0 1 1.83 1.83v14.5A1.834 1.834 0 0 1 17.688 20zM13.604 9.24h2.62a.337.337 0 0 1 .335.325v2.181a.337.337 0 0 1-.335.326h-2.62a.335.335 0 0 1-.326-.326V9.574a.334.334 0 0 1 .325-.326V9.24zm-5.13 0h2.623a.335.335 0 0 1 .325.325v2.181a.336.336 0 0 1-.325.326H8.475a.335.335 0 0 1-.326-.326V9.574a.335.335 0 0 1 .326-.326V9.24zm-5.181 0h2.622a.335.335 0 0 1 .325.325v2.181a.337.337 0 0 1-.325.326H3.293a.335.335 0 0 1-.334-.326V9.574a.334.334 0 0 1 .334-.326V9.24zm10.31 4.637h2.621a.336.336 0 0 1 .335.325v2.182a.335.335 0 0 1-.335.333h-2.62a.335.335 0 0 1-.326-.333V14.21a.335.335 0 0 1 .325-.326v-.008zm-5.128 0h2.622a.335.335 0 0 1 .325.325v2.182a.335.335 0 0 1-.325.333H8.475a.335.335 0 0 1-.326-.333V14.21a.337.337 0 0 1 .326-.326v-.008zm-5.182 0h2.622a.335.335 0 0 1 .325.325v2.182a.335.335 0 0 1-.325.333H3.293a.335.335 0 0 1-.334-.333V14.21a.335.335 0 0 1 .334-.326v-.008zm9.5-13.153c0-.398.39-.724.879-.724.488 0 .884.326.884.724v3.368c0 .4-.394.724-.884.724s-.882-.325-.882-.724V.724h.003zm-7.91 0c0-.398.397-.724.885-.724.489 0 .882.326.882.724v3.368c0 .4-.393.724-.882.724-.488 0-.885-.324-.885-.724V.724zM.586 7.14v10.836a1.443 1.443 0 0 0 1.439 1.44h15.462a1.444 1.444 0 0 0 1.44-1.44V7.14H.586z" fill="#898989"/>
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="wt0vqrjqla">
+                                                                        <path fill="#fff" d="M0 0h19.518v20H0z"/>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                            <span>21 mars 2020</span>
+                                                        </div>
+                                    </div>
+                                    <h2 class="card__item card__item--small card__title">Blue Ocean
+                                        Waves Crash</h2>
+                                </div>
+                                <section class="card__item card__body">
+                                    <p>See the beautiful oceans of the Pacific coast where the water is
+                                        so
+                                        clean you can see the sand.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card" href="blog-event.html">
+                        <div class="card__wrapper">
+
+                            <figure class="card__feature">
+                                <img src="https://www.dropbox.com/s/r06tebu17sjfcca/bridge.jpg?raw=1"
+                                    class="card__img" alt="waves" width="275" height="160">
+                            </figure>
+
+                            <div class="card__box">
+                                <div class="card__item card__header">
+                                    <div class="card__type">
+                                        <h6 class="violet">EVENT</h6>
+                                        <div class="date">
+                                                            <svg height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#wt0vqrjqla)">
+                                                                    <path d="M17.689 20H1.829A1.836 1.836 0 0 1 0 18.17V3.67a1.836 1.836 0 0 1 1.83-1.83h1.687v2.252a2.01 2.01 0 0 0 .76 1.564 2.368 2.368 0 0 0 2.98 0 2.01 2.01 0 0 0 .76-1.564V1.84h3.409v2.25a2.01 2.01 0 0 0 .76 1.565 2.368 2.368 0 0 0 2.98 0 2.01 2.01 0 0 0 .76-1.564V1.84h1.763a1.84 1.84 0 0 1 1.83 1.83v14.5A1.834 1.834 0 0 1 17.688 20zM13.604 9.24h2.62a.337.337 0 0 1 .335.325v2.181a.337.337 0 0 1-.335.326h-2.62a.335.335 0 0 1-.326-.326V9.574a.334.334 0 0 1 .325-.326V9.24zm-5.13 0h2.623a.335.335 0 0 1 .325.325v2.181a.336.336 0 0 1-.325.326H8.475a.335.335 0 0 1-.326-.326V9.574a.335.335 0 0 1 .326-.326V9.24zm-5.181 0h2.622a.335.335 0 0 1 .325.325v2.181a.337.337 0 0 1-.325.326H3.293a.335.335 0 0 1-.334-.326V9.574a.334.334 0 0 1 .334-.326V9.24zm10.31 4.637h2.621a.336.336 0 0 1 .335.325v2.182a.335.335 0 0 1-.335.333h-2.62a.335.335 0 0 1-.326-.333V14.21a.335.335 0 0 1 .325-.326v-.008zm-5.128 0h2.622a.335.335 0 0 1 .325.325v2.182a.335.335 0 0 1-.325.333H8.475a.335.335 0 0 1-.326-.333V14.21a.337.337 0 0 1 .326-.326v-.008zm-5.182 0h2.622a.335.335 0 0 1 .325.325v2.182a.335.335 0 0 1-.325.333H3.293a.335.335 0 0 1-.334-.333V14.21a.335.335 0 0 1 .334-.326v-.008zm9.5-13.153c0-.398.39-.724.879-.724.488 0 .884.326.884.724v3.368c0 .4-.394.724-.884.724s-.882-.325-.882-.724V.724h.003zm-7.91 0c0-.398.397-.724.885-.724.489 0 .882.326.882.724v3.368c0 .4-.393.724-.882.724-.488 0-.885-.324-.885-.724V.724zM.586 7.14v10.836a1.443 1.443 0 0 0 1.439 1.44h15.462a1.444 1.444 0 0 0 1.44-1.44V7.14H.586z" fill="#898989"/>
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="wt0vqrjqla">
+                                                                        <path fill="#fff" d="M0 0h19.518v20H0z"/>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                            <span>21 mars 2020</span>
+                                                        </div>
+                                    </div>
+                                    <h2 class="card__item card__item--small card__title">Blue Ocean
+                                        Waves Crash</h2>
+                                </div>
+                                <section class="card__item card__body">
+                                    <p>See the beautiful oceans of the Pacific coast where the water is
+                                        so
+                                        clean you can see the sand.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+     
+        <div class="news-letter wow animate__fadeIn"  data-wow-duration="2s" data-wow-delay="0s">
+            <div class="bloc-news-letter-main">
+                <div class="bloc-news-letter">
+                    <div class="bloc-news-left">
+                        <h4>Notre Newsletter</h4>
+                        <p>Une newsletter trimestrielle conçue rien que pour vous par nos IT-NewVisionners !</p>
+                    </div>
+                    <div class="bloc-news-right">
+                        <input type="text" placeholder="Votre Email" />
+                        <button>
+                            <img src="images/sent 2.png" />
+                            <span>S'inscrire</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer wow animate__slideInUp"  data-wow-duration="1s" data-wow-delay="0s">
+            <a href="#" class="center-bottom-button">
+                <svg width="16" height="31" viewBox="0 0 26 41" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="scrollToTop()">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.631 0 0 15.436h8.13V40.13h9.002V15.436h8.112L12.63 0z" fill="#EDB940"/>
+                </svg>                
+            </a>
+            <div class="top-footer">
+                <div class="top-footer-left">
+                    <div class="logo-network">
+                        <div>
+                            <img src="images/logo.png" alt="waves" class="logo">
+                        </div>
+                        <div class="logo-network">
+                            <a href="https://www.linkedin.com/company/itnewvision/" id="linkedInLogo"  target="_blank">
+                                <svg height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#174a79h1la)" fill-rule="evenodd" clip-rule="evenodd">
+                                        <path
+                                            d="M9.075 0h22.036a9.102 9.102 0 0 1 9.075 9.075v21.853A9.101 9.101 0 0 1 31.111 40H9.075A9.101 9.101 0 0 1 0 30.928V9.075A9.101 9.101 0 0 1 9.075 0z"
+                                            fill="#0A66C2" />
+                                        <path
+                                            d="M16.087 15.505h5.079v2.616h.072c.71-1.269 2.436-2.616 5.017-2.616 5.36 0 6.35 3.336 6.35 7.675v9.177h-5.294v-8.156c0-1.868-.04-4.271-2.754-4.271s-3.178 2.03-3.178 4.137v8.306h-5.292V15.506zm-3.005-5.109a2.754 2.754 0 1 1-5.509 0 2.754 2.754 0 0 1 5.508 0zM7.58 15.505h5.5v16.852h-5.5V15.505z"
+                                            fill="#fff" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="174a79h1la">
+                                            <path fill="#fff" d="M0 0h40.186v40H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a  href="https://www.youtube.com/channel/UCK_QogosW_hCdKvkzFU1txg" id="youtubeLogo"  target="_blank">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.203 0h23.594A8.226 8.226 0 0 1 40 8.203v23.594A8.226 8.226 0 0 1 31.797 40H8.203A8.226 8.226 0 0 1 0 31.797V8.203A8.226 8.226 0 0 1 8.203 0z" fill="red"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.49 15.179s-.227-1.628-.933-2.327a3.346 3.346 0 0 0-2.35-.977c-3.282-.24-8.207-.24-8.207-.24s-4.925 0-8.206.24a3.356 3.356 0 0 0-2.35.977c-.707.71-.932 2.327-.932 2.327a35.51 35.51 0 0 0-.244 3.799v1.777c.01 1.27.089 2.54.235 3.802 0 0 .23 1.628.93 2.328.893.934 2.064.901 2.605 1.002 1.878.18 7.978.235 7.978.235s4.932 0 8.213-.244a3.36 3.36 0 0 0 2.35-.977c.707-.713.935-2.33.935-2.33a35.99 35.99 0 0 0 .23-3.8v-1.793a36.075 36.075 0 0 0-.237-3.799h-.016z" fill="#fff"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.568 22.913v-6.591l6.338 3.307-6.338 3.284z" fill="red"/>
+                                </svg>
+                                
+                            </a>
+                            <a  href="https://instagram.com/__itnv__?igshid=ZDU1ZDhlY2E=" id="instaLogo"  target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="2.842170943040401e-14 0 3364.7 3364.7" height="40"><defs><radialGradient id="a" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="b" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2 3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5s-116.4-140.1-153.5-235.9c-28.2-72.3-61.5-181-70.6-381.1-10-216.3-12-281.2-12-829.2s2.2-612.8 11.9-829.3C21 653.1 54.5 544.6 82.5 472.1 119.8 376.3 164.3 308 236 236c71.8-71.8 140.1-116.4 236-153.5C544.3 54.3 653 21 853.1 11.9 1069.5 2 1134.5 0 1682.3 0c548 0 612.8 2.2 829.3 11.9 200.1 9.1 308.6 42.6 381.1 70.6 95.8 37.1 164.1 81.7 236 153.5s116.2 140.2 153.5 236c28.2 72.3 61.5 181 70.6 381.1 9.9 216.5 11.9 281.3 11.9 829.3 0 547.8-2 612.8-11.9 829.3-9.1 200.1-42.6 308.8-70.6 381.1-37.3 95.8-81.7 164.1-153.5 235.9s-140.2 116.2-236 153.5c-72.3 28.2-181 61.5-381.1 70.6-216.3 9.9-281.3 11.9-829.3 11.9-547.8 0-612.8-1.9-829.1-11.9" fill="url(#a)"/><path d="M853.2 3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5s-116.4-140.1-153.5-235.9c-28.2-72.3-61.5-181-70.6-381.1-10-216.3-12-281.2-12-829.2s2.2-612.8 11.9-829.3C21 653.1 54.5 544.6 82.5 472.1 119.8 376.3 164.3 308 236 236c71.8-71.8 140.1-116.4 236-153.5C544.3 54.3 653 21 853.1 11.9 1069.5 2 1134.5 0 1682.3 0c548 0 612.8 2.2 829.3 11.9 200.1 9.1 308.6 42.6 381.1 70.6 95.8 37.1 164.1 81.7 236 153.5s116.2 140.2 153.5 236c28.2 72.3 61.5 181 70.6 381.1 9.9 216.5 11.9 281.3 11.9 829.3 0 547.8-2 612.8-11.9 829.3-9.1 200.1-42.6 308.8-70.6 381.1-37.3 95.8-81.7 164.1-153.5 235.9s-140.2 116.2-236 153.5c-72.3 28.2-181 61.5-381.1 70.6-216.3 9.9-281.3 11.9-829.3 11.9-547.8 0-612.8-1.9-829.1-11.9" fill="url(#b)"/><path d="M1269.25 1689.52c0-230.11 186.49-416.7 416.6-416.7s416.7 186.59 416.7 416.7-186.59 416.7-416.7 416.7-416.6-186.59-416.6-416.7m-225.26 0c0 354.5 287.36 641.86 641.86 641.86s641.86-287.36 641.86-641.86-287.36-641.86-641.86-641.86S1044 1335 1044 1689.52m1159.13-667.31a150 150 0 1 0 150.06-149.94h-.06a150.07 150.07 0 0 0-150 149.94M1180.85 2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28 7.27-505.15c5.55-121.87 26-188 43-232.13 22.72-58.36 49.78-100 93.5-143.78s85.32-70.88 143.78-93.5c44-17.16 110.26-37.46 232.13-43 131.76-6.06 171.34-7.27 505-7.27S2059.13 666 2191 672c121.87 5.55 188 26 232.13 43 58.36 22.62 100 49.78 143.78 93.5s70.78 85.42 93.5 143.78c17.16 44 37.46 110.26 43 232.13 6.06 131.87 7.27 171.34 7.27 505.15s-1.21 373.28-7.27 505.15c-5.55 121.87-25.95 188.11-43 232.13-22.72 58.36-49.78 100-93.5 143.68s-85.42 70.78-143.78 93.5c-44 17.16-110.26 37.46-232.13 43-131.76 6.06-171.34 7.27-505.15 7.27s-373.28-1.21-505-7.27M1170.5 447.09c-133.07 6.06-224 27.16-303.41 58.06-82.19 31.91-151.86 74.72-221.43 144.18S533.39 788.47 501.48 870.76c-30.9 79.46-52 170.34-58.06 303.41-6.16 133.28-7.57 175.89-7.57 515.35s1.41 382.07 7.57 515.35c6.06 133.08 27.16 223.95 58.06 303.41 31.91 82.19 74.62 152 144.18 221.43s139.14 112.18 221.43 144.18c79.56 30.9 170.34 52 303.41 58.06 133.35 6.06 175.89 7.57 515.35 7.57s382.07-1.41 515.35-7.57c133.08-6.06 223.95-27.16 303.41-58.06 82.19-32 151.86-74.72 221.43-144.18s112.18-139.24 144.18-221.43c30.9-79.46 52.1-170.34 58.06-303.41 6.06-133.38 7.47-175.89 7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43s-139.24-112.27-221.33-144.18c-79.56-30.9-170.44-52.1-303.41-58.06-133.3-6.09-175.89-7.57-515.3-7.57s-382.1 1.41-515.45 7.57" fill="#fff"/></svg>
+                                
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top-footer-right">
+                    <div class="footer-adresse">
+                        <h4>Nos Sites</h4>
+
+                        <div class="footer-adresse-details">
+                            <h5>ITNV Africa</h5>
+                            <div class="footer-adresse-details-content">
+                                <img src="images/pin-location 1.png" />
+                                <p>Casa Business Center, Lotissement Mandarouna, Sidi Maarouf | Casablanca</p>
+                            </div>
+                        </div>
+
+                        <div class="footer-adresse-details">
+                            <h5>ITNV France</h5>
+                            <div class="footer-adresse-details-content">
+                                <img src="images/pin-location 1.png" />
+                                <p>33 avenue du Maine 75015 Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-footer-bloc-list">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="offres.html">Nos offres</a></li>
+                            <li><a href="enjeux.html">Les enjeux du secteur</a></li>
+                            <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                            <li><a href="nous-rejoindre.html">Rejoindre l'ITeam</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bottom-footer">
+                <div class="bottom-footer-left">
+                    <div class="copyright">©2022 IT-NewVision.</div>
+
+                </div>
+                <div class="bottom-footer-right">
+                    <div class="user_link">
+                        <ul>
+                            <li><a class="orange-download" href="#">
+                                <svg height="13" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.201 3.59c2.771-2.097 6.81.348 6.81 2.907 0 1.654-.634 2.302-1.616 2.993 4.95 2.647 2.71 8.502-1.608 9.49H6.708c-7.081 0-9.7-9.597-2.16-11.922C3.133 1.421 14.185-3.669 18.2 3.59zm-6.815 2.662v4.424H8.353l4.755 5.028 4.756-5.028h-3.033V6.252h-3.445z" fill="#FF911F"/>
+                                </svg>
+                                Télécharger Notre Plaquette
+                            </a></li>
+                            <li><a href="#">Condition d'utilisation</a></li>
+                            <li><a href="#">Mention Légale</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="send-msg" >
+            <img src="images/sent 2.png" />       
+        </a>
+    </div>
+</body>
+
+</html>

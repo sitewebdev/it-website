@@ -368,6 +368,10 @@
     flex-direction: row-reverse;
 }
 
+.valeur-subbloc:last-child{
+    margin: 1em 0em 0em;
+}
+
 .valeur-subbloc:nth-child(even) .valeur-subbloc-description { padding: 0em 2em 0em 3em; }
 
 .enjeux-testimonial {
