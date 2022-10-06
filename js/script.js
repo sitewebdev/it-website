@@ -3,6 +3,7 @@
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
+    console.log('hello')
     document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("mySidenav").style.opacity = "1";
     document.getElementById("mySidenavForm").style.width = "750px";

@@ -6,6 +6,11 @@
     margin: 0.3em;
 }
 
+.img-auto{
+    height: auto!important;
+    width: 80%!important;
+}
+
 
 .espace-bloc-videos {
     background-color: #3d348b;
