@@ -428,8 +428,8 @@
     outline: none;
   }
 .testimonial-resume ul li a img{
-    width: 52px;
-    height: 48px;
+    width: 90%;
+    max-height: 48px;
 }
 
 .testimonial-resume ul li a img:focus {
