@@ -499,6 +499,7 @@
     color: #47419b;
     font-size: 1em;
     font-weight: bold;
+    text-transform: none;
 }
 
 .testimonial-biographie .presentation h3 {

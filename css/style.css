@@ -38,6 +38,7 @@ body {
     scroll-behavior: smooth;
 }
 
+h4{text-transform: uppercase;}
 .page { overflow: hidden;}
 
 
@@ -765,6 +766,7 @@ body {
     color: #fff;
     font-size: 1.5em;
     font-weight: bold;
+    text-transform: none;
 }
 
 .discuss-project .pbtn {

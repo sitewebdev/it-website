@@ -221,6 +221,7 @@
 .specialite-grid .card-h4 {
     color: #fff;
     font-size: 2em;
+    text-transform: none;
 }
 .specialite-grid .card-p {
     color: #fff;
