@@ -165,7 +165,7 @@
     height: 100%;
     width: 50%;
     text-align: left;
-    padding: 3em 2em;
+    padding: 0 3em 2em;
 
 }
 .reason-subbloc-img{
@@ -194,7 +194,7 @@
     margin: 0em 0em;
     color: #ff8c24;
     font-size: 1.8em;
-    padding: 4px;
+    padding: 4px 0;
     font-weight: bold;
 }
   
@@ -756,6 +756,7 @@
     color: #47419b;
     font-size: 1em;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .reason-gallery h3 {
