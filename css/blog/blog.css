@@ -214,7 +214,11 @@
     font-size: 0.95em;
 }
 
-.blog-content h4 { color:#ffab09; font-size: 1.5em;}
+.blog-content h4 {    
+    color: #ffab09;
+    font-size: 2em;
+    text-transform: capitalize;
+}
 .blog-content img { width: 100%;}
 
 .blog-content h5 {
