@@ -210,7 +210,8 @@
 }
 
 .expertise .bloc-image .image img {
-    height: 430px;
+    width: 95%;
+    border-radius: 8px;
 
 }
 

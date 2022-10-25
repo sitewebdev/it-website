@@ -334,6 +334,7 @@
 .valeur-subbloc-img img {
     border-style: none;
     width: 100%;
+    border-radius: 18px;
 }
 
 .valeur-subbloc-description ul {
