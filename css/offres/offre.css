@@ -202,6 +202,7 @@
     margin: auto;
     /* padding: 5em 1em; */
     justify-content: space-between;
+    align-items: center;
 }
 .expertise .bloc-image .image {
     height: 100%;
