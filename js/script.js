@@ -285,6 +285,7 @@ function openTab(evt, cityName) {
     catch(e){
         console.log(e)
     }
+    window.scrollTo(0,0)
     
 }
 
