@@ -254,7 +254,7 @@
     }
     .footer-adresse {
         float: none;
-        margin: 2em;
+        margin: 0 2em;
         width: auto;
     }
     .bottom-footer {

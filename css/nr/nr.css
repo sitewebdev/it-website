@@ -816,6 +816,10 @@
     .carriere-offre {
         width: auto;
     }
+    .carriere-offre .carriere-offre-description {
+        width: 70%;
+    }
+    .carriere-offre .carriere-offre-action {width: 30%;}
 
     .nr-valeur {
         width: auto;

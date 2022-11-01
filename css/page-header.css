@@ -246,4 +246,12 @@
     .header-title-bloc .top-side .body-vertical-align .bloc-image {
         display: none;
     }
+
+    .bloc-title-details{
+        width: 80%;
+    }
+
+    .big-bloc {
+        height: 430px!important;
+    }
 }

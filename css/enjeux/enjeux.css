@@ -725,4 +725,8 @@ ul.details li p{
     .sticky-enjeux-menu li {
         width: 100% !important;
     }
+
+    ul.details {
+        height: auto;
+    }
 }

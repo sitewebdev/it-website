@@ -108,5 +108,18 @@
     .bloc-news-right {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0 0.7em;
     }
+    .bloc-news-right input {
+        width: 100%;
+        margin: 0.2em 0;
+    }
+
+    .bloc-news-right button {
+        width: 100%;
+        text-align: center;
+    }
+
 }
