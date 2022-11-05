@@ -38,6 +38,7 @@ $(document).ready(function(){
     try{
         var input = document.getElementById("phone");
         window.intlTelInput(input, {
+            initialCountry:'fr'
             // any initialisation options go here
         });
     }

@@ -102,7 +102,7 @@
                         <div class="bloc-title-details bloc-title-top">
                             <h4 style="color:#ff8e23;">OFFRE D'EMPLOI</h4>
                             <h3 style="font-style: italic;">LEAD DEVELOPER JAVA/ANGULAR</h3>
-                            <a href="nous-rejoindre.html">
+                            <a href="nous-rejoindre.html#offres">
                                 <svg height="10" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#7zw3tdhq7a)">
                                         <path d="M12.091 15.506a2.641 2.641 0 0 1-3.766 3.702l-7.309-7.433a2.643 2.643 0 0 1 0-3.702L8.176.79a2.641 2.641 0 1 1 3.767 3.702l-2.79 2.847 11.228.053a2.641 2.641 0 0 1-.044 5.282L9.26 12.623l2.831 2.883z" fill="#FF8C24"></path>
@@ -113,7 +113,7 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span>Retour à la page nous rejoindre</span>
+                                <span>Retour aux offres</span>
                             </a>
                         </div>
                         <div class="bloc-action-offre  wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
@@ -130,7 +130,7 @@
                                 <span>Casablanca business center, Casablanca</span>
                             </div>
                             <div class="action-details">
-                                <a href="mailto:admin.ma@itnewvision.com" class="button">
+                                <a href="#postuler" class="button">
                                     <img src="images/sent 2.png" style="height: 19px;margin-right: 0.6em;">
                                     <span>Postuler</span>
                                 </a>
@@ -248,7 +248,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="bloc-partage">
             <div class="describe-poste">
                 <h3>PARTAGER SUR</h3>
@@ -321,6 +321,83 @@
                 </div>
             </div>
         </div>
+        <div class="bloc-form-postuler  wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <div class="overlay" id="post-candidate-overlay">
+                <div class="modal">
+                    <div class="modal-image"></div>
+                    <div class="modal-description">
+                        <div class="toolbar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closePostCandidate()">
+                                <span class="icon">&times;</span>
+                                <span class="text">Fermer</span>
+                            </a>
+                            
+                        </div>
+                        <div class="content">
+                            <h3>Rejoignez-nous</h3>
+                            <p>Votre candidature a été Envoyer à l'équipe RH pour vérification</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="postuler" class="form-postuler">
+
+                <div class="line-form">
+                    <div class="input">
+                        <label>Votre nom <span>*</span></label>
+                        <input type="text" placeholder="Brad" />
+                    </div>
+                    
+                    <div class="input">
+                        <label>Votre prénom <span>*</span></label>
+                        <input type="text" placeholder="Pitt" />
+                    </div>
+                </div>
+
+                <div class="line-form">
+                    <div class="input">
+                        <label>Votre téléphone <span>*</span></label>
+                        <input id="phone" type="text"  placeholder=" 123 456 789" />
+                    </div>
+                    <div class="input">
+                        <label>Votre email <span>*</span></label>
+                        <input type="text"  placeholder=" Hamza@Company.com" />
+                    </div>
+                    
+                </div>
+
+                <div class="line-form">
+                    <div class="input">
+                        <label>Disponibilité <span>*</span></label>
+                        <input type="text" placeholder=" Immédiate"  />
+                    </div>
+                </div>
+
+                <div class="line-form">
+                    <div class="input">
+                        <label>CV <span>*</span></label>
+                        <input type="file"  placeholder=" +0033 998 998  345" />
+                    </div>
+                    <div class="input">
+                        <label>Lettre de motivation</label>
+                        <input type="file" placeholder=" Facturation Système"  />
+                    </div>
+                </div>
+
+                <div class="line-form">
+                    <div class="input-area">
+                        <label>Message <span>*</span></label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="line-form-button">
+                    <button onclick="openPostCandidate()">
+                        <span>Envoyer</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     <!--
         <div class="bloc-form-postuler  wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
             <div class="overlay" id="post-candidate-overlay">
@@ -342,24 +419,24 @@
 
                 </div>
             </div>
-            <div class="form-postuler">
+            <div id="postuler" class="form-postuler">
 
                 <div class="line-form">
                     <div class="input">
                         <label>Votre nom <span>*</span></label>
-                        <input type="text" placeholder=" Hamza" />
+                        <input type="text" placeholder="Brad" />
                     </div>
                     
                     <div class="input">
                         <label>Votre prénom <span>*</span></label>
-                        <input type="text" placeholder=" Bennouna Smires" />
+                        <input type="text" placeholder="Pitt" />
                     </div>
                 </div>
 
                 <div class="line-form">
                     <div class="input">
                         <label>Votre téléphone <span>*</span></label>
-                        <input id="phone" type="text"  placeholder=" +0033 998 998  345" />
+                        <input id="phone" type="text"  placeholder=" 123 456 789" />
                     </div>
                     <div class="input">
                         <label>Votre email <span>*</span></label>
@@ -371,7 +448,7 @@
                 <div class="line-form">
                     <div class="input">
                         <label>Disponibilité <span>*</span></label>
-                        <input type="text" placeholder=" Facturation Système"  />
+                        <input type="text" placeholder=" Immédiate"  />
                     </div>
                 </div>
 
