@@ -1,3 +1,12 @@
+/* import file js in html files */
+$(document).ready(function (){
+    $("body").append($("<script></script>").attr("src", './js/config.js'));
+    $("body").append($("<script></script>").attr("src", './js/utils.js'));
+    $("body").append($("<script></script>").attr("src", './js/newsLetter.js'));
+    $("body").append($("<script></script>").attr("src", './js/contact.js'));
+    $("body").append($("<script></script>").attr("src", './js/candidature.js'));
+
+})
 
 
 

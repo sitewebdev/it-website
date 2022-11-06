@@ -698,17 +698,19 @@
             </div>
     
             <div class="bloc-form-postuler">
-                <div class="form-postuler">
-    
+                <div class="form-postuler" id="form-postuler">
+                    <div class="line-form">
+                        <span class="form-postuler-confirmation"></span>
+                    </div>
                     <div class="line-form">
                         <div class="input">
                             <label>Votre nom <span>*</span></label>
-                            <input type="text" placeholder=" Brad" />
+                            <input required="required" class="inp-form-postuler-nom" type="text" placeholder=" Brad" />
                         </div>
 
                         <div class="input">
                             <label>Votre prénom <span>*</span></label>
-                            <input type="text" placeholder="Pitt" />
+                            <input required="required" class="inp-form-postuler-prenom" type="text" placeholder="Pitt" />
                         </div>
                         
                     </div>
@@ -720,18 +722,18 @@
                         </div>
                         <div class="input">
                             <label>Votre email <span>*</span></label>
-                            <input type="text"  placeholder=" Hamza@Company.com" />
+                            <input required="required" class="inp-form-postuler-email" type="email"  placeholder=" Hamza@Company.com" />
                         </div>
                     </div>
     
                     <div class="line-form">
                         <div class="input">
                             <label>Poste<span>*</span></label>
-                            <input type="text"  placeholder="01 23 45 67 89" />
+                            <input required="required" class="inp-form-postuler-poste" type="text"  placeholder=" 01 23 45 67 89" />
                         </div>
                         <div class="input">
                             <label>Mobilité</label>
-                            <input type="text" placeholder=" France"  />
+                            <input  class="inp-form-postuler-mobilite" type="text" placeholder=" France"  />
                         </div>
                     </div>
     
@@ -739,29 +741,29 @@
                     <div class="line-form">
                         <div class="input">
                             <label>CV <span>*</span></label>
-                            <input type="file"  placeholder="01 23 45 67 89" />
+                            <input type="file" required="required" type="file" class="inp-form-postuler-cv"  placeholder=" 01 23 45 67 89" />
                         </div>
                         <div class="input">
                             <label>Lettre de motivation</label>
-                            <input type="file" placeholder=" Facturation Système"  />
+                            <input  class="inp-form-postuler-lm" type="file" placeholder=" Facturation Système"  />
                         </div>
                     </div>
 
                     <div class="line-form">
                         <div class="input">
                             <label>Votre disponibilité</label>
-                            <input type="text" placeholder=" Facturation Système"  />
+                            <input  class="inp-form-postuler-disponibilite" type="text" placeholder=" Facturation Système"  />
                         </div>
                     </div>
     
                     <div class="line-form">
                         <div class="input-area">
                             <label>Message <span>*</span></label>
-                            <textarea></textarea>
+                            <textarea required="required" class="inp-form-postuler-message"></textarea>
                         </div>
                     </div>
                     <div class="line-form-button">
-                        <button>
+                        <button onclick="validateFormCandidature('#form-postuler','form-postuler-btn')">
                             <span>Envoyer</span>
                         </button>
                     </div>

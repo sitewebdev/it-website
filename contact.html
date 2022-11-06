@@ -111,29 +111,31 @@
             </div>
         </div>
 
-        <div class="sidenav-form form-contact bg-grey">
+        <div class="sidenav-form form-contact bg-grey" id="form-contact">
             <div class="bloc-form-postuler wow animate__fadeInUp"  data-wow-duration="1s" data-wow-delay="0s">
                 <div class="form-postuler">
-
+                    <div class="line-form">
+                        <span class="form-contact-confirmation"></span>
+                    </div>
                     <div class="line-form">
                         <div class="input">
                             <label>Votre nom <span>*</span></label>
-                            <input type="text" placeholder=" Emile Dubois" />
+                            <input required="required" id="input-contact-name" type="text" placeholder=" Emile Dubois" />
                         </div>
                         <div class="input">
                             <label>Votre société <span>*</span></label>
-                            <input type="text" placeholder=" Dubois Cie"  />
+                            <input required="required" id="input-contact-societe" type="text" placeholder=" Dubois Cie"  />
                         </div>
                     </div>
 
                     <div class="line-form">
                         <div class="input">
                             <label>Votre email <span>*</span></label>
-                            <input type="text"  placeholder=" e.dubois@duboiscie.com" />
+                            <input required="required" id="input-contact-email" type="email"  placeholder=" e.dubois@duboiscie.com" />
                         </div>
                         <div class="input">
                             <label>Votre téléphone</label>
-                            <input id="phone" type="text"  placeholder="01 23 45 67 89" />
+                            <input id="phone" type="text"    placeholder=" 06 05 04 03 02" />
                         </div>
                         
                     </div>
@@ -141,11 +143,11 @@
                     <div class="line-form">
                         <div class="input">
                             <label>Sujet<span>*</span></label>
-                            <input type="text"  placeholder=" demande de démonstration" />
+                            <input required="required" id="input-contact-sujet" type="text"  placeholder=" demande de démonstration" />
                         </div>
                         <div class="input">
                             <label>Pièce jointe</label>
-                            <input type="file"  placeholder="Fichier" />
+                            <input type="file"  id="input-contact-piece-jointe" placeholder="Fichier" />
                         </div>
                     </div>
 
@@ -153,11 +155,11 @@
                     <div class="line-form">
                         <div class="input-area">
                             <label>Message <span>*</span></label>
-                            <textarea></textarea>
+                            <textarea required="required" id="textarea-contact-message"></textarea>
                         </div>
                     </div>
                     <div class="line-form-button">
-                        <button>
+                        <button  onclick="validateFormContact('#form-contact')">
                             <span>Envoyer</span>
                         </button>
                     </div>
@@ -282,7 +284,8 @@
                             <p>Une newsletter trimestrielle conçue rien que pour vous par nos IT-NewVisionners !</p>
                         </div>
                         <div class="bloc-news-right">
-                            <input type="text" placeholder="Votre email" />
+                            <span class="news-letter-confirmation">Message</span>
+                            <input type="email"  placeholder="Votre Email" />
                             <button>
                                 <img src="images/sent 2.png" />
                                 <span>S'inscrire</span>

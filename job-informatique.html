@@ -101,7 +101,7 @@
                         
                         <div class="bloc-title-details bloc-title-top">
                             <h4 style="color:#ff8e23;">OFFRE D'EMPLOI</h4>
-                            <h3 style="font-style: italic;">INGENIEUR INFORMATIQUE - SUPPORT APPLICATIF NIVEAU 1</h3>
+                            <h3 style="font-style: italic;" class="inp-form-postuler-poste">INGENIEUR INFORMATIQUE - SUPPORT APPLICATIF NIVEAU 1</h3>
                             <a href="nous-rejoindre.html#offres">
                                 <svg height="10" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#7zw3tdhq7a)">
@@ -320,16 +320,18 @@
                 </div>
             </div>
             <div id="postuler" class="form-postuler">
-
+                <div class="line-form">
+                    <span class="form-postuler-confirmation"></span>
+                </div>
                 <div class="line-form">
                     <div class="input">
                         <label>Votre nom <span>*</span></label>
-                        <input type="text" placeholder="Brad" />
+                        <input class="inp-form-postuler-nom" required="required" type="text" placeholder="Brad" />
                     </div>
                     
                     <div class="input">
                         <label>Votre prénom <span>*</span></label>
-                        <input type="text" placeholder="Pitt" />
+                        <input required="required" class="inp-form-postuler-prenom" type="text" placeholder="Pitt" />
                     </div>
                 </div>
 
@@ -340,7 +342,7 @@
                     </div>
                     <div class="input">
                         <label>Votre email <span>*</span></label>
-                        <input type="text"  placeholder=" Hamza@Company.com" />
+                        <input required="required" class="inp-form-postuler-email" type="email"  placeholder=" Hamza@Company.com" />
                     </div>
                     
                 </div>
@@ -348,29 +350,29 @@
                 <div class="line-form">
                     <div class="input">
                         <label>Disponibilité <span>*</span></label>
-                        <input type="text" placeholder=" Immédiate"  />
+                        <input required="required" class="inp-form-postuler-disponibilite" type="text" placeholder=" Immédiate"  />
                     </div>
                 </div>
 
                 <div class="line-form">
                     <div class="input">
                         <label>CV <span>*</span></label>
-                        <input type="file"  placeholder="01 23 45 67 89" />
+                        <input required="required" class="inp-form-postuler-cv" type="file"  placeholder="01 23 45 67 89" />
                     </div>
                     <div class="input">
                         <label>Lettre de motivation</label>
-                        <input type="file" placeholder=" Facturation Système"  />
+                        <input  type="file" class="inp-form-postuler-lm" placeholder=" Facturation Système"  />
                     </div>
                 </div>
 
                 <div class="line-form">
                     <div class="input-area">
                         <label>Message <span>*</span></label>
-                        <textarea></textarea>
+                        <textarea class="inp-form-postuler-message" required="required"></textarea>
                     </div>
                 </div>
                 <div class="line-form-button">
-                    <button onclick="openPostCandidate()">
+                    <button onclick="validateFormCandidature('.form-postuler','form-postuler-btn')">
                         <span>Envoyer</span>
                     </button>
                 </div>
