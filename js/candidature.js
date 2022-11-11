@@ -20,7 +20,7 @@ const sendCandidature = (idForm) => {
         prenom:prenom.val()?prenom.val():'',
         email: email.val() ? email.val() : '',
         poste: poste.val() ? poste.val().replace(/[/\\?%*:|"<>]/g, "_")  : poste.text() ? poste.text().toLowerCase().replace(/[/\\?%*:|"<>]/g, "_") : '',
-        telephone: phone.val() ? phone.val() : '',
+        telephone: phone.val() ? `(+${iti.getSelectedCountryData().dialCode}) `+phone.val() : '',
         message: message.val() ? message.val() : '',
         datePostulation: new Date()
     })], {

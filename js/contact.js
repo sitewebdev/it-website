@@ -10,14 +10,14 @@ function sendMail(idForm) {
         email: $('#input-contact-email').val(),
         name: $('#input-contact-name').val(),
         societe: $('#input-contact-societe').val(),
-        telephone: $('#phone').val(),
+        telephone: $('#phone').val()?`(+${iti.getSelectedCountryData().dialCode}) `+$('#phone').val() :'',
         subject: $('#input-contact-sujet').val(),
         message: $('#textarea-contact-message').val()
     }
     const fd = new FormData()
     fd.append('pieceJointe', document.getElementById('input-contact-piece-jointe').files[0])
     fd.append('contact',JSON.stringify(contact))
-    fetch(`http://${server.host_node}:${server.port_node}/api/contact-send`, {
+    fetch(`${server.host_node}:${server.port_node}/api/contact-send`, {
         method: 'POST',
         body: fd
     })

@@ -1,4 +1,5 @@
 /* import file js in html files */
+var iti;
 $(document).ready(function (){
     $("body").append($("<script></script>").attr("src", './js/config.js'));
     $("body").append($("<script></script>").attr("src", './js/utils.js'));
@@ -46,7 +47,7 @@ $(document).ready(function(){
 
     try{
         var input = document.getElementById("phone");
-        window.intlTelInput(input, {
+       iti= window.intlTelInput(input, {
             initialCountry:'fr'
             // any initialisation options go here
         });

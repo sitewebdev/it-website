@@ -21,7 +21,7 @@ $('.bloc-news-letter-main button').first().on('click', () => {
         newsLetteConfirmation.show();
     } else {
         if (validateEmail(newsLetterEmail.val())) {
-            fetch(`http://${server.host_node}:${server.port_node}/api/news-letter/subscribe`, {
+            fetch(`${server.host_node}:${server.port_node}/api/news-letter/subscribe`, {
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({email: newsLetterEmail.val()})
