@@ -22,7 +22,10 @@ const sendCandidature = (idForm) => {
         poste: poste.val() ? poste.val().replace(/[/\\?%*:|"<>]/g, "_")  : poste.text() ? poste.text().toLowerCase().replace(/[/\\?%*:|"<>]/g, "_") : '',
         telephone: phone.val() ? `(+${iti.getSelectedCountryData().dialCode}) `+phone.val() : '',
         message: message.val() ? message.val() : '',
-        datePostulation: new Date()
+        datePostulation: new Date(),
+        entite:{
+            id:1
+        }
     })], {
         type: "application/json;charset=utf-8"
     });
