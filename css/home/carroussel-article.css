@@ -17,16 +17,16 @@
 
 .owl-carousel .item {
   text-align: center;
-  min-width: 100px;
+  /*min-width: 500px;*/
 }
 
-.owl-item {
-  width: 391px !important;
-}
+/*.owl-item {*/
+/*  width: 391px !important;*/
+/*}*/
 
-.owl-stage {
-  width: 2500px !important;
-}
+/*.owl-stage {*/
+/*  width: 2500px !important;*/
+/*}*/
 
 .owl-carousel .nav-btn {
   height: 47px;
