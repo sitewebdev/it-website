@@ -1,5 +1,6 @@
 .header {
     height: 80px;
+    background: white;
 }
 
 .logo-menu{
@@ -144,4 +145,11 @@ nav .social-network a{
     }
     .menu-opened{ height: 320px !important; transition:height 0.3s ease-out;}
     .menu-closed{ height: 0 !important; transition: 0.3s;}
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }

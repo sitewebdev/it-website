@@ -207,7 +207,10 @@ try{
     console.log(ulx)
     
     // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {stickyEnjeuxFunc()};
+    window.onscroll = function() {
+        stickyEnjeuxFunc()
+        stickyHeader()
+    };
  
     
     
@@ -427,4 +430,15 @@ function openMenu(){
         m.classList.add("menu-opened")
         m.classList.remove("menu-closed");
     }
+}
+
+function stickyHeader (){
+    const header = document.getElementsByClassName('header')[0];
+    const fixed = header.offsetTop;
+    if (window.pageYOffset >0) {
+        header.classList.add("fixed")
+    } else {
+        header.classList.remove("fixed");
+    }
+    console.log(header.offsetTop)
 }
