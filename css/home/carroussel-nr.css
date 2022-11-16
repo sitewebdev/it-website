@@ -245,3 +245,7 @@
 
 .nous-rejoindre .navigation .left {  float: left; }
 .nous-rejoindre .navigation .right { float: right; }
+
+#owl-carousel-nr .owl-stage-outer,#owl-carousel-nr .owl-stage{
+  height: 247px !important;
+}
