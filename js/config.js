@@ -10,6 +10,6 @@
 // comment this section on dev mode
 const server={
     url_prefix:'https://rmstest.itnewvision.com:8443',
-    host_node:'www.itnewvision.com',
+    host_node:'https://www.itnewvision.com',
     port_node:8880
 }
