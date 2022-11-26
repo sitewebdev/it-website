@@ -1,6 +1,6 @@
 /*!*card-nr ARTICLE*!*/
 .card-nr {
-  /*width: 100%;*/
+  width: 100%;
   text-align: center;
   /*transition: all .125s;
   transform: scale(1) translateY(0px);*/
@@ -71,7 +71,7 @@
   padding-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 125px;
+  height: 200px;
 
 }
 
@@ -160,9 +160,9 @@
   /*transform: scale(0.95) translateY(10px);*/
 }
 
-/*.nous-rejoindre .owl-item {*/
-/*  width: 220px!important;*/
-/*}*/
+.nous-rejoindre .owl-item {
+  /*width: 220px!important;*/
+}
 
 
 
@@ -247,6 +247,3 @@
 .nous-rejoindre .navigation .left {  float: left; }
 .nous-rejoindre .navigation .right { float: right; }
 
-#owl-carousel-nr .owl-stage-outer,#owl-carousel-nr .owl-stage{
-  height: 247px !important;
-}

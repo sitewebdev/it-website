@@ -131,21 +131,22 @@ $(document).ready(function () {
                 0: {
                     items: 1
                 },
-                400: {
-                    items: 2
+                400:{
+                  items:2
                 },
-                700: {
+                600: {
                     items: 3
                 },
-                900: {
-                    items: 4
+                900:{
+                    items:4
                 },
-                1101:{
-                    items: 2
+                1100:{
+                    items:3
                 },
-                1400: {
-                    items: 3
+                1500:{
+                    items:4
                 }
+
             }
 
         }
